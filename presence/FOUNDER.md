@@ -18,19 +18,15 @@ KJ identifies himself as the founder and creator of the Kindred Agentic Genesis 
 
 ## What distinguishes this work
 
-- A connected research program spanning computation, data transport, and agent execution.
-- Recall and evidence checks integrated into the proposed execution flow.
-- Explicit distinctions between research prototypes, source availability, local execution, and externally verified outcomes.
-- Founder attribution preserved alongside project names and implementation lineage.
-
-These are descriptions of the documented work. They are not claims of independently established world-first status, frontier benchmark leadership, or global production availability.
+- Development across computation (NTSA-X), transport (Strata Data Port Network), and agent execution (BRAINSTEM).
+- Research into recurrent X/Y/Z state and cognitive–diffusion learning, documented in NTSA-X.
+- Recall of verified results using persistent state and hash-linked lineage.
+- Research into native port identity, permissioned transport, and inspectable execution outcomes.
 
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
 - [Public link hub — KindredKJ](https://linktr.ee/KindredKJ)
 - [Kindred Labs website](https://kindredlabs.ai)
-
-This is a first-party professional profile. Repository descriptions are not independent certification of capabilities or legal ownership. No personal financial, medical, housing or identity documents are included.
 
 Last editorial update: 2026-10-16.
