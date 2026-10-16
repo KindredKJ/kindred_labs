@@ -60,7 +60,7 @@
       "name": "NTSA-X",
       "url": "https://github.com/KindredKJ/NTSA-X",
       "source": "https://github.com/KindredKJ/NTSA-X/blob/main/README.md",
-      "sourceBlobSha": "c617dc7ca6afab7f5d7db670cf60edb8df568301",
+      "sourceBlobSha": "c089e92eb6fe89b8a4c3885b8cfa4b449f1034f5",
       "scope": "experimental adaptive-computation and recurrent-model research",
       "milestones": [
         {
@@ -106,6 +106,60 @@
             "Trusted extensions run in process and are not sandboxed.",
             "Parallel workloads are bounded within a request; no always-on background agent is established.",
             "No production deployment or worldwide-priority claim is established."
+          ]
+        },
+        {
+          "id": "ntsa-x-m16",
+          "title": "Milestone 16: browser-backed web recall and source receipts",
+          "stage": "merged_research_prototype",
+          "mergedAt": "2026-10-16T20:04:44Z",
+          "pullRequest": "https://github.com/KindredKJ/NTSA-X/pull/22",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "6fd8827db8c8d7e0946203408065a2c6653ad67b",
+          "mergeCommitAuthor": "KindredKJ",
+          "source": "https://github.com/KindredKJ/NTSA-X/blob/6fd8827db8c8d7e0946203408065a2c6653ad67b/docs/MILESTONE-16-BROWSER-WEB-RECALL.md",
+          "sourceBlobSha": "2348a867c71465ab655163220506098cb1b2eb88",
+          "summary": "Opt-in local SearXNG/Playwright search, bounded public-HTTPS retrieval and source receipts integrated into the existing unified inference path without changing model weights.",
+          "verification": {
+            "sourceAndTestsInspected": true,
+            "changedFiles": [
+              ".github/workflows/ci.yml",
+              "README.md",
+              "docs/MILESTONE-16-BROWSER-WEB-RECALL.md",
+              "ntsa_x/cog_fu_server.py",
+              "ntsa_x/unified_cognition.py",
+              "ntsa_x/web_recall.py",
+              "tests/test_web_recall.py"
+            ],
+            "sourceHeadSha": "76c23e859063d74e1e9c4578b6e5b759981b9a87",
+            "sourceHeadWorkflows": [
+              {
+                "name": "NTSA-X verified throughput",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/38959197621"
+              },
+              {
+                "name": "NTSA-X verified throughput",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/38959190577"
+              }
+            ],
+            "testScope": "Windows and Linux web-recall contract tests passed; retrieval is mocked and no live browser/search service is exercised by these tests.",
+            "mergeWorkflow": {
+              "status": "in_progress",
+              "conclusion": null,
+              "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/38959603437"
+            },
+            "observedAt": "2026-10-16T20:06:18.473Z"
+          },
+          "limitations": [
+            "Local SearXNG and Playwright Chromium setup is required for live use; live end-to-end retrieval was not verified in this review.",
+            "Retrieved content is untrusted; source receipts and links are not independent fact-checks or proof of answer accuracy.",
+            "No model-weight changes, trained fluency improvement, unlimited search or access to ChatGPT's proprietary search backend is established.",
+            "No GitHub release was listed at review; production deployment is not established.",
+            "Post-merge CI was still running when reviewed."
           ]
         }
       ]
