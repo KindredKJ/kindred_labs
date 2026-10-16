@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "lastEditorialUpdate": "2026-10-16",
+  "person": {
+    "name": "Kindred Jermaine Cox",
+    "preferredName": "KJ",
+    "publicHandle": "KindredKJ",
+    "role": "Founder, Kindred Labs"
+  },
+  "organization": {
+    "name": "Kindred Labs",
+    "founder": "Kindred Jermaine Cox",
+    "attributionBasis": "founder declaration and project-source attribution",
+    "legalOwnershipStatus": "not independently established by this profile"
+  },
+  "protocolLineage": {
+    "names": [
+      "Kindred Agentic Genesis Protocol",
+      "Project Genesis",
+      "Agentic-SuperShell"
+    ],
+    "creatorAttribution": "first-party founder declaration",
+    "globalPriorityStatus": "not established"
+  },
+  "profiles": [
+    {
+      "url": "https://github.com/KindredKJ",
+      "relationship": "connected account verified on 2026-10-16"
+    },
+    {
+      "url": "https://linktr.ee/KindredKJ",
+      "relationship": "public link hub observed on 2026-10-16"
+    }
+  ],
+  "website": {
+    "url": "https://kindredlabs.ai",
+    "intendedRelationship": "Kindred Labs website",
+    "registrationOwnershipStatus": "unverified",
+    "lastObservedHttpStatus": 402,
+    "lastCheckedAt": "2026-10-16T08:05:17.205Z"
+  },
+  "projects": [
+    {
+      "name": "BRAINSTEM",
+      "url": "https://github.com/KindredKJ/kindred-brainstem",
+      "source": "https://github.com/KindredKJ/kindred-brainstem/blob/main/README.md",
+      "sourceBlobSha": "e16d55c844f8a586065b3e2e74678019de89c242",
+      "scope": "public source; documented local runtime",
+      "founderAttribution": "Kindred Jermaine Cox"
+    },
+    {
+      "name": "Strata Data Port Network",
+      "url": "https://github.com/KindredKJ/strata-data-port-network",
+      "source": "https://github.com/KindredKJ/strata-data-port-network/blob/main/README.md",
+      "sourceBlobSha": "750b405c516965e15470ea8c961c129133f0ce6b",
+      "scope": "public research candidates; encrypted browser handoff package",
+      "founderAttribution": "Kindred Jermaine Cox"
+    },
+    {
+      "name": "NTSA-X",
+      "url": "https://github.com/KindredKJ/NTSA-X",
+      "source": "https://github.com/KindredKJ/NTSA-X/blob/main/README.md",
+      "sourceBlobSha": "dd0b7be2532b5983876514c8ccb6d2946c533089",
+      "scope": "experimental adaptive-computation and recurrent-model research"
+    }
+  ],
+  "updatePolicy": {
+    "managedPaths": [
+      "presence/FOUNDER.md",
+      "presence/profile.json"
+    ],
+    "requireEvidenceForMaterialClaims": true,
+    "privateSourcePublication": false,
+    "worldFirstRequiresIndependentPriorityEvidence": true,
+    "legalOwnershipRequiresOwnershipRecords": true
+  }
+}
