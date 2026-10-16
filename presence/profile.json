@@ -60,8 +60,55 @@
       "name": "NTSA-X",
       "url": "https://github.com/KindredKJ/NTSA-X",
       "source": "https://github.com/KindredKJ/NTSA-X/blob/main/README.md",
-      "sourceBlobSha": "dd0b7be2532b5983876514c8ccb6d2946c533089",
-      "scope": "experimental adaptive-computation and recurrent-model research"
+      "sourceBlobSha": "c617dc7ca6afab7f5d7db670cf60edb8df568301",
+      "scope": "experimental adaptive-computation and recurrent-model research",
+      "milestones": [
+        {
+          "id": "ntsa-x-m15",
+          "title": "Milestone 15: unified inference, typed memory and native extensions",
+          "stage": "merged_research_prototype",
+          "mergedAt": "2026-10-16T10:01:57Z",
+          "pullRequest": "https://github.com/KindredKJ/NTSA-X/pull/21",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "985652e8df495a64491456fcf4bd832c45e831e2",
+          "mergeCommitAuthor": "KindredKJ",
+          "source": "https://github.com/KindredKJ/NTSA-X/blob/985652e8df495a64491456fcf4bd832c45e831e2/docs/MILESTONE-15-UNIFIED-COGNITION.md",
+          "sourceBlobSha": "05fccabf9920a831dd51655af0cf33d2c7f880b3",
+          "summary": "Experimental shared-state recurrent/denoising inference, typed local SQLite memory and bounded concurrent trusted native extensions.",
+          "verification": {
+            "sourceAndTestsInspected": true,
+            "changedFiles": [
+              ".github/workflows/ci.yml",
+              "README.md",
+              "docs/MILESTONE-15-UNIFIED-COGNITION.md",
+              "ntsa_x/cog_fu.py",
+              "ntsa_x/cog_fu_server.py",
+              "ntsa_x/memory_fabric.py",
+              "ntsa_x/unified_cognition.py",
+              "tests/test_unified_cognition.py",
+              "tests/test_unified_native_fusion.py"
+            ],
+            "sourceHeadSha": "1a4b6115dc87af03b0a0180ef30e247d4092da83",
+            "sourceHeadWorkflows": [
+              {
+                "name": "NTSA-X verified throughput",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/38884204064"
+              }
+            ],
+            "mergeWorkflowObservation": "The PR-filtered workflow lookup returned no runs for the merge SHA; no post-merge CI conclusion is asserted.",
+            "observedAt": "2026-10-16T10:04:15.554Z"
+          },
+          "limitations": [
+            "Research prototype; conversational improvements remain unproven.",
+            "Checkpoint-compatible inference addition; the merge does not perform model training.",
+            "Trusted extensions run in process and are not sandboxed.",
+            "Parallel workloads are bounded within a request; no always-on background agent is established.",
+            "No production deployment or worldwide-priority claim is established."
+          ]
+        }
+      ]
     }
   ],
   "updatePolicy": {
