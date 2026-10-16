@@ -148,18 +148,60 @@
             ],
             "testScope": "Windows and Linux web-recall contract tests passed; retrieval is mocked and no live browser/search service is exercised by these tests.",
             "mergeWorkflow": {
-              "status": "in_progress",
-              "conclusion": null,
-              "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/38959603437"
+              "status": "completed",
+              "conclusion": "success",
+              "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/38959603437",
+              "headSha": "6fd8827db8c8d7e0946203408065a2c6653ad67b",
+              "jobs": [
+                {
+                  "name": "factory-benchmark (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "native-state-smoke (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "persistent-benchmark (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "test (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "factory-benchmark (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "test (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "persistent-benchmark (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "native-state-smoke (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "verified-gate",
+                  "conclusion": "success"
+                }
+              ]
             },
-            "observedAt": "2026-10-16T20:06:18.473Z"
+            "observedAt": "2026-10-16T20:16:19.802Z",
+            "previousMergeWorkflowObservation": {
+              "status": "in_progress",
+              "observedAt": "2026-10-16T20:06:18.473Z"
+            }
           },
           "limitations": [
             "Local SearXNG and Playwright Chromium setup is required for live use; live end-to-end retrieval was not verified in this review.",
             "Retrieved content is untrusted; source receipts and links are not independent fact-checks or proof of answer accuracy.",
             "No model-weight changes, trained fluency improvement, unlimited search or access to ChatGPT's proprietary search backend is established.",
-            "No GitHub release was listed at review; production deployment is not established.",
-            "Post-merge CI was still running when reviewed."
+            "No GitHub release was listed at review; production deployment is not established."
           ]
         }
       ]
