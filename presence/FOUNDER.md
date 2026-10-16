@@ -23,6 +23,14 @@ KJ identifies himself as the founder and creator of the Kindred Agentic Genesis 
 - Recall of verified results using persistent state and hash-linked lineage.
 - Research into native port identity, permissioned transport, and inspectable execution outcomes.
 
+## Documented milestones
+
+### 2026-10-16 — NTSA-X Milestone 15
+
+[PR #21](https://github.com/KindredKJ/NTSA-X/pull/21), authored by the KindredKJ account, merged as [`985652e8df495a64491456fcf4bd832c45e831e2`](https://github.com/KindredKJ/NTSA-X/commit/985652e8df495a64491456fcf4bd832c45e831e2). The public research implementation adds a shared recurrent/denoising inference loop, typed local SQLite memory, and bounded concurrent trusted native extensions. Existing model checkpoints are preserved.
+
+The [source-head CI workflow](https://github.com/KindredKJ/NTSA-X/actions/runs/38884204064) completed successfully for `1a4b6115dc87af03b0a0180ef30e247d4092da83`. This is a merged research prototype; conversational improvements remain unproven, memory writes require explicit opt-in, and the concurrent work runs within an incoming request. The merge does not establish model training, an always-on autonomous agent, or a production deployment. See the [versioned implementation guide](https://github.com/KindredKJ/NTSA-X/blob/985652e8df495a64491456fcf4bd832c45e831e2/docs/MILESTONE-15-UNIFIED-COGNITION.md).
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
