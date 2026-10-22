@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "lastEditorialUpdate": "2026-10-16",
+  "lastEditorialUpdate": "2026-10-21",
   "person": {
     "name": "Kindred Jermaine Cox",
     "preferredName": "KJ",
@@ -52,9 +52,80 @@
       "name": "Strata Data Port Network",
       "url": "https://github.com/KindredKJ/strata-data-port-network",
       "source": "https://github.com/KindredKJ/strata-data-port-network/blob/main/README.md",
-      "sourceBlobSha": "750b405c516965e15470ea8c961c129133f0ce6b",
-      "scope": "public research candidates; encrypted browser handoff package",
-      "founderAttribution": "Kindred Jermaine Cox"
+      "sourceBlobSha": "05786ac1be14fb29609797c3fe6a49a663b0341a",
+      "scope": "public research candidates; encrypted browser handoff package; merged provider-independent static workspace host candidate",
+      "founderAttribution": "Kindred Jermaine Cox",
+      "milestones": [
+        {
+          "id": "sdpn-standalone-host-pr28",
+          "title": "Provider-independent static workspace host and product-boundary documentation",
+          "stage": "merged_implementation_candidate",
+          "mergedAt": "2026-10-22T04:21:12Z",
+          "localDate": "2026-10-21",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/28",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "66a7610f324ad56bf84b674f7e3f502a744a7532",
+          "mergeCommitAuthor": "KindredKJ",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/66a7610f324ad56bf84b674f7e3f502a744a7532/docs/STANDALONE-INDEPENDENCE-AND-INTEGRATION.md",
+          "sourceBlobSha": "447559d721141f85f9110b04db4c1690fc11e1f9",
+          "summary": "Dependency-free Node.js 22 loopback host for the existing static landing page and encrypted-package browser workspace, with an explicit route allowlist, restrictive browser headers, read-only methods, removal of the Vercel analytics dependency, and documented separation from Project Genesis.",
+          "verification": {
+            "sourceAndTestsInspected": true,
+            "changedFiles": [
+              ".github/workflows/interconnect-native.yml",
+              ".github/workflows/two-vm-proof.yml",
+              "README.md",
+              "docs/STANDALONE-INDEPENDENCE-AND-INTEGRATION.md",
+              "index.html",
+              "package-lock.json",
+              "package.json",
+              "scripts/serve-standalone.mjs",
+              "test/standalone-host.test.mjs"
+            ],
+            "sourceHeadSha": "29b49bff6119a680fae161bcb20ad1b767bf1340",
+            "sourceHeadWorkflows": [
+              {
+                "name": "Candidate verification",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721703840"
+              },
+              {
+                "name": "SW06-F two actual VMs",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721703953"
+              },
+              {
+                "name": "INTERCONNECT native proof",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721703909"
+              },
+              {
+                "name": "SW07 Android native network entry",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721703884"
+              }
+            ],
+            "testScope": "Six focused standalone-host test cases are present in the merged source. The observed Candidate verification job log ran only the focused Direct Pipe test, so no CI execution of the new standalone-host suite is asserted.",
+            "mergeWorkflowObservation": "The PR-filtered workflow lookup returned no GitHub Actions runs for the merge SHA. A Vercel commit status reported success, but no external production smoke test was verified.",
+            "unresolvedReviewFindings": [
+              "Non-loopback HTTP browser use is not a secure context, so Web Crypto seal/open operations require HTTPS.",
+              "The /healthz endpoint reports process liveness without confirming required static assets are readable."
+            ],
+            "observedAt": "2026-10-22T04:26:27.360Z"
+          },
+          "limitations": [
+            "Static web service only; it does not launch the native distributed protocol, deliver packages, activate Port Zero, establish physical zero-copy, or expose an authenticated public API.",
+            "Local loopback operation avoids a hosting-provider dependency but still requires a machine and Node.js 22 or newer.",
+            "LAN encrypted-workspace use requires separately administered HTTPS; direct public Internet exposure is not supported.",
+            "The merged standalone-host test source was inspected, but its execution was not observed in the fetched source-head CI logs.",
+            "No externally verified production deployment, global access, customer use, revenue, or worldwide-priority claim is established."
+          ]
+        }
+      ]
     },
     {
       "name": "NTSA-X",
