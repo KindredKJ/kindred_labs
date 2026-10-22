@@ -52,8 +52,8 @@
       "name": "Strata Data Port Network",
       "url": "https://github.com/KindredKJ/strata-data-port-network",
       "source": "https://github.com/KindredKJ/strata-data-port-network/blob/main/README.md",
-      "sourceBlobSha": "b8d7b978b5567f28becafe68c4c5246d2d605a7f",
-      "scope": "public research candidates; encrypted browser handoff package; merged provider-independent static workspace host candidate; merged PORT/1 signed native-addressing candidate",
+      "sourceBlobSha": "30a9817d2b63c43a3803392bd013c79d770750fe",
+      "scope": "public research candidates; encrypted browser handoff package; merged provider-independent static workspace host candidate; merged PORT/1 signed native-addressing candidate; merged PORTAL/1 local-first application candidate",
       "founderAttribution": "Kindred Jermaine Cox",
       "milestones": [
         {
@@ -200,6 +200,80 @@
             "A signed name does not itself grant transport or data access, establish legal title or monopoly, or prove Internet-domain registration ownership.",
             "The exposed activation path does not enforce the implementation's rollback and issuer-revocation state, and three additional review findings remained unresolved at merge.",
             "No customers, revenue, independent recognition, production benchmark or worldwide-priority claim is established."
+          ]
+        },
+        {
+          "id": "sdpn-portal1-pr30",
+          "title": "PORTAL/1 local-first search, optional local AI and signed PORT websites",
+          "stage": "merged_implementation_candidate",
+          "mergedAt": "2026-10-22T04:58:37Z",
+          "localDate": "2026-10-21",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/30",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "38e1b8756a5fb9c2643931e24f1742ad0e77cfed",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/38e1b8756a5fb9c2643931e24f1742ad0e77cfed/docs/PORTAL-FOUNDERS-RELEASE.md",
+          "sourceBlobSha": "d151c2ae1ca3ad5bce11b493a941f4d39808f754",
+          "summary": "Node.js loopback application for deterministic search over checked-in SDPN documents and locally saved sites, optional localhost OpenAI-compatible model access, bounded text-only site creation, explicit operator signing into PORT/1, and offline display of owner-targeted signed sites in INTERCONNECT.",
+          "verification": {
+            "sourceAndTestsInspected": true,
+            "changedFiles": [
+              "README.md",
+              "apps/portal/open-port.mjs",
+              "apps/portal/public/app.js",
+              "apps/portal/public/index.html",
+              "apps/portal/public/styles.css",
+              "apps/portal/publish.mjs",
+              "apps/portal/server.mjs",
+              "apps/portal/test/port-publish.test.mjs",
+              "apps/portal/test/portal.test.mjs",
+              "docs/PORTAL-FOUNDERS-RELEASE.md",
+              "interconnect/browser.py",
+              "interconnect/port_address.py",
+              "interconnect/tests/test_portal_sites.py",
+              "package.json"
+            ],
+            "sourceHeadSha": "cfdfe2a5a0b9f2676c473dc1c43d9e044feda990",
+            "sourceHeadWorkflows": [
+              {
+                "name": "Candidate verification",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39725197942"
+              },
+              {
+                "name": "SW06-F two actual VMs",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39725197821"
+              },
+              {
+                "name": "INTERCONNECT native proof",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39725197849"
+              },
+              {
+                "name": "SW07 Android native network entry",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39725198697"
+              }
+            ],
+            "testScope": "The INTERCONNECT workflow executed 12 Python tests, including the new cross-language signed-site publication/rendering test, and passed. Candidate verification executed 60 general Python tests. Seven new Portal Node test cases are present in the merged source, but the observed Candidate Node job ran only test/direct-pipe-runtime.v1.test.mjs; CI execution of the Portal Node suite is not asserted.",
+            "deploymentEvidence": "Vercel reported successful preview/commit statuses for the source head and merge commit. These are preview/build signals only; no production endpoint, externally observed public service, or operational smoke test was verified.",
+            "mergeWorkflowObservation": "The PR-filtered workflow lookup returned no distinct GitHub Actions runs for merge commit 38e1b8756a5fb9c2643931e24f1742ad0e77cfed.",
+            "reviewObservation": "No review submissions or review threads were returned. The Codex review summary still reported running on earlier head 42d7d9d37ad74fbeb5ae06ed7e3744ac522e307f when the PR merged, so no completed automated review conclusion is asserted.",
+            "observedAt": "2026-10-22T05:00:52.469Z"
+          },
+          "limitations": [
+            "PORTAL/1 is loopback-only local software; it is not a public search engine, global web index, hosted service or alternative Internet.",
+            "Search covers checked-in SDPN documents and locally saved sites only; public crawling, ingestion rights, ranking evaluation, abuse defenses and scalable storage are not implemented.",
+            "AI responses require a separately installed and running localhost OpenAI-compatible model; no foundational model, live model availability or answer quality was independently verified.",
+            "Signed PORT publication remains local and owner-operated; it does not create DNS registration, worldwide reach, remote session authorization or legal ownership.",
+            "The seven new Portal Node tests are present but were not observed running in the fetched CI logs; no distinct post-merge GitHub Actions run was found.",
+            "No production release, customers, payments, subscriptions, revenue, performance benchmark, independent recognition or worldwide-priority claim is established."
           ]
         }
       ]
