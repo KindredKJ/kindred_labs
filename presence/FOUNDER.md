@@ -37,10 +37,16 @@ The [source-head CI workflow](https://github.com/KindredKJ/NTSA-X/actions/runs/3
 
 [Source-head CI](https://github.com/KindredKJ/NTSA-X/actions/runs/38959197621) passed for `76c23e859063d74e1e9c4578b6e5b759981b9a87`, including Windows and Linux web-recall tests. These tests use deterministic mocked retrieval, not live browsing. Live use requires local setup; retrieved sources are not independently fact-checked, and source links do not prove generated claims. This is not ChatGPT's proprietary search backend, unlimited search, or demonstrated production operation. [Post-merge CI](https://github.com/KindredKJ/NTSA-X/actions/runs/38959603437) also completed successfully for the merge commit, including Windows and Linux test jobs. See the [versioned M16 guide](https://github.com/KindredKJ/NTSA-X/blob/6fd8827db8c8d7e0946203408065a2c6653ad67b/docs/MILESTONE-16-BROWSER-WEB-RECALL.md).
 
+### 2026-10-21 — SDPN provider-independent static workspace host
+
+[PR #28](https://github.com/KindredKJ/strata-data-port-network/pull/28), authored by the KindredKJ account, merged as [`66a7610f324ad56bf84b674f7e3f502a744a7532`](https://github.com/KindredKJ/strata-data-port-network/commit/66a7610f324ad56bf84b674f7e3f502a744a7532). The merged implementation adds a dependency-free Node.js 22 loopback host for SDPN's existing static landing page and encrypted-package browser workspace, with allowlisted routes, restrictive browser headers, read-only methods, and no Vercel analytics dependency. Its public documentation explicitly keeps SDPN independent from Project Genesis and treats Kindred Labs AI and ChatGPT as optional, separately authorized consumers rather than core dependencies.
+
+Four source-head workflows completed successfully for `29b49bff6119a680fae161bcb20ad1b767bf1340`: [Candidate verification](https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721703840), [SW06-F two actual VMs](https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721703953), [INTERCONNECT native proof](https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721703909), and [SW07 Android native network entry](https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721703884). The observed Candidate verification log ran a focused Direct Pipe test, not the newly added standalone-host suite, so this record does not assert CI execution of that suite. Two automated P2 review findings remained unresolved at merge: non-loopback browser cryptography requires HTTPS, and `/healthz` can report process liveness while required static assets are unavailable. This is a merged implementation candidate, not evidence of a public SDPN transport, physical zero-copy, a production authentication gateway, global access, or production verification. See the [versioned independence and integration guide](https://github.com/KindredKJ/strata-data-port-network/blob/66a7610f324ad56bf84b674f7e3f502a744a7532/docs/STANDALONE-INDEPENDENCE-AND-INTEGRATION.md).
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
 - [Public link hub — KindredKJ](https://linktr.ee/KindredKJ)
 - [Kindred Labs website](https://kindredlabs.ai)
 
-Last editorial update: 2026-10-16.
+Last editorial update: 2026-10-21.
