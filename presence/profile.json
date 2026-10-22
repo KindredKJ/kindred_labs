@@ -52,8 +52,8 @@
       "name": "Strata Data Port Network",
       "url": "https://github.com/KindredKJ/strata-data-port-network",
       "source": "https://github.com/KindredKJ/strata-data-port-network/blob/main/README.md",
-      "sourceBlobSha": "05786ac1be14fb29609797c3fe6a49a663b0341a",
-      "scope": "public research candidates; encrypted browser handoff package; merged provider-independent static workspace host candidate",
+      "sourceBlobSha": "b8d7b978b5567f28becafe68c4c5246d2d605a7f",
+      "scope": "public research candidates; encrypted browser handoff package; merged provider-independent static workspace host candidate; merged PORT/1 signed native-addressing candidate",
       "founderAttribution": "Kindred Jermaine Cox",
       "milestones": [
         {
@@ -123,6 +123,83 @@
             "LAN encrypted-workspace use requires separately administered HTTPS; direct public Internet exposure is not supported.",
             "The merged standalone-host test source was inspected, but its execution was not observed in the fetched source-head CI logs.",
             "No externally verified production deployment, global access, customer use, revenue, or worldwide-priority claim is established."
+          ]
+        },
+        {
+          "id": "sdpn-port1-pr29",
+          "title": "PORT/1 signed native addressing, offline resolution and INTERCONNECT integration",
+          "stage": "merged_implementation_candidate",
+          "mergedAt": "2026-10-22T04:42:49Z",
+          "localDate": "2026-10-21",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/29",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "fce0cb25e13ea26c55e2d5be4defd63c74d19242",
+          "mergeCommitAuthor": "KindredKJ",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/fce0cb25e13ea26c55e2d5be4defd63c74d19242/docs/PORT-URI-AND-NATIVE-NAMES.md",
+          "sourceBlobSha": "33e79d10eaa5b06c60a62289758ce711b342d9ad",
+          "summary": "Local self-certifying port:// overlay with Ed25519-signed namespace manifests, aliases and subdomains; offline resolution; INTERCONNECT display after Node-based verification; and an opt-in user-scoped Windows protocol handler.",
+          "verification": {
+            "sourceAndTestsInspected": true,
+            "changedFiles": [
+              ".gitignore",
+              "README.md",
+              "docs/PORT-URI-AND-NATIVE-NAMES.md",
+              "interconnect/README.md",
+              "interconnect/browser.py",
+              "interconnect/port_address.py",
+              "interconnect/tests/test_port_address.py",
+              "package.json",
+              "scripts/Install-SDPNPortProtocol.ps1",
+              "scripts/Invoke-SDPNPortHandler.ps1",
+              "scripts/port-domain.mjs",
+              "scripts/port-resolve.mjs",
+              "src/port-names.mjs",
+              "test/port-domain-cli.test.mjs",
+              "test/port-names.test.mjs"
+            ],
+            "sourceHeadSha": "cc8016b73df9f2d01526797a8cd84edcb5e0bc6a",
+            "sourceHeadWorkflows": [
+              {
+                "name": "Candidate verification",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39723704539"
+              },
+              {
+                "name": "SW06-F two actual VMs",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39723704534"
+              },
+              {
+                "name": "INTERCONNECT native proof",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39723704551"
+              },
+              {
+                "name": "SW07 Android native network entry",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39723704623"
+              }
+            ],
+            "testScope": "The INTERCONNECT workflow executed 11 Python tests, including both new signed port-address integration tests, and passed. Seven new Node test cases are present in the merged source, but their execution was not established in the fetched workflow logs. Candidate verification also passed 60 general Python tests.",
+            "mergeWorkflowObservation": "The fetched successful runs were associated with PR #29 source head and checked out GitHub's synthesized PR merge ref. No distinct post-merge workflow execution on merge commit fce0cb25e13ea26c55e2d5be4defd63c74d19242 is asserted. A Vercel status was successful, but no production deployment or public-service smoke test was verified.",
+            "unresolvedReviewFindings": [
+              "The exposed resolver does not persist or use SignedPortNameDirectory state, so rollback and issuer-revocation protection is not enforced through the activation path.",
+              "Namespace initialization is not transactional after private-key creation; a later manifest-write failure can require manual repair.",
+              "INTERCONNECT Back, Forward and Reload can reuse cached synthetic HTML without re-verifying signature, expiry or bindings.",
+              "The writer limits canonical manifest bytes while readers limit the pretty-printed signed envelope, so near-limit valid writes can become unreadable or unrenewable."
+            ],
+            "observedAt": "2026-10-22T04:44:56.790Z"
+          },
+          "limitations": [
+            "This is a custom local overlay, not IANA registration, an ICANN top-level domain, public DNS delegation or a normal-browser HTTPS replacement.",
+            "Initial names are signed reservations, not live applications; the merge does not establish a live carrier, production service, remote access authorization or public deployment.",
+            "A signed name does not itself grant transport or data access, establish legal title or monopoly, or prove Internet-domain registration ownership.",
+            "The exposed activation path does not enforce the implementation's rollback and issuer-revocation state, and three additional review findings remained unresolved at merge.",
+            "No customers, revenue, independent recognition, production benchmark or worldwide-priority claim is established."
           ]
         }
       ]
