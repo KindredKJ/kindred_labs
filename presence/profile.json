@@ -52,8 +52,8 @@
       "name": "Strata Data Port Network",
       "url": "https://github.com/KindredKJ/strata-data-port-network",
       "source": "https://github.com/KindredKJ/strata-data-port-network/blob/main/README.md",
-      "sourceBlobSha": "30a9817d2b63c43a3803392bd013c79d770750fe",
-      "scope": "public research candidates; encrypted browser handoff package; merged provider-independent static workspace host candidate; merged PORT/1 signed native-addressing candidate; merged PORTAL/1 local-first application candidate",
+      "sourceBlobSha": "e7c37f63b5d1a8a826693dd7422548dea7164c62",
+      "scope": "public research candidates; encrypted browser handoff package; merged provider-independent static workspace host candidate; merged PORT/1 signed native-addressing candidate; merged PORTAL/1 local-first application candidate; separately licensed Apache-2.0 SDPN Community identity and naming component",
       "founderAttribution": "Kindred Jermaine Cox",
       "milestones": [
         {
@@ -274,6 +274,75 @@
             "Signed PORT publication remains local and owner-operated; it does not create DNS registration, worldwide reach, remote session authorization or legal ownership.",
             "The seven new Portal Node tests are present but were not observed running in the fetched CI logs; no distinct post-merge GitHub Actions run was found.",
             "No production release, customers, payments, subscriptions, revenue, performance benchmark, independent recognition or worldwide-priority claim is established."
+          ]
+        },
+        {
+          "id": "sdpn-community-pr31",
+          "title": "SDPN Community Apache-2.0 identity and signed-name foundation",
+          "stage": "merged_public_open_source_component",
+          "mergedAt": "2026-10-22T05:32:33Z",
+          "localDate": "2026-10-21",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/31",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "5f98d7330a2cc35848b1d40b4673d76b5d239f23",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/5f98d7330a2cc35848b1d40b4673d76b5d239f23/docs/OPEN-CORE-FOUNDER-GOVERNANCE.md",
+          "sourceBlobSha": "eec02906f2ac424c7e98240a306a472829a35b88",
+          "license": "Apache-2.0",
+          "licenseScope": "community/ only; other repository paths retain their existing terms unless separately licensed",
+          "licenseSource": "https://github.com/KindredKJ/strata-data-port-network/blob/5f98d7330a2cc35848b1d40b4673d76b5d239f23/community/LICENSE",
+          "licenseBlobSha": "ff9ad4530f5716304e042cbac72cecd7c40f0e0e",
+          "summary": "Separately licensed Node.js 22 community component for offline Ed25519 identity creation/import/export, signed PORT/1-compatible namespaces and canonical port:// resolution, with an executable catalog that distinguishes implemented free identity/naming functions from planned free transport and unavailable managed services.",
+          "verification": {
+            "sourceAndTestsInspected": true,
+            "changedFiles": [
+              ".github/workflows/community-independent.yml",
+              "LICENSE.md",
+              "README.md",
+              "apps/portal/public/app.js",
+              "apps/portal/public/index.html",
+              "apps/portal/public/styles.css",
+              "apps/portal/server.mjs",
+              "apps/portal/test/portal.test.mjs",
+              "community/LICENSE",
+              "community/NOTICE",
+              "community/README.md",
+              "community/package.json",
+              "community/src/access.mjs",
+              "community/src/index.mjs",
+              "community/test/community.test.mjs",
+              "docs/OPEN-CORE-FOUNDER-GOVERNANCE.md",
+              "package.json",
+              "test/community-interop.test.mjs"
+            ],
+            "sourceHeadSha": "047fae3963162b90f8a3f855f7683e8ae4144903",
+            "sourceHeadWorkflows": [
+              {
+                "name": "SDPN Community independent open-source verification",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39728399770"
+              },
+              {
+                "name": "Candidate verification",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39728399663"
+              }
+            ],
+            "testScope": "The independent workflow verified the explicit Apache-2.0 scope, then passed 5 tests with community/ extracted from all other repository code, 1 PORT/1 interoperability test, and 7 Portal tests. Candidate verification passed 60 general Python tests.",
+            "deploymentEvidence": "Vercel reported successful statuses for the source head and merge commit. These are build/preview signals only; no production endpoint or public-service smoke test was verified.",
+            "mergeWorkflowObservation": "The PR-filtered workflow lookup returned no distinct GitHub Actions runs for merge commit 5f98d7330a2cc35848b1d40b4673d76b5d239f23.",
+            "reviewObservation": "No review submissions or review threads were returned.",
+            "observedAt": "2026-10-22T05:38:00Z"
+          },
+          "limitations": [
+            "Only community/ is newly Apache-2.0; the remainder of the repository is not thereby open source.",
+            "Implemented functions cover identity and signed naming. Peer discovery, sessions, data transport and wider free-network modules are planned, not live.",
+            "Managed Creator, Business and Enterprise services are planned and unavailable; no price is activated, payment is accepted, or subscription is purchasable.",
+            "A cryptographic identity or signed name does not prove legal personhood, company ownership, Internet-domain registration, trademark rights or access authorization.",
+            "No production network, public launch, customers, revenue, independent recognition, worldwide-priority claim or externally verified service is established."
           ]
         }
       ]
