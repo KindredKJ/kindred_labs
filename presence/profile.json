@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "lastEditorialUpdate": "2026-10-22",
+  "lastEditorialUpdate": "2026-10-23",
   "person": {
     "name": "Kindred Jermaine Cox",
     "preferredName": "KJ",
@@ -747,6 +747,127 @@
             "Retrieved content is untrusted; source receipts and links are not independent fact-checks or proof of answer accuracy.",
             "No model-weight changes, trained fluency improvement, unlimited search or access to ChatGPT's proprietary search backend is established.",
             "No GitHub release was listed at review; production deployment is not established."
+          ]
+        }
+      ],
+      "researchVariants": [
+        {
+          "id": "kindred-rfs-001",
+          "name": "Recall-First Systems (RFS)",
+          "categoryId": "KINDRED-RFS-001",
+          "stage": "tested_experimental_branch",
+          "branch": "category/recall-first-systems-v1",
+          "sourceHeadSha": "43699ef2fe87dd127d2e1ddfc36dab5abf334d95",
+          "sourceDate": "2026-10-23T08:35:50Z",
+          "commitAuthor": "KindredKJ",
+          "commitCommitter": "KindredKJ",
+          "source": "https://github.com/KindredKJ/NTSA-X/blob/43699ef2fe87dd127d2e1ddfc36dab5abf334d95/research/recall_first_systems/EXECUTION.md",
+          "sourceBlobSha": "57eef220e09deab5bf26fb2164fd875189f37875",
+          "categorySource": "https://github.com/KindredKJ/NTSA-X/blob/43699ef2fe87dd127d2e1ddfc36dab5abf334d95/research/recall_first_systems/CATEGORY.md",
+          "categorySourceBlobSha": "1006850a2f9b4a6370add79fc11708f749b625f0",
+          "summary": "Independent Python/SQLite exact-result recall kernel for explicitly pure, deterministic work, with tenant/context/revision/TTL identity and a current caller-supplied verifier on every cached or fresh result.",
+          "preservation": {
+            "canonicalMainSha": "6fd8827db8c8d7e0946203408065a2c6653ad67b",
+            "comparison": "https://github.com/KindredKJ/NTSA-X/compare/6fd8827db8c8d7e0946203408065a2c6653ad67b...43699ef2fe87dd127d2e1ddfc36dab5abf334d95",
+            "branchCommits": 8,
+            "addedFiles": 7,
+            "modifiedInheritedTrackedFiles": 0,
+            "scope": "Git-tracked source comparison; local checkpoints, datasets and runtime state were not inspected."
+          },
+          "verification": {
+            "sourceAndTestsInspected": true,
+            "workflowsEnumeratedWithoutEventFilter": true,
+            "isolatedWorkflow": {
+              "name": "RFS isolated validation",
+              "event": "push",
+              "headSha": "43699ef2fe87dd127d2e1ddfc36dab5abf334d95",
+              "status": "completed",
+              "conclusion": "success",
+              "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/39925772423",
+              "testsPerJob": 13,
+              "jobs": [
+                {
+                  "name": "rfs-verification (ubuntu-latest, 3.12)",
+                  "jobId": 120321642559,
+                  "conclusion": "success",
+                  "logInspected": true
+                },
+                {
+                  "name": "rfs-verification (windows-latest, 3.12)",
+                  "jobId": 120321643031,
+                  "conclusion": "success",
+                  "logInspected": true
+                },
+                {
+                  "name": "rfs-verification (ubuntu-latest, 3.13)",
+                  "jobId": 120321643061,
+                  "conclusion": "success",
+                  "logInspected": true
+                },
+                {
+                  "name": "rfs-verification (windows-latest, 3.13)",
+                  "jobId": 120321643095,
+                  "conclusion": "success",
+                  "logInspected": true
+                }
+              ]
+            },
+            "inheritedWorkflow": {
+              "name": "NTSA-X verified throughput",
+              "event": "push",
+              "headSha": "43699ef2fe87dd127d2e1ddfc36dab5abf334d95",
+              "status": "completed",
+              "conclusion": "success",
+              "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/39925772416",
+              "jobs": [
+                {
+                  "name": "persistent-benchmark (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "persistent-benchmark (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "native-state-smoke (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "factory-benchmark (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "test (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "test (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "native-state-smoke (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "factory-benchmark (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "verified-gate",
+                  "conclusion": "success"
+                }
+              ]
+            },
+            "testScope": "13 distinct correctness tests executed in each Windows/Linux and Python 3.12/3.13 matrix cell: exact reuse, identity boundaries, expiry, current verifier recheck, corruption, failure handling, restart, input isolation and separate state.",
+            "benchmarkScope": "Synthetic repeated PBKDF2 workload with a precomputed fixture verifier; not a neural-inference, training or energy benchmark.",
+            "observedAt": "2026-10-23T10:32:07Z"
+          },
+          "limitations": [
+            "Experimental branch hosted in NTSA-X; the canonical main branch and existing milestones remain separate.",
+            "No GitHub release or production deployment was verified.",
+            "Callers must enforce deterministic purity, revision/freshness inputs and independent verifier logic; arbitrary workers are not sandboxed.",
+            "SQLite tenant separation is logical, not encryption; SHA-256 integrity checks do not authenticate a maliciously modified store.",
+            "Broader RFS tracks remain research proposals; no general AI-performance, energy-saving, novelty or worldwide-priority conclusion is established."
           ]
         }
       ]
