@@ -69,10 +69,18 @@ The [independent community workflow](https://github.com/KindredKJ/strata-data-po
 
 The license grant is explicitly limited to `community/`; the remainder of the repository keeps its existing terms unless separately licensed. Five push-triggered workflows passed on merge commit `5f98d7330a2cc35848b1d40b4673d76b5d239f23`. The [post-merge independent community workflow](https://github.com/KindredKJ/strata-data-port-network/actions/runs/39728620650) again passed 5 isolated community tests, 1 PORT/1 interoperability test and 7 Portal tests; its log records Node.js 24.21.0. The [post-merge Candidate workflow](https://github.com/KindredKJ/strata-data-port-network/actions/runs/39728620668) also succeeded. Vercel reported successful source-head and merge-commit statuses; production network operation and a public-service launch remain unverified. The merge does not establish deployed peer transport, Internet reach, a purchasable subscription, billing, customers, revenue, domain ownership, legal ownership beyond the public notices, independent recognition, or worldwide priority. See the [versioned community guide](https://github.com/KindredKJ/strata-data-port-network/blob/5f98d7330a2cc35848b1d40b4673d76b5d239f23/community/README.md), [license boundary](https://github.com/KindredKJ/strata-data-port-network/blob/5f98d7330a2cc35848b1d40b4673d76b5d239f23/LICENSE.md), and [governance record](https://github.com/KindredKJ/strata-data-port-network/blob/5f98d7330a2cc35848b1d40b4673d76b5d239f23/docs/OPEN-CORE-FOUNDER-GOVERNANCE.md).
 
+### 2026-10-23 — Recall-First Systems experimental branch
+
+The KindredKJ account authored and committed eight public direct-push commits on `category/recall-first-systems-v1`, ending at [`43699ef2fe87dd127d2e1ddfc36dab5abf334d95`](https://github.com/KindredKJ/NTSA-X/commit/43699ef2fe87dd127d2e1ddfc36dab5abf334d95). Recall-First Systems (RFS), category `KINDRED-RFS-001`, is an independent research variant hosted on this NTSA-X branch. Its initial Python/SQLite kernel reuses exact results for explicitly pure, deterministic work, with tenant/context/revision/TTL boundaries and a current caller-supplied verifier on every cached or fresh result. The [source comparison](https://github.com/KindredKJ/NTSA-X/compare/6fd8827db8c8d7e0946203408065a2c6653ad67b...43699ef2fe87dd127d2e1ddfc36dab5abf334d95) adds seven files without modifying inherited tracked files; NTSA-X `main` remains at `6fd8827db8c8d7e0946203408065a2c6653ad67b`.
+
+The push-triggered [RFS isolated validation](https://github.com/KindredKJ/NTSA-X/actions/runs/39925772423) workflow passed all 13 correctness tests in each of four Windows/Linux and Python 3.12/3.13 combinations. The existing [NTSA-X verified throughput](https://github.com/KindredKJ/NTSA-X/actions/runs/39925772416) workflow also completed all nine jobs successfully on the same branch head. These establish tested branch code; no GitHub release or production deployment was verified.
+
+The recorded benchmark uses synthetic repeated PBKDF2 work with a fixture verifier; it does not measure neural inference, model training or energy savings. Callers remain responsible for purity, revision/freshness inputs and verifier quality. Workers are not sandboxed, tenant separation is logical, and checksums do not authenticate a maliciously modified store. Broader RFS tracks remain research proposals. See the [versioned execution contract](https://github.com/KindredKJ/NTSA-X/blob/43699ef2fe87dd127d2e1ddfc36dab5abf334d95/research/recall_first_systems/EXECUTION.md).
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
 - [Public link hub — KindredKJ](https://linktr.ee/KindredKJ)
 - [Kindred Labs website](https://kindredlabs.ai)
 
-Last editorial update: 2026-10-22.
+Last editorial update: 2026-10-23.
