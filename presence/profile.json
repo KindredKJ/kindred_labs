@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "lastEditorialUpdate": "2026-10-21",
+  "lastEditorialUpdate": "2026-10-22",
   "person": {
     "name": "Kindred Jermaine Cox",
     "preferredName": "KJ",
@@ -110,12 +110,56 @@
               }
             ],
             "testScope": "Six focused standalone-host test cases are present in the merged source. The observed Candidate verification job log ran only the focused Direct Pipe test, so no CI execution of the new standalone-host suite is asserted.",
-            "mergeWorkflowObservation": "The PR-filtered workflow lookup returned no GitHub Actions runs for the merge SHA. A Vercel commit status reported success, but no external production smoke test was verified.",
+            "mergeWorkflowObservation": "Direct repository Actions enumeration without a PR-event filter confirms 4 successful push-triggered workflows on merge commit 66a7610f324ad56bf84b674f7e3f502a744a7532.",
             "unresolvedReviewFindings": [
               "Non-loopback HTTP browser use is not a secure context, so Web Crypto seal/open operations require HTTPS.",
               "The /healthz endpoint reports process liveness without confirming required static assets are readable."
             ],
-            "observedAt": "2026-10-22T04:26:27.360Z"
+            "observedAt": "2026-10-22T04:26:27.360Z",
+            "previousMergeWorkflowObservation": {
+              "text": "The PR-filtered workflow lookup returned no GitHub Actions runs for the merge SHA. A Vercel commit status reported success, but no external production smoke test was verified.",
+              "observedAt": "2026-10-22T04:26:27.360Z"
+            },
+            "mergeWorkflows": [
+              {
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "66a7610f324ad56bf84b674f7e3f502a744a7532",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721897452",
+                "updatedAt": "2026-10-22T04:21:33Z"
+              },
+              {
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "66a7610f324ad56bf84b674f7e3f502a744a7532",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721897352",
+                "updatedAt": "2026-10-22T04:22:06Z"
+              },
+              {
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "66a7610f324ad56bf84b674f7e3f502a744a7532",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721897391",
+                "updatedAt": "2026-10-22T04:22:24Z"
+              },
+              {
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "66a7610f324ad56bf84b674f7e3f502a744a7532",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39721897325",
+                "updatedAt": "2026-10-22T04:22:52Z"
+              }
+            ],
+            "mergeWorkflowObservedAt": "2026-10-23T01:46:57.053Z",
+            "mergeTestScope": "The post-merge Candidate Node job executed only test/direct-pipe-runtime.v1.test.mjs (1 pass, 0 fail). Execution of test/standalone-host.test.mjs at this merge remains unverified."
           },
           "limitations": [
             "Static web service only; it does not launch the native distributed protocol, deliver packages, activate Port Zero, establish physical zero-copy, or expose an authenticated public API.",
@@ -185,14 +229,58 @@
               }
             ],
             "testScope": "The INTERCONNECT workflow executed 11 Python tests, including both new signed port-address integration tests, and passed. Seven new Node test cases are present in the merged source, but their execution was not established in the fetched workflow logs. Candidate verification also passed 60 general Python tests.",
-            "mergeWorkflowObservation": "The fetched successful runs were associated with PR #29 source head and checked out GitHub's synthesized PR merge ref. No distinct post-merge workflow execution on merge commit fce0cb25e13ea26c55e2d5be4defd63c74d19242 is asserted. A Vercel status was successful, but no production deployment or public-service smoke test was verified.",
+            "mergeWorkflowObservation": "Direct repository Actions enumeration without a PR-event filter confirms 4 successful push-triggered workflows on merge commit fce0cb25e13ea26c55e2d5be4defd63c74d19242.",
             "unresolvedReviewFindings": [
               "The exposed resolver does not persist or use SignedPortNameDirectory state, so rollback and issuer-revocation protection is not enforced through the activation path.",
               "Namespace initialization is not transactional after private-key creation; a later manifest-write failure can require manual repair.",
               "INTERCONNECT Back, Forward and Reload can reuse cached synthetic HTML without re-verifying signature, expiry or bindings.",
               "The writer limits canonical manifest bytes while readers limit the pretty-printed signed envelope, so near-limit valid writes can become unreadable or unrenewable."
             ],
-            "observedAt": "2026-10-22T04:44:56.790Z"
+            "observedAt": "2026-10-22T04:44:56.790Z",
+            "previousMergeWorkflowObservation": {
+              "text": "The fetched successful runs were associated with PR #29 source head and checked out GitHub's synthesized PR merge ref. No distinct post-merge workflow execution on merge commit fce0cb25e13ea26c55e2d5be4defd63c74d19242 is asserted. A Vercel status was successful, but no production deployment or public-service smoke test was verified.",
+              "observedAt": "2026-10-22T04:44:56.790Z"
+            },
+            "mergeWorkflows": [
+              {
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "fce0cb25e13ea26c55e2d5be4defd63c74d19242",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39723904027",
+                "updatedAt": "2026-10-22T04:43:07Z"
+              },
+              {
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "fce0cb25e13ea26c55e2d5be4defd63c74d19242",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39723904077",
+                "updatedAt": "2026-10-22T04:43:39Z"
+              },
+              {
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "fce0cb25e13ea26c55e2d5be4defd63c74d19242",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39723903945",
+                "updatedAt": "2026-10-22T04:43:52Z"
+              },
+              {
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "fce0cb25e13ea26c55e2d5be4defd63c74d19242",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39723904063",
+                "updatedAt": "2026-10-22T04:44:37Z"
+              }
+            ],
+            "mergeWorkflowObservedAt": "2026-10-23T01:46:57.053Z",
+            "mergeTestScope": "The post-merge Candidate Node job executed only test/direct-pipe-runtime.v1.test.mjs (1 pass, 0 fail). Execution of the new signed-address Node test suite at this merge remains unverified."
           },
           "limitations": [
             "This is a custom local overlay, not IANA registration, an ICANN top-level domain, public DNS delegation or a normal-browser HTTPS replacement.",
@@ -263,16 +351,60 @@
             ],
             "testScope": "The INTERCONNECT workflow executed 12 Python tests, including the new cross-language signed-site publication/rendering test, and passed. Candidate verification executed 60 general Python tests. Seven new Portal Node test cases are present in the merged source, but the observed Candidate Node job ran only test/direct-pipe-runtime.v1.test.mjs; CI execution of the Portal Node suite is not asserted.",
             "deploymentEvidence": "Vercel reported successful preview/commit statuses for the source head and merge commit. These are preview/build signals only; no production endpoint, externally observed public service, or operational smoke test was verified.",
-            "mergeWorkflowObservation": "The PR-filtered workflow lookup returned no distinct GitHub Actions runs for merge commit 38e1b8756a5fb9c2643931e24f1742ad0e77cfed.",
+            "mergeWorkflowObservation": "Direct repository Actions enumeration without a PR-event filter confirms 4 successful push-triggered workflows on merge commit 38e1b8756a5fb9c2643931e24f1742ad0e77cfed.",
             "reviewObservation": "No review submissions or review threads were returned. The Codex review summary still reported running on earlier head 42d7d9d37ad74fbeb5ae06ed7e3744ac522e307f when the PR merged, so no completed automated review conclusion is asserted.",
-            "observedAt": "2026-10-22T05:00:52.469Z"
+            "observedAt": "2026-10-22T05:00:52.469Z",
+            "previousMergeWorkflowObservation": {
+              "text": "The PR-filtered workflow lookup returned no distinct GitHub Actions runs for merge commit 38e1b8756a5fb9c2643931e24f1742ad0e77cfed.",
+              "observedAt": "2026-10-22T05:00:52.469Z"
+            },
+            "mergeWorkflows": [
+              {
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "38e1b8756a5fb9c2643931e24f1742ad0e77cfed",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39725374678",
+                "updatedAt": "2026-10-22T04:59:35Z"
+              },
+              {
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "38e1b8756a5fb9c2643931e24f1742ad0e77cfed",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39725374826",
+                "updatedAt": "2026-10-22T04:59:50Z"
+              },
+              {
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "38e1b8756a5fb9c2643931e24f1742ad0e77cfed",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39725374804",
+                "updatedAt": "2026-10-22T04:59:39Z"
+              },
+              {
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "38e1b8756a5fb9c2643931e24f1742ad0e77cfed",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39725374671",
+                "updatedAt": "2026-10-22T05:00:38Z"
+              }
+            ],
+            "mergeWorkflowObservedAt": "2026-10-23T01:46:57.053Z",
+            "mergeTestScope": "The post-merge Candidate Node job executed only test/direct-pipe-runtime.v1.test.mjs (1 pass, 0 fail). Execution of the Portal Node suite at this merge remains unverified; seven Portal tests were separately observed at the later PR #31 commit."
           },
           "limitations": [
             "PORTAL/1 is loopback-only local software; it is not a public search engine, global web index, hosted service or alternative Internet.",
             "Search covers checked-in SDPN documents and locally saved sites only; public crawling, ingestion rights, ranking evaluation, abuse defenses and scalable storage are not implemented.",
             "AI responses require a separately installed and running localhost OpenAI-compatible model; no foundational model, live model availability or answer quality was independently verified.",
             "Signed PORT publication remains local and owner-operated; it does not create DNS registration, worldwide reach, remote session authorization or legal ownership.",
-            "The seven new Portal Node tests are present but were not observed running in the fetched CI logs; no distinct post-merge GitHub Actions run was found.",
+            "The seven Portal Node tests were not observed running at the PR #30 merge; its four post-merge workflows passed but the inspected Candidate Node log executed only the focused Direct Pipe test. Portal-suite execution is separately verified at the later PR #31 commit.",
             "No production release, customers, payments, subscriptions, revenue, performance benchmark, independent recognition or worldwide-priority claim is established."
           ]
         },
@@ -333,9 +465,62 @@
             ],
             "testScope": "The independent workflow verified the explicit Apache-2.0 scope, then passed 5 tests with community/ extracted from all other repository code, 1 PORT/1 interoperability test, and 7 Portal tests. Candidate verification passed 60 general Python tests.",
             "deploymentEvidence": "Vercel reported successful statuses for the source head and merge commit. These are build/preview signals only; no production endpoint or public-service smoke test was verified.",
-            "mergeWorkflowObservation": "The PR-filtered workflow lookup returned no distinct GitHub Actions runs for merge commit 5f98d7330a2cc35848b1d40b4673d76b5d239f23.",
+            "mergeWorkflowObservation": "Direct repository Actions enumeration without a PR-event filter confirms 5 successful push-triggered workflows on merge commit 5f98d7330a2cc35848b1d40b4673d76b5d239f23.",
             "reviewObservation": "No review submissions or review threads were returned.",
-            "observedAt": "2026-10-22T05:38:00Z"
+            "observedAt": "2026-10-22T05:38:00Z",
+            "previousMergeWorkflowObservation": {
+              "text": "The PR-filtered workflow lookup returned no distinct GitHub Actions runs for merge commit 5f98d7330a2cc35848b1d40b4673d76b5d239f23.",
+              "observedAt": "2026-10-22T05:38:00Z"
+            },
+            "mergeWorkflows": [
+              {
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "5f98d7330a2cc35848b1d40b4673d76b5d239f23",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39728620650",
+                "updatedAt": "2026-10-22T05:32:49Z"
+              },
+              {
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "5f98d7330a2cc35848b1d40b4673d76b5d239f23",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39728620668",
+                "updatedAt": "2026-10-22T05:32:55Z"
+              },
+              {
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "5f98d7330a2cc35848b1d40b4673d76b5d239f23",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39728620655",
+                "updatedAt": "2026-10-22T05:33:14Z"
+              },
+              {
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "5f98d7330a2cc35848b1d40b4673d76b5d239f23",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39728620730",
+                "updatedAt": "2026-10-22T05:33:58Z"
+              },
+              {
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "5f98d7330a2cc35848b1d40b4673d76b5d239f23",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/39728620681",
+                "updatedAt": "2026-10-22T05:34:27Z"
+              }
+            ],
+            "mergeWorkflowObservedAt": "2026-10-23T01:46:57.053Z",
+            "mergeTestScope": "Post-merge independent-community job 119658245886 checked out 5f98d7330a2cc35848b1d40b4673d76b5d239f23 and passed 5 extracted-community tests, 1 PORT/1 interoperability test and 7 Portal tests on Node.js 24.21.0. Post-merge Candidate Python job 119658246323 passed 60 tests."
           },
           "limitations": [
             "Only community/ is newly Apache-2.0; the remainder of the repository is not thereby open source.",
@@ -388,8 +573,77 @@
                 "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/38884204064"
               }
             ],
-            "mergeWorkflowObservation": "The PR-filtered workflow lookup returned no runs for the merge SHA; no post-merge CI conclusion is asserted.",
-            "observedAt": "2026-10-16T10:04:15.554Z"
+            "mergeWorkflowObservation": "Direct repository Actions enumeration without a PR-event filter confirms 1 successful push-triggered workflow on merge commit 985652e8df495a64491456fcf4bd832c45e831e2. One later repeat on the same commit was cancelled; it does not replace the recorded successful run.",
+            "observedAt": "2026-10-16T10:04:15.554Z",
+            "previousMergeWorkflowObservation": {
+              "text": "The PR-filtered workflow lookup returned no runs for the merge SHA; no post-merge CI conclusion is asserted.",
+              "observedAt": "2026-10-16T10:04:15.554Z"
+            },
+            "mergeWorkflows": [
+              {
+                "name": "NTSA-X verified throughput",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "cancelled",
+                "headSha": "985652e8df495a64491456fcf4bd832c45e831e2",
+                "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/38958597220",
+                "updatedAt": "2026-10-16T19:58:03Z"
+              },
+              {
+                "name": "NTSA-X verified throughput",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "985652e8df495a64491456fcf4bd832c45e831e2",
+                "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/38884499359",
+                "updatedAt": "2026-10-16T10:04:12Z"
+              }
+            ],
+            "mergeWorkflowObservedAt": "2026-10-23T01:46:57.053Z",
+            "mergeWorkflow": {
+              "status": "completed",
+              "conclusion": "success",
+              "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/38884499359",
+              "headSha": "985652e8df495a64491456fcf4bd832c45e831e2",
+              "jobs": [
+                {
+                  "name": "persistent-benchmark (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "factory-benchmark (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "native-state-smoke (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "native-state-smoke (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "persistent-benchmark (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "test (ubuntu-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "factory-benchmark (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "test (windows-latest)",
+                  "conclusion": "success"
+                },
+                {
+                  "name": "verified-gate",
+                  "conclusion": "success"
+                }
+              ]
+            }
           },
           "limitations": [
             "Research prototype; conversational improvements remain unproven.",
