@@ -77,10 +77,23 @@ The push-triggered [RFS isolated validation](https://github.com/KindredKJ/NTSA-X
 
 The recorded benchmark uses synthetic repeated PBKDF2 work with a fixture verifier; it does not measure neural inference, model training or energy savings. Callers remain responsible for purity, revision/freshness inputs and verifier quality. Workers are not sandboxed, tenant separation is logical, and checksums do not authenticate a maliciously modified store. Broader RFS tracks remain research proposals. See the [versioned execution contract](https://github.com/KindredKJ/NTSA-X/blob/43699ef2fe87dd127d2e1ddfc36dab5abf334d95/research/recall_first_systems/EXECUTION.md).
 
+
+### 2026-10-27 — SDPN External Proof v1 signed-receipt boundary
+
+[PR #32](https://github.com/KindredKJ/strata-data-port-network/pull/32), authored by the KindredKJ account, merged at 2026-10-28T02:11:49Z (October 27 in America/Denver) as [`85581c46f8ac14d1fcebb8ba1b4308bf0764a6bc`](https://github.com/KindredKJ/strata-data-port-network/commit/85581c46f8ac14d1fcebb8ba1b4308bf0764a6bc). The nine source commits are attributed to KindredKJ; GitHub's web-flow account committed the squash merge. The implementation adds bounded canonical-state payloads, stateless HMAC-authenticated challenges, AES-256-GCM encryption, SHA-256 integrity binding, Ed25519-signed receipts, a public verification key, a standalone verifier, and status/challenge/transfer API handlers.
+
+All 12 runs returned for source head `4f5b897040b0a21f3e5a92d66f7252a042ae0830` succeeded, including two [External Proof v1](https://github.com/KindredKJ/strata-data-port-network/actions/runs/40618564081) runs. Each focused run executed the same four local fixture tests (round trip, receipt tamper, challenge tamper and expiry) and parsed the Ed25519 public key on Node.js 24.21.0. Their checkout was synthetic PR merge `fb42a6de401738a1448f3887dd217288a687a162`, not the final squash commit. These tests do not exercise deployed HTTP handlers or a real cross-service receipt.
+
+All five push-triggered workflows passed on the final merge commit. Inspected [Candidate verification](https://github.com/KindredKJ/strata-data-port-network/actions/runs/40619499523) logs passed 60 Python tests and one focused Direct Pipe test; [independent community verification](https://github.com/KindredKJ/strata-data-port-network/actions/runs/40619499651) passed five isolated community, one interoperability and seven Portal tests. The focused proof workflow has pull_request/workflow_dispatch triggers and no push trigger; no focused post-merge run was returned. Both exact-SHA run collections were enumerated without an event filter; no cancelled repeats were returned.
+
+Public Vercel statuses report successful source-head and merge-commit deployments, and the PR bot reports a Ready preview. An unauthenticated preview status-path check yielded HTML rather than proof-status JSON; configured readiness, the deployed key and an actual encrypted transfer/receipt were not verified. No GitHub release was listed. No submitted reviews or inline review comments were returned; the automated review summary still reported running at observation.
+
+This is a merged, locally tested implementation candidate. A signature authenticates a configured key's statement, not physical execution or machine identity. The source keeps `physicalMachineAttestationProven=false` and `productionReadyClaim=false`. No VERIFIED_EXTERNAL classification, physical zero-copy, failover/resume, global SDPN reach, production readiness, public launch, customers, revenue, legal/domain ownership or worldwide priority is established. See the [versioned evidence contract](https://github.com/KindredKJ/strata-data-port-network/blob/85581c46f8ac14d1fcebb8ba1b4308bf0764a6bc/docs/EXTERNAL-PROOF-V1.md).
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
 - [Public link hub — KindredKJ](https://linktr.ee/KindredKJ)
 - [Kindred Labs website](https://kindredlabs.ai)
 
-Last editorial update: 2026-10-23.
+Last editorial update: 2026-10-27.
