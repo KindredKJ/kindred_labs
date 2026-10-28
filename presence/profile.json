@@ -1182,6 +1182,146 @@
             "New client supports a fresh bounded proof request but was not executed here. A signed receipt authenticates the configured key's statements, not physical-machine execution or all recovery history.",
             "No public launch, commercial adoption, revenue, legal/domain ownership, worldwide priority or wider SDPN production readiness established."
           ]
+        },
+        {
+          "id": "sdpn-cross-provider-recovery-pr38",
+          "title": "Bounded sealed-capsule cross-provider recovery implementation",
+          "stage": "merged_tested_implementation_candidate",
+          "mergedAt": "2026-10-28T02:37:15Z",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/38",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceCommitAuthors": [
+            "KindredKJ"
+          ],
+          "sourceCommitCount": 4,
+          "mergeCommit": "f4712945f5c40a91ea860cb386ca5beb8b169e59",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/f4712945f5c40a91ea860cb386ca5beb8b169e59/src/external-proof-v1.mjs",
+          "sourceBlobSha": "f37c8345bd0794c2bb3cc73b86d50a35db3a05d1",
+          "summary": "Capsule authentication/decryption and input-hash revalidation, bounded HASH_TEXT/CANONICALIZE_JSON execution, signed recovery records, standalone verifier and configured recovery API handler. External recovery acceptance steps remain unverified by this review.",
+          "verification": {
+            "observedAt": "2026-10-28T02:38:37Z",
+            "allEventTypesEnumerated": true,
+            "sourceHeadSha": "e78578fcc42730c64a98a9f81f50c2b7a8eedbb7",
+            "prCheckoutSha": "fe3f8e7aeb99d89690d3e5bc746134286acc3575",
+            "changedFiles": [
+              "api/proof/recover.mjs",
+              "scripts/verify-cross-provider-recovery.mjs",
+              "src/external-proof-v1.mjs",
+              "test/external-proof-v1.test.mjs"
+            ],
+            "sourceHeadRuns": [
+              {
+                "id": 40621935559,
+                "name": "SDPN Community independent open-source verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621935559"
+              },
+              {
+                "id": 40621935603,
+                "name": "External Proof v1",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621935603"
+              },
+              {
+                "id": 40621936049,
+                "name": "Candidate verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621936049"
+              },
+              {
+                "id": 40621936089,
+                "name": "SW06-F two actual VMs",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621936089"
+              },
+              {
+                "id": 40621936129,
+                "name": "INTERCONNECT native proof",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621936129"
+              },
+              {
+                "id": 40621935613,
+                "name": "SW07 Android native network entry",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621935613"
+              }
+            ],
+            "mergeRuns": [
+              {
+                "id": 40622009391,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40622009391"
+              },
+              {
+                "id": 40622009708,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "in_progress",
+                "conclusion": null,
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40622009708"
+              },
+              {
+                "id": 40622009337,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40622009337"
+              },
+              {
+                "id": 40622009368,
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40622009368"
+              },
+              {
+                "id": 40622009511,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40622009511"
+              }
+            ],
+            "cancelledRepeats": [],
+            "testScope": "Focused PR run 40621935603 passed 6 local fixtures: prior 4 cryptographic cases plus generated HASH_TEXT capsule open/sign/verify and digest-tamper rejection. Also passed 10 standalone checks for each of 2 earlier transfer receipts, not new recovery envelopes. Synthetic PR checkout, not final squash merge. No deployed-handler/live original-capsule recovery test in inspected scope.",
+            "postMergeTestScope": "Candidate inspected logs passed 60 Python tests and 1 Direct Pipe test. Community inspected logs passed 5 isolated community, 1 interoperability and 7 Portal tests. No focused final-merge run returned.",
+            "defaultBranchHead": "f4712945f5c40a91ea860cb386ca5beb8b169e59",
+            "releaseEvidence": "No GitHub release listed.",
+            "deploymentEvidence": "Vercel source/merge commit statuses success; PR bot Ready preview. Configured recovery endpoint and live recovery not independently checked.",
+            "reviewEvidence": "No submitted reviews or inline comments returned; automated review summary still running."
+          },
+          "sources": {
+            "handler": "https://github.com/KindredKJ/strata-data-port-network/blob/f4712945f5c40a91ea860cb386ca5beb8b169e59/api/proof/recover.mjs",
+            "verifier": "https://github.com/KindredKJ/strata-data-port-network/blob/f4712945f5c40a91ea860cb386ca5beb8b169e59/scripts/verify-cross-provider-recovery.mjs",
+            "tests": "https://github.com/KindredKJ/strata-data-port-network/blob/f4712945f5c40a91ea860cb386ca5beb8b169e59/test/external-proof-v1.test.mjs"
+          },
+          "limitations": [
+            "Only the published implementation and observed fixture/CI scope are established. The PR acceptance checklist is not completion evidence; none of its four changed files adds a live cross-provider recovery envelope.",
+            "New verifier authenticates a configured key's signed hash fields; it does not independently replay capsule execution or attest provider/physical-machine identity.",
+            "No deployed-handler exercise or new CANONICALIZE_JSON recovery fixture was observed in the focused test scope.",
+            "Automatic failover, abrupt-termination recovery, physical-machine attestation and productionReadyClaim remain false; no public launch, customers, revenue, legal/domain ownership or worldwide priority established."
+          ]
         }
       ]
     },
