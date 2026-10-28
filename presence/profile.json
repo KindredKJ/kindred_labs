@@ -715,6 +715,152 @@
             "No physical zero-copy, forced-failure recovery, resume/failover, global SDPN reach, production readiness, public launch, customers, revenue, legal/domain ownership or worldwide priority is established.",
             "physicalMachineAttestationProven=false and productionReadyClaim=false remain explicit in source."
           ]
+        },
+        {
+          "id": "sdpn-external-proof-001",
+          "title": "External Proof #001: published and cryptographically verified receipt",
+          "stage": "published_signed_receipt_verified",
+          "mergedAt": "2026-10-28T02:20:42Z",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/33",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceCommitAuthors": [
+            "KindredKJ"
+          ],
+          "mergeCommit": "2e7f443042507da35efa6b30e381ed1342a80770",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/2e7f443042507da35efa6b30e381ed1342a80770/examples/external-proof-v1/001/README.md",
+          "sourceBlobSha": "91e16d407834bb461595f6a4e1e10d908a3e676f",
+          "summary": "Published 951-byte state-transfer receipt with matching state/payload/received SHA-256 and an Ed25519 signature that verifies against the committed public key. The public README reports a bounded HASH_TEXT path from an independent client through Render to Vercel; this review verified the saved artifact, not a new live transfer.",
+          "receiptEvidence": {
+            "source": "https://github.com/KindredKJ/strata-data-port-network/blob/2e7f443042507da35efa6b30e381ed1342a80770/examples/external-proof-v1/001/receipt.envelope.json",
+            "sourceBlobSha": "0b2aaf35621ffc2c2cdcb950d60591fb0534c930",
+            "observedAt": "2026-10-28T02:15:17.165Z",
+            "sourceNodeId": "genesis-render-node-a",
+            "destinationNodeId": "strata-vercel-node-b",
+            "payloadBytes": 951,
+            "stateHash": "5ca869c0b666c8c9b5621e368a226b69042f97e421b8f723207812b1f1e4bb15",
+            "keyId": "9cccc27fedfbdb987a3f2f442c550ee4c9978f1a29bc017831f81ff4d4439dd5",
+            "destinationCommit": "85581c46f8ac14d1fcebb8ba1b4308bf0764a6bc",
+            "physicalMachineAttestationProven": false,
+            "productionReadyClaim": false
+          },
+          "verification": {
+            "observedAt": "2026-10-28T02:22:34.661Z",
+            "allEventTypesEnumerated": true,
+            "changedFiles": [
+              ".github/workflows/external-proof-v1.yml",
+              "examples/external-proof-v1/001/README.md",
+              "examples/external-proof-v1/001/receipt.envelope.json",
+              "examples/external-proof-v1/001/verify.txt"
+            ],
+            "sourceHeadSha": "0ccb458d77649694c31c015c5581b68e136a3827",
+            "sourceHeadRuns": [
+              {
+                "id": 40620056577,
+                "name": "External Proof v1",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620056577"
+              },
+              {
+                "id": 40620056605,
+                "name": "SW07 Android native network entry",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620056605"
+              },
+              {
+                "id": 40620056650,
+                "name": "Candidate verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620056650"
+              },
+              {
+                "id": 40620056578,
+                "name": "SDPN Community independent open-source verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620056578"
+              },
+              {
+                "id": 40620056547,
+                "name": "SW06-F two actual VMs",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620056547"
+              },
+              {
+                "id": 40620056609,
+                "name": "INTERCONNECT native proof",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620056609"
+              }
+            ],
+            "mergeRuns": [
+              {
+                "id": 40620367737,
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620367737"
+              },
+              {
+                "id": 40620367707,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "in_progress",
+                "conclusion": null,
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620367707"
+              },
+              {
+                "id": 40620367727,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620367727"
+              },
+              {
+                "id": 40620367714,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620367714"
+              },
+              {
+                "id": 40620367755,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620367755"
+              }
+            ],
+            "cancelledRepeats": [],
+            "focusedPrWorkflow": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40620056577",
+            "testScope": "Focused PR job passed four local fixture tests, parsed the Ed25519 public key and ran the standalone verifier against the published receipt: ten verifier checks passed. It checked out a synthetic PR merge, not the final squash commit. The committed verify.txt separately reports twelve checks; those are preserved reported output, not the ten-check standalone output.",
+            "independentArtifactVerification": "Executed the unchanged committed standalone verifier locally on the final-merge receipt/key: all ten checks passed, exit 0. This rechecks the saved cryptographic artifact; it does not independently observe the historical network transfer.",
+            "postMergeTestScope": "Candidate logs passed 60 Python tests and one Direct Pipe test; independent community logs passed 5 isolated community, 1 interoperability and 7 Portal tests. Focused proof workflow still has no push trigger; no focused post-merge run returned.",
+            "deploymentEvidence": "Public Vercel commit statuses report success on the source and merge SHAs; PR bot reports Ready preview. Historical transfer and production destination are README/receipt claims, not a new live endpoint observation.",
+            "releaseEvidence": "No GitHub release listed.",
+            "reviewEvidence": "No submitted reviews or inline comments returned; automated code-review summary reports completed with no findings."
+          },
+          "limitations": [
+            "The README classifies its bounded path VERIFIED_EXTERNAL; independent verification here establishes signature/key/hash consistency of a saved receipt, not independently attested provider execution or source identity.",
+            "Signed transport and execution fields are issuer statements; a valid signature does not independently attest physical machines or all reported historical operations.",
+            "No forced-failure recovery, failover/resume, physical zero-copy, global network reach, wider-stack production readiness, public launch, customers, revenue, financial settlement, blockchain/mainnet execution, legal/domain ownership or worldwide priority is established."
+          ]
         }
       ]
     },
