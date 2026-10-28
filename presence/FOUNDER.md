@@ -139,10 +139,16 @@ The saved Ed25519 recovery record states observation at `2026-10-28T02:37:42.662
 
 This is new cryptographically valid published artifact evidence beyond PR #38's fixtures. It binds the recovery fields to the configured signing key; provider execution, original capsule provenance and historical cross-provider recovery remain issuer statements plus the publisher's report, not a replay or independent physical attestation. No sealed capsule or secret was retrieved or submitted. At `2026-10-28T03:54:26Z`, no Actions run was returned for this exact evidence-branch SHA when enumerating all events; Vercel reports a successful commit status, which does not prove the historical operation. Fresh exact-SHA enumeration also confirms all five push workflows for each of PR #32, #33, #34, #35 and #38 now succeeded, preserving earlier pending observations as history. No GitHub release was listed. The report's VERIFIED_EXTERNAL_CROSS_PROVIDER_RECOVERY label is the publisher's classification. Automatic failover, abrupt-termination recovery, physical-machine attestation and production readiness remain false; no physical zero-copy, customer use, revenue, ownership or worldwide-priority conclusion is added.
 
+### 2026-10-28 — Recovery verifier hash-check limitation
+
+A completed [automated PR #38 review](https://github.com/KindredKJ/strata-data-port-network/pull/38#discussion_r4396357695) identifies a limitation confirmed in the unchanged [standalone verifier](https://github.com/KindredKJ/strata-data-port-network/blob/f4712945f5c40a91ea860cb386ca5beb8b169e59/scripts/verify-cross-provider-recovery.mjs) and its helper: CAPSULE HASH, INPUT HASH and OUTPUT HASH compare signed fields with those same fields returned by the helper. They do not compare a preserved capsule/checkpoint or recompute output. A local controlled fixture with a valid test-key signature and deliberately inconsistent output/outputHash returned all nine PASS results, exit 0. These are nine reported checks, not nine independent recovery-integrity checks.
+
+The earlier published recovery envelope separately passed signature/key verification and an independent recomputation of its signed output hash; this finding does not invalidate those scoped artifact results. Its capsule/input hashes match the earlier report, but independent checkpoint/capsule provenance remains unverified. Recompute output from the signed output object and compare capsule/input hashes against independently preserved expected evidence before claiming recovery-integrity verification. No application or verifier repair was made by this presence update.
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
 - [Public link hub — KindredKJ](https://linktr.ee/KindredKJ)
 - [Kindred Labs website](https://kindredlabs.ai)
 
-Last editorial update: 2026-10-27.
+Last editorial update: 2026-10-28.
