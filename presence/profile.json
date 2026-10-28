@@ -1379,13 +1379,181 @@
               "finding": "CAPSULE HASH, INPUT HASH and OUTPUT HASH compare signed fields with the same fields returned by the helper; no external expected checkpoint comparison or output recomputation.",
               "controlledVerification": "Local generated test-key signed fixture with deliberately mismatched output/outputHash returned all 9 PASS and exit 0. No live recovery or production secret used.",
               "artifactBoundary": "Previously published envelope's signature/key validity and separately recomputed signed-output hash remain verified. Nine CLI PASS results do not establish nine independent recovery-integrity checks.",
-              "nextVerification": "Recompute signed output hash and compare capsule/input hashes with independently preserved original checkpoint evidence; no application repair performed by presence task."
+              "nextVerification": "Recompute signed output hash and compare capsule/input hashes with independently preserved original checkpoint evidence; no application repair performed by presence task.",
+              "resolution": {
+                "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/40",
+                "mergeCommit": "823004e23dae76914cb7ab88e8c22e4a6da26aa7",
+                "scope": "CLI correction verified separately; preserve original limitation as history. See PR40 milestone for artifact checks and remaining CI/provenance limits."
+              }
             }
           },
           "limitations": [
             "Signed recovery fields authenticate the configured key's statements; capsule provenance and historical provider execution were not independently replayed. No capsule or secret retrieved/submitted.",
             "Nine standalone checks and output-digest recomputation are distinct from fourteen publisher-reported checks.",
             "Automatic failover, abrupt termination recovery, physical-machine attestation and productionReadyClaim remain false; no physical zero-copy, customer adoption, revenue, ownership or worldwide priority established."
+          ]
+        },
+        {
+          "id": "sdpn-cross-provider-recovery-pr40",
+          "title": "Corrected checkpoint hash verification and merged recovery artifact evidence",
+          "stage": "merged_verifier_correction_artifact_verified",
+          "mergedAt": "2026-10-28T16:54:17Z",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/40",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "823004e23dae76914cb7ab88e8c22e4a6da26aa7",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitCommitter": "web-flow",
+          "sourceHeadSha": "47ad2a4978b5195cd0f0579010d6d06f4befb62d",
+          "sourceCommitCount": 6,
+          "sourceCommitAuthors": [
+            "KindredKJ"
+          ],
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/823004e23dae76914cb7ab88e8c22e4a6da26aa7/scripts/verify-cross-provider-recovery.mjs",
+          "sourceBlobSha": "1c7f21d66b04f7a6fbf4dc48254c6cacbad376da",
+          "summary": "CLI recomputes the canonical signed output hash and compares recovery ID, capsule/input hashes, original node/boot and checkpoint time with the separately preserved Recovery #001 summary. The existing signed recovery envelope is now on main; separate local verification passed 16 checks and rejected three inconsistent fixtures.",
+          "verification": {
+            "observedAt": "2026-10-28 16:57:50 UTC",
+            "allEventTypesEnumerated": true,
+            "sourceHeadWorkflows": [
+              {
+                "name": "External Proof v1",
+                "id": 40730428704,
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730428704"
+              },
+              {
+                "name": "SDPN Community independent open-source verification",
+                "id": 40730428794,
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730428794"
+              },
+              {
+                "name": "Candidate verification",
+                "id": 40730428707,
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730428707"
+              },
+              {
+                "name": "SW06-F two actual VMs",
+                "id": 40730428818,
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730428818"
+              },
+              {
+                "name": "INTERCONNECT native proof",
+                "id": 40730428650,
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730428650"
+              },
+              {
+                "name": "SW07 Android native network entry",
+                "id": 40730428771,
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730428771"
+              }
+            ],
+            "mergeWorkflows": [
+              {
+                "name": "SDPN Community independent open-source verification",
+                "id": 40730525668,
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730525668"
+              },
+              {
+                "name": "Candidate verification",
+                "id": 40730525886,
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730525886"
+              },
+              {
+                "name": "SW06-F two actual VMs",
+                "id": 40730525505,
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730525505"
+              },
+              {
+                "name": "SW07 Android native network entry",
+                "id": 40730525678,
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730525678"
+              },
+              {
+                "name": "INTERCONNECT native proof",
+                "id": 40730525478,
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730525478"
+              }
+            ],
+            "cancelledRepeats": [],
+            "localRuntime": "Node.js v24.22.1",
+            "publishedEnvelopeChecksPassed": 16,
+            "publishedEnvelopeExitCode": 0,
+            "negativeCases": [
+              {
+                "case": "valid generated test-key signature with inconsistent output hash",
+                "exitCode": 1,
+                "failedCheck": "OUTPUT HASH"
+              },
+              {
+                "case": "different expected capsule digest",
+                "exitCode": 1,
+                "failedCheck": "CAPSULE HASH"
+              },
+              {
+                "case": "different expected input digest",
+                "exitCode": 1,
+                "failedCheck": "INPUT HASH"
+              }
+            ],
+            "checkpointSummarySource": "https://github.com/KindredKJ/strata-data-port-network/blob/823004e23dae76914cb7ab88e8c22e4a6da26aa7/examples/external-proof-v1/recovery-001/recovery.summary.json",
+            "checkpointSummaryBlob": "e13c7a3a598f363fabb4adad2c9145b4d0bd132f",
+            "envelopeBlob": "89336e6099d7bc598ba2852a8f59e678ea5c3c40",
+            "publishedVerificationSource": "https://github.com/KindredKJ/strata-data-port-network/blob/823004e23dae76914cb7ab88e8c22e4a6da26aa7/examples/external-proof-v1/cross-provider-recovery-001/verify.txt",
+            "publishedVerificationBlob": "e5ffc579a2dbd39213cfd329fb14e7893ddfa9ff",
+            "publisherReportedThirdEnvironmentAt": "2026-10-28T16:51:10Z",
+            "focusedCi": {
+              "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40730428704",
+              "checkoutSha": "dabdd101691e2b8e88e53c20188e700acecaf51d",
+              "conclusion": "failure",
+              "scope": "5 of 6 local fixtures passed; tampered challenge token test failed with Missing expected exception (expected authentication failed). Key parsing and saved transfer-receipt steps were skipped. Corrected recovery CLI is not invoked by this workflow; no push trigger."
+            },
+            "inspectedMergeLogScope": "Candidate: 60 Python tests and 1 Direct Pipe test passed. Community: 5 isolated community, 1 interop and 7 Portal tests passed. These jobs did not replay historical recovery.",
+            "releaseEvidence": "No GitHub release listed.",
+            "deploymentEvidence": {
+              "source": "https://github.com/KindredKJ/strata-data-port-network/commit/823004e23dae76914cb7ab88e8c22e4a6da26aa7",
+              "context": "Vercel",
+              "state": "success",
+              "targetUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/4NyNpNaMVgHbFfiwZ4PAtSDrNzjy",
+              "scope": "Provider-reported commit status; not independent production health or recovery proof."
+            }
+          },
+          "limitations": [
+            "The expected Recovery #001 summary is separately committed but unsigned; comparison proves agreement with that artifact, not independently attested original capsule provenance. Historical recovery was not replayed; no capsule or secret was submitted.",
+            "This fixes the reviewed CLI self-comparison limitation, not all protocol/security issues. The helper source remains unchanged, and the focused source CI failure remains recorded.",
+            "Public proof-page source now includes the bounded recovery; anonymous live proof-page access could not be verified from this client. PR deployment-scope statements are publisher reports.",
+            "Automatic failover, abrupt termination/power-loss recovery, physical-machine attestation and production readiness remain unproven; no public-launch, customer, revenue, ownership or worldwide-priority claim added."
           ]
         }
       ]
