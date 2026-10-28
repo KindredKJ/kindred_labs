@@ -1322,6 +1322,51 @@
             "No deployed-handler exercise or new CANONICALIZE_JSON recovery fixture was observed in the focused test scope.",
             "Automatic failover, abrupt-termination recovery, physical-machine attestation and productionReadyClaim remain false; no public launch, customers, revenue, legal/domain ownership or worldwide priority established."
           ]
+        },
+        {
+          "id": "sdpn-cross-provider-recovery-001-branch",
+          "title": "Published signed cross-provider recovery envelope on evidence branch",
+          "stage": "published_branch_artifact_signature_verified",
+          "branch": "evidence/cross-provider-recovery-001-20261027",
+          "headCommit": "711aaf976a7697847d7bd7d959d4d1a21202038c",
+          "commitAuthors": [
+            "KindredKJ"
+          ],
+          "commitCount": 3,
+          "defaultBranchHead": "f4712945f5c40a91ea860cb386ca5beb8b169e59",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/711aaf976a7697847d7bd7d959d4d1a21202038c/examples/external-proof-v1/cross-provider-recovery-001/README.md",
+          "sourceBlobSha": "a21b6418122a1d91be33ab63f36090458af3948b",
+          "summary": "Public evidence branch publishes a signed recovery record and a reported cross-provider recovery account. Nine-check standalone verifier and independent signed-output digest recomputation pass; historical recovery was not replayed.",
+          "envelope": {
+            "source": "https://github.com/KindredKJ/strata-data-port-network/blob/711aaf976a7697847d7bd7d959d4d1a21202038c/examples/external-proof-v1/cross-provider-recovery-001/recovery.envelope.json",
+            "sourceBlobSha": "89336e6099d7bc598ba2852a8f59e678ea5c3c40",
+            "observedAt": "2026-10-28T02:37:42.662Z",
+            "recoveryId": "recovery-0c26b65a-7095-49e6-a256-ec5d33ed276c",
+            "capsuleSha256": "1ce112f769af2aa3b046a3b7dad562895a73d2d1891658000bb4d249f232cbff",
+            "recoveredInputHash": "78d26e8d56089c6d07c0648897990dd9eb8370079341af8e5436f85cd8849b76",
+            "outputHash": "50096515f6071b3812ee4b5d60189aca39aa4bfd839530485a4abcb5fd947432",
+            "executionCommit": "f4712945f5c40a91ea860cb386ca5beb8b169e59",
+            "keyId": "9cccc27fedfbdb987a3f2f442c550ee4c9978f1a29bc017831f81ff4d4439dd5"
+          },
+          "verification": {
+            "observedAt": "2026-10-28T03:54:26Z",
+            "allEventTypesEnumerated": true,
+            "exactHeadActionsRuns": [],
+            "standaloneChecksPassed": 9,
+            "exitCode": 0,
+            "outputDigestRecomputed": true,
+            "reportedChecks": 14,
+            "reportedClassification": "VERIFIED_EXTERNAL_CROSS_PROVIDER_RECOVERY",
+            "classificationScope": "Publisher label; saved-artifact verification is distinct from independently observing historical provider execution.",
+            "deploymentEvidence": "Vercel commit status success; no live recovery initiated or independently observed.",
+            "releaseEvidence": "No GitHub release listed; evidence branch not recorded as merged.",
+            "postMergeCiFollowup": "Fresh all-event exact-SHA enumeration confirms all 5 push workflows succeeded on each of PR32, PR33, PR34, PR35 and PR38 merge commits. Earlier pending observations remain historical."
+          },
+          "limitations": [
+            "Signed recovery fields authenticate the configured key's statements; capsule provenance and historical provider execution were not independently replayed. No capsule or secret retrieved/submitted.",
+            "Nine standalone checks and output-digest recomputation are distinct from fourteen publisher-reported checks.",
+            "Automatic failover, abrupt termination recovery, physical-machine attestation and productionReadyClaim remain false; no physical zero-copy, customer adoption, revenue, ownership or worldwide priority established."
+          ]
         }
       ]
     },
