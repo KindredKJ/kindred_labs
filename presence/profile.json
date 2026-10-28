@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "lastEditorialUpdate": "2026-10-27",
+  "lastEditorialUpdate": "2026-10-28",
   "person": {
     "name": "Kindred Jermaine Cox",
     "preferredName": "KJ",
@@ -1309,7 +1309,17 @@
             "defaultBranchHead": "f4712945f5c40a91ea860cb386ca5beb8b169e59",
             "releaseEvidence": "No GitHub release listed.",
             "deploymentEvidence": "Vercel source/merge commit statuses success; PR bot Ready preview. Configured recovery endpoint and live recovery not independently checked.",
-            "reviewEvidence": "No submitted reviews or inline comments returned; automated review summary still running."
+            "reviewEvidence": "No submitted reviews or inline comments returned; automated review summary still running.",
+            "hashCheckReviewFollowup": {
+              "observedAt": "2026-10-28T06:15:34Z",
+              "source": "https://github.com/KindredKJ/strata-data-port-network/pull/38#discussion_r4396357695",
+              "reviewedCommit": "e78578fcc42730c64a98a9f81f50c2b7a8eedbb7",
+              "currentVerifierBlob": "f1a102697577044e41b41fc86831c45d5586d438",
+              "finding": "CAPSULE HASH, INPUT HASH and OUTPUT HASH compare signed fields with the same fields returned by the helper; no external expected checkpoint comparison or output recomputation.",
+              "controlledVerification": "Local generated test-key signed fixture with deliberately mismatched output/outputHash returned all 9 PASS and exit 0. No live recovery or production secret used.",
+              "artifactBoundary": "Previously published envelope's signature/key validity and separately recomputed signed-output hash remain verified. Nine CLI PASS results do not establish nine independent recovery-integrity checks.",
+              "nextVerification": "Recompute signed output hash and compare capsule/input hashes with independently preserved original checkpoint evidence; no application repair performed by presence task."
+            }
           },
           "sources": {
             "handler": "https://github.com/KindredKJ/strata-data-port-network/blob/f4712945f5c40a91ea860cb386ca5beb8b169e59/api/proof/recover.mjs",
@@ -1360,7 +1370,17 @@
             "classificationScope": "Publisher label; saved-artifact verification is distinct from independently observing historical provider execution.",
             "deploymentEvidence": "Vercel commit status success; no live recovery initiated or independently observed.",
             "releaseEvidence": "No GitHub release listed; evidence branch not recorded as merged.",
-            "postMergeCiFollowup": "Fresh all-event exact-SHA enumeration confirms all 5 push workflows succeeded on each of PR32, PR33, PR34, PR35 and PR38 merge commits. Earlier pending observations remain historical."
+            "postMergeCiFollowup": "Fresh all-event exact-SHA enumeration confirms all 5 push workflows succeeded on each of PR32, PR33, PR34, PR35 and PR38 merge commits. Earlier pending observations remain historical.",
+            "hashCheckReviewFollowup": {
+              "observedAt": "2026-10-28T06:15:34Z",
+              "source": "https://github.com/KindredKJ/strata-data-port-network/pull/38#discussion_r4396357695",
+              "reviewedCommit": "e78578fcc42730c64a98a9f81f50c2b7a8eedbb7",
+              "currentVerifierBlob": "f1a102697577044e41b41fc86831c45d5586d438",
+              "finding": "CAPSULE HASH, INPUT HASH and OUTPUT HASH compare signed fields with the same fields returned by the helper; no external expected checkpoint comparison or output recomputation.",
+              "controlledVerification": "Local generated test-key signed fixture with deliberately mismatched output/outputHash returned all 9 PASS and exit 0. No live recovery or production secret used.",
+              "artifactBoundary": "Previously published envelope's signature/key validity and separately recomputed signed-output hash remain verified. Nine CLI PASS results do not establish nine independent recovery-integrity checks.",
+              "nextVerification": "Recompute signed output hash and compare capsule/input hashes with independently preserved original checkpoint evidence; no application repair performed by presence task."
+            }
           },
           "limitations": [
             "Signed recovery fields authenticate the configured key's statements; capsule provenance and historical provider execution were not independently replayed. No capsule or secret retrieved/submitted.",
