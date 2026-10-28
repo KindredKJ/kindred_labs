@@ -1017,6 +1017,171 @@
             "Publisher classification and signed execution/provider metadata are statements by their issuers, not independent physical-machine attestation.",
             "No abrupt arbitrary-instruction kill, power interruption, automatic failover, physical zero-copy, wider-stack production readiness, public launch, customers, revenue, ownership or worldwide priority established."
           ]
+        },
+        {
+          "id": "sdpn-external-benchmark-001",
+          "title": "Published external benchmark, proof page and documented limitations",
+          "stage": "published_benchmark_report_and_verification_guidance",
+          "mergedAt": "2026-10-28T02:33:11Z",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/35",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceCommitAuthors": [
+            "KindredKJ"
+          ],
+          "sourceCommitCount": 9,
+          "mergeCommit": "2c01ad9f8e92594a1635709619b790b4dbb96a8c",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/2c01ad9f8e92594a1635709619b790b4dbb96a8c/examples/external-proof-v1/benchmark-001/README.md",
+          "sourceBlobSha": "ff629a9a4a89eacb4afb406533c6605a1237f20a",
+          "summary": "Publishes a small sequential benchmark report/CSV, proof-page source, a fresh-proof client/guide and a scoped threat model. Benchmark receipt outcomes and timings remain publisher observations rather than independently reproduced results.",
+          "reportedBenchmark": {
+            "observedAt": "2026-10-28T02:27:15.833Z",
+            "jobs": 12,
+            "reportedHttp201": 12,
+            "reportedVerifiedReceipts": 12,
+            "reportedLatencyMs": {
+              "mean": 427.988,
+              "p50": 358.153,
+              "p95": 1044.115,
+              "p99": 1044.115,
+              "min": 288.792,
+              "max": 1044.115
+            },
+            "csvSource": "https://github.com/KindredKJ/strata-data-port-network/blob/2c01ad9f8e92594a1635709619b790b4dbb96a8c/examples/external-proof-v1/benchmark-001/jobs.csv",
+            "csvBlobSha": "5f0461c20b5c4d42c06c805ae1eafd26ed350163",
+            "arithmeticReview": "12 rows report status=201 and verified=true; mean recomputes to 427.988 ms. Reported p50 is sixth ordered observation; conventional median averaging sixth/seventh is 361.170 ms.",
+            "receiptReverification": "No twelve corresponding receipt envelopes or benchmark-generation script in this published bundle; historical row-level verification cannot be reproduced from it alone."
+          },
+          "verification": {
+            "observedAt": "2026-10-28T02:34:14Z",
+            "allEventTypesEnumerated": true,
+            "sourceHeadSha": "73c45283b8c08c0cebe3cd245c44cca6850fff79",
+            "prCheckoutSha": "f32b7e79b03c73082e3054cfe90f561ef2a55169",
+            "changedFiles": [
+              "docs/EXTERNAL-PROOF-THREAT-MODEL.md",
+              "docs/INDEPENDENT-VERIFICATION.md",
+              "examples/external-proof-v1/benchmark-001/README.md",
+              "examples/external-proof-v1/benchmark-001/jobs.csv",
+              "examples/external-proof-v1/benchmark-001/summary.json",
+              "public/index.html",
+              "public/proof.html",
+              "scripts/run-independent-proof.mjs"
+            ],
+            "sourceHeadRuns": [
+              {
+                "id": 40621491078,
+                "name": "Candidate verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621491078"
+              },
+              {
+                "id": 40621491091,
+                "name": "SDPN Community independent open-source verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621491091"
+              },
+              {
+                "id": 40621491143,
+                "name": "External Proof v1",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621491143"
+              },
+              {
+                "id": 40621491130,
+                "name": "SW06-F two actual VMs",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621491130"
+              },
+              {
+                "id": 40621491074,
+                "name": "INTERCONNECT native proof",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621491074"
+              },
+              {
+                "id": 40621491099,
+                "name": "SW07 Android native network entry",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621491099"
+              }
+            ],
+            "mergeRuns": [
+              {
+                "id": 40621611333,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621611333"
+              },
+              {
+                "id": 40621611501,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "in_progress",
+                "conclusion": null,
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621611501"
+              },
+              {
+                "id": 40621611310,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "in_progress",
+                "conclusion": null,
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621611310"
+              },
+              {
+                "id": 40621611278,
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621611278"
+              },
+              {
+                "id": 40621611413,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/40621611413"
+              }
+            ],
+            "cancelledRepeats": [],
+            "testScope": "Focused PR run passed 4 local fixtures and 10 standalone verifier checks for each of the 2 earlier saved receipts. Did not verify 12 benchmark receipts or run new live client. Synthetic PR checkout, not final squash commit; no focused final-merge run returned.",
+            "postMergeTestScope": "Inspected Candidate logs: 60 Python tests and 1 Direct Pipe test passed. Community logs: 5 isolated community, 1 interoperability and 7 Portal tests passed.",
+            "defaultBranchHead": "2c01ad9f8e92594a1635709619b790b4dbb96a8c",
+            "releaseEvidence": "No GitHub release listed.",
+            "deploymentEvidence": "Vercel source/merge statuses success and PR preview Ready. No new live proof-page or service-health observation; no production-readiness conclusion.",
+            "reviewEvidence": "Automated review on earlier commit 2b9b21a00d54971b41d2c3b8556dfdb7837e38c2 raised standalone /proof.html routing issue. Final-merge host source still lacks the route; no application correction made by this task."
+          },
+          "sources": {
+            "proofPage": "https://github.com/KindredKJ/strata-data-port-network/blob/2c01ad9f8e92594a1635709619b790b4dbb96a8c/public/proof.html",
+            "independentVerification": "https://github.com/KindredKJ/strata-data-port-network/blob/2c01ad9f8e92594a1635709619b790b4dbb96a8c/docs/INDEPENDENT-VERIFICATION.md",
+            "threatModel": "https://github.com/KindredKJ/strata-data-port-network/blob/2c01ad9f8e92594a1635709619b790b4dbb96a8c/docs/EXTERNAL-PROOF-THREAT-MODEL.md",
+            "standaloneHost": "https://github.com/KindredKJ/strata-data-port-network/blob/2c01ad9f8e92594a1635709619b790b4dbb96a8c/scripts/serve-standalone.mjs",
+            "review": "https://github.com/KindredKJ/strata-data-port-network/pull/35#discussion_r4396325322"
+          },
+          "limitations": [
+            "12 sequential publisher-recorded jobs do not establish independent performance validation, long-term uptime, concurrency, capacity or a production SLO.",
+            "Standalone host allowlist omits /proof.html; unlisted paths return 404 at this merge.",
+            "Public threat model documents within-TTL challenge replay without durable nonce cache, process-local rate limiting, canary source, no automatic failover or key-rotation policy, and no independent human security audit.",
+            "New client supports a fresh bounded proof request but was not executed here. A signed receipt authenticates the configured key's statements, not physical-machine execution or all recovery history.",
+            "No public launch, commercial adoption, revenue, legal/domain ownership, worldwide priority or wider SDPN production readiness established."
+          ]
         }
       ]
     },
