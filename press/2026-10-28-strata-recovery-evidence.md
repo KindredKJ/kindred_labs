@@ -14,6 +14,8 @@ Cox's related public research spans [BRAINSTEM](https://github.com/KindredKJ/kin
 
 **About Kindred Labs.** Kindred Labs is the technology work associated with founder Kindred Jermaine Cox, encompassing agentic AI systems, computational research, governed infrastructure, and interactive digital experiences. Public code and evidence are available through the founder's GitHub account. Statements of world-first historical priority, company equity ownership, third-party commercial deployment or global production availability are not made in this release.
 
+**Company directory:** [Crunchbase's Kindred listing](https://www.crunchbase.com/organization/kindredlabs) lists Kindred Cox among the founders and links the historical Kindred Labs website. The founder confirms this is his company profile. This directory record supplies identity context; it is not an independent assessment of the engineering claims or a determination of sole legal ownership.
+
 **Primary sources:** [PR #40](https://github.com/KindredKJ/strata-data-port-network/pull/40) · [PR #35](https://github.com/KindredKJ/strata-data-port-network/pull/35) · [PR #34](https://github.com/KindredKJ/strata-data-port-network/pull/34) · [Founder's public profile](https://github.com/KindredKJ/kindred_labs/blob/main/presence/FOUNDER.md)
 
 **Media inquiries and technical source requests:** [KindredKJ on GitHub](https://github.com/KindredKJ). This is a founder-issued technical announcement, not independent editorial coverage.
