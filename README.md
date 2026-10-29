@@ -1,6 +1,7 @@
 # Kindred Labs — Founder, Public Evidence and Press
 
 **Founder:** [Kindred Jermaine Cox (KJ / KindredKJ)](presence/FOUNDER.md)  
+**Third-party company directory:** [Kindred on Crunchbase](https://www.crunchbase.com/organization/kindredlabs) (founder-confirmed historical listing; not an independent technical verification)  
 **Media kit:** [Kindred Labs press resources](press/MEDIA_KIT.md)  
 **Latest founder announcement — October 28, 2026:** [Independently verifiable bounded cross-provider recovery evidence](press/2026-10-28-strata-recovery-evidence.md)  
 **Primary technical record:** [Strata Data Port Network PR #40](https://github.com/KindredKJ/strata-data-port-network/pull/40)
