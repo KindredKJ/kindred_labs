@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "vercel-fastapi-starter"
 version = "0.1.0"
@@ -8,3 +12,11 @@ dependencies = [
   "pydantic-settings>=2.2.1",
   "uvicorn>=0.34.0",
 ]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app", "app.*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+app = ["templates/*.html", "templates/**/*.html"]
