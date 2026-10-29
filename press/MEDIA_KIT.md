@@ -6,6 +6,8 @@
 **Public source record:** [Founder profile](../presence/FOUNDER.md)  
 **Current news release:** [October 28 SDPN engineering milestone](2026-10-28-strata-recovery-evidence.md)
 
+**Technical partnership and startup support brief:** [Partner Technical Brief](PARTNER_TECHNICAL_BRIEF.md) — scoped collaboration requests supported by public evidence; not a statement of external funding or endorsement.
+
 ## Executive biography
 
 Kindred Jermaine Cox is the founder of Kindred Labs and an AI systems developer working at the intersection of agentic software, persistent-state computation, permissioned data transport, and interactive digital experiences. His public research includes BRAINSTEM, NTSA-X and the Strata Data Port Network. Cox identifies himself as the creator of the Kindred Agentic Genesis Protocol and Agentic-SuperShell concepts. Project Genesis is also acknowledged as a community-oriented initiative; first-party founder attribution is not a substitute for independent historical-priority or legal-ownership findings.
