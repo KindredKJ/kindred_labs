@@ -23,6 +23,12 @@ Kindred Jermaine Cox is the founder of Kindred Labs and an AI systems developer 
 
 > Kindred Jermaine Cox is the founder of Kindred Labs and an AI systems developer whose public projects span governed agent execution, stateful model research and identity-bound data transport. His Strata project publishes source-linked, independently checkable technical evidence.
 
+## Company directory reference
+
+The founder identifies the existing [Kindred company listing on Crunchbase](https://www.crunchbase.com/organization/kindredlabs) as his authentic historical Kindred/Kindred Labs profile. Its public entry currently includes **Kindred Cox** among the listed founders and links **kindredlabs.ai** as the company website. This directory is a useful third-party company identity reference alongside the dated engineering source records above.
+
+The founder reports that Crunchbase conducted a review before approving his association with the listing; that account of the review is **not** presented here as a separately published Crunchbase attestation or as a determination of individual legal equity. The directory also names other founders. The founder's specific personal engineering milestones, Project Genesis community history, corporate ownership and organization roles should be treated as distinct questions. Do not assume that a named directory profile independently verifies authorship of technical contributions.
+
 ## Press usage and verification
 
 - Attribute **Kindred Labs founder** to **Kindred Jermaine Cox**, consistent with his first-party project records. Do not infer equity percentages or company registration status from GitHub attribution.
