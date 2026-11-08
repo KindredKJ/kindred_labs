@@ -155,10 +155,20 @@ Exact source and merge Actions inventories were enumerated across all events. Fi
 
 The default-branch head was independently checked at the merge; no GitHub release was listed. Vercel reports a successful merge commit status, which is provider evidence rather than independent current service health. Anonymous retrieval of the public proof page could not be verified from this client. The PR identifies the Strata deployment separately from the kindred_labs scaffold; those deployment details are publisher reports. Automatic failover, abrupt termination/power-loss recovery, physical-machine attestation, wider production readiness, public launch, customer adoption, revenue, ownership and worldwide priority remain unproven.
 
+### 2026-11-07 — AI-Crawl cloud gameplay and video smoke
+
+KJ authored the seven commits merged in [AI-Crawl PR #26](https://github.com/KindredKJ/AI-Crawl/pull/26) at `595f2ca4aeeb627e1a885ed6725d2857544e8d3a` (November 8, 2026, 01:23:23 UTC). The public source adds a Linux browser-game controller, FFmpeg capture, and manually dispatched five-segment orchestration targeting a 24-hour deadline. This is source availability and bounded CI evidence, not a verified 24-hour broadcast.
+
+On source head `a62e9f92e2d479f6522b46e5b03854fa22d22006`, [cloud CI](https://github.com/KindredKJ/AI-Crawl/actions/runs/42433849677) passed four controller tests and a 55-second real browser-game/local-video dry run. Its logs record 32 observed combat turns, 18 learned contexts, zero campaign replays, and `streamingAttempted=false`; ffprobe identifies H.264 video at 1280×720 and AAC audio. The PR job checked out synthetic merge `cc7136dd4857931f47d28c86759b7d33b656a719`. The five live segments and deadline job were skipped. The run lists a footage/receipt artifact; its bytes were not independently replayed in this review.
+
+[Source Verify](https://github.com/KindredKJ/AI-Crawl/actions/runs/42433849623) and [push-triggered merge Verify](https://github.com/KindredKJ/AI-Crawl/actions/runs/42434046397) passed lint, 33 tests, build and local preview/compiled-asset smoke checks. Exact source/merge inventories returned no manually triggered or cancelled runs. The default branch was checked separately at the merge commit, and no GitHub release was listed.
+
+The [versioned runbook](https://github.com/KindredKJ/AI-Crawl/blob/595f2ca4aeeb627e1a885ed6725d2857544e8d3a/docs/operations/AI_CRAWL_FREE_CLOUD_BROADCAST.md) describes deterministic tactical gameplay with bounded contextual learning. YouTube ingest, an active broadcast, cross-runner learning continuity, campaign replay, 24-hour uptime, uninterrupted streaming, Windows/Unreal integration and model-weight training are not established by this smoke test. Live operation requires account-side setup and separate receiving-channel/ingest verification; reconnection gaps are expected. No public launch, customers, revenue, ownership or priority claim follows from this merge.
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
 - [Public link hub — KindredKJ](https://linktr.ee/KindredKJ)
 - [Kindred Labs website](https://kindredlabs.ai)
 
-Last editorial update: 2026-10-28.
+Last editorial update: 2026-11-07.
