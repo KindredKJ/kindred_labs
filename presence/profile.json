@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "lastEditorialUpdate": "2026-10-28",
+  "lastEditorialUpdate": "2026-11-07",
   "person": {
     "name": "Kindred Jermaine Cox",
     "preferredName": "KJ",
@@ -1895,6 +1895,85 @@
             "SQLite tenant separation is logical, not encryption; SHA-256 integrity checks do not authenticate a maliciously modified store.",
             "Broader RFS tracks remain research proposals; no general AI-performance, energy-saving, novelty or worldwide-priority conclusion is established."
           ]
+        }
+      ]
+    },
+    {
+      "name": "AI-Crawl",
+      "url": "https://github.com/KindredKJ/AI-Crawl",
+      "source": "https://github.com/KindredKJ/AI-Crawl/blob/595f2ca4aeeb627e1a885ed6725d2857544e8d3a/docs/operations/AI_CRAWL_FREE_CLOUD_BROADCAST.md",
+      "sourceBlobSha": "f888115f502ec53c7c10b3e72b54eb4ac5d8f77a",
+      "scope": "Public Linux cloud gameplay/FFmpeg implementation; bounded browser-game and local-video CI smoke. Five-segment 24-hour orchestration implemented but live broadcast unverified.",
+      "founderAttribution": "Seven PR commits attributed by GitHub to KindredKJ; merged by KindredKJ. This does not attribute every underlying dependency or prior line to KJ.",
+      "milestones": [
+        {
+          "title": "Cloud gameplay and local-video smoke",
+          "pullRequest": "https://github.com/KindredKJ/AI-Crawl/pull/26",
+          "mergedAt": "2026-11-08T01:23:23Z",
+          "sourceSha": "a62e9f92e2d479f6522b46e5b03854fa22d22006",
+          "mergeSha": "595f2ca4aeeb627e1a885ed6725d2857544e8d3a",
+          "ci": {
+            "source": [
+              {
+                "id": 42433849677,
+                "event": "pull_request",
+                "conclusion": "success",
+                "controllerTestsPassed": 4,
+                "smoke": {
+                  "allocatedSeconds": 55,
+                  "observedTurns": 32,
+                  "learnedContexts": 18,
+                  "campaignReplays": 0,
+                  "streamingAttempted": false,
+                  "video": "H.264 1280x720",
+                  "audio": "AAC",
+                  "checkoutSha": "cc7136dd4857931f47d28c86759b7d33b656a719",
+                  "liveSegments": "skipped",
+                  "deadlineJob": "skipped",
+                  "artifactId": 13598492696,
+                  "artifactBytesIndependentlyReviewed": false
+                }
+              },
+              {
+                "id": 42433849623,
+                "event": "pull_request",
+                "conclusion": "success",
+                "testsPassed": 33,
+                "scope": [
+                  "lint",
+                  "tests",
+                  "build",
+                  "local preview and compiled asset smoke"
+                ]
+              }
+            ],
+            "merge": [
+              {
+                "id": 42434046397,
+                "event": "push",
+                "conclusion": "success",
+                "testsPassed": 33,
+                "scope": [
+                  "lint",
+                  "tests",
+                  "build",
+                  "local preview and compiled asset smoke"
+                ]
+              }
+            ],
+            "manualRunsReturned": 0,
+            "cancelledRunsReturned": 0
+          },
+          "releaseStatus": "No GitHub release listed; default main head independently checked at merge SHA. Empty commit-status list does not establish deployment.",
+          "limitations": [
+            "No YouTube ingest or active-broadcast proof",
+            "No 24-hour uptime or uninterrupted-stream proof",
+            "No cross-runner learning continuity or campaign replay observed in this smoke",
+            "No Windows/Unreal integration or model-weight training established",
+            "Account-side setup and independent receiving-channel verification remain necessary; reconnection gaps expected"
+          ],
+          "confidence": "High for retrieved public source and CI logs; live external outcomes unverified.",
+          "nextVerification": "Review retained footage/receipts, then independently verify any separately authorized live ingest, segment handoffs and 24-hour deadline."
         }
       ]
     }
