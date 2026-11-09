@@ -2042,6 +2042,82 @@
           ],
           "confidence": "High for retrieved public source, GitHub metadata and inspected CI logs; external operational outcomes unverified.",
           "nextVerification": "Exercise browser start/stop, campaign completion and duplicate-turn behavior at the merged revision; verify any separately authorized encoder ingest and receiving channel independently."
+        },
+        {
+          "title": "Build correction and scoped dependency-audit gate",
+          "pullRequest": "https://github.com/KindredKJ/AI-Crawl/pull/27",
+          "mergedAt": "2026-11-09T22:40:55Z",
+          "sourceSha": "fd43c3e05c8f4843f78751b79f9fdd792146d03e",
+          "mergeSha": "6bd65e51ed7381623790a1493c8480f2af0cb9c4",
+          "source": "https://github.com/KindredKJ/AI-Crawl/blob/6bd65e51ed7381623790a1493c8480f2af0cb9c4/.github/workflows/security-audit.yml",
+          "sourceBlobSha": "1a287a37e44be1033a99363ebbcc1f7c3be0eb67",
+          "attribution": "Three PR commits attributed by GitHub to KindredKJ; merged by KindredKJ.",
+          "changes": [
+            "Vite alias uses import.meta.dirname",
+            "CI gates high/critical npm production-dependency findings; full-audit diagnostics retained without gating"
+          ],
+          "ci": {
+            "source": [
+              {
+                "id": 42713844099,
+                "event": "push",
+                "conclusion": "success"
+              },
+              {
+                "id": 42713947047,
+                "event": "pull_request",
+                "conclusion": "success"
+              },
+              {
+                "id": 42713946445,
+                "event": "pull_request",
+                "conclusion": "success"
+              }
+            ],
+            "merge": [
+              {
+                "id": 42714039367,
+                "event": "push",
+                "conclusion": "success"
+              },
+              {
+                "id": 42714039162,
+                "event": "push",
+                "conclusion": "success"
+              }
+            ],
+            "allAttempts": 1,
+            "manualRunsReturned": 0,
+            "cancelledRunsReturned": 0,
+            "testsPassedPerTestInvocation": 37,
+            "scope": [
+              "TypeScript checking",
+              "37 unit tests",
+              "build",
+              "Verify: runner-local preview shell and two compiled assets"
+            ],
+            "productionAudit": {
+              "command": "npm audit --omit=dev --audit-level=high",
+              "reportedFindings": 0
+            },
+            "fullAudit": {
+              "moderate": 3,
+              "high": 1,
+              "critical": 1,
+              "total": 5,
+              "dependencyChain": "Capacitor CLI development tooling",
+              "blocksWorkflow": false
+            }
+          },
+          "releaseStatus": "Default main checked at merge SHA; no GitHub release or commit deployment status listed. No deployment inferred.",
+          "limitations": [
+            "Package-scope audit does not establish comprehensive application or build-chain security",
+            "Five full-audit development-toolchain findings remain",
+            "Android major-upgrade safety not established",
+            "No new gameplay, live broadcast, production deployment or launch proof"
+          ],
+          "confidence": "High for public source, exact-SHA metadata and inspected logs; scope limited to recorded checks.",
+          "nextVerification": "Retest a separately reviewed development-toolchain/Android upgrade and repeat full audit; verify public operation separately."
         }
       ]
     }
