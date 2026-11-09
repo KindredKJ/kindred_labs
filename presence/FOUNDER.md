@@ -165,10 +165,20 @@ On source head `a62e9f92e2d479f6522b46e5b03854fa22d22006`, [cloud CI](https://gi
 
 The [versioned runbook](https://github.com/KindredKJ/AI-Crawl/blob/595f2ca4aeeb627e1a885ed6725d2857544e8d3a/docs/operations/AI_CRAWL_FREE_CLOUD_BROADCAST.md) describes deterministic tactical gameplay with bounded contextual learning. YouTube ingest, an active broadcast, cross-runner learning continuity, campaign replay, 24-hour uptime, uninterrupted streaming, Windows/Unreal integration and model-weight training are not established by this smoke test. Live operation requires account-side setup and separate receiving-channel/ingest verification; reconnection gaps are expected. No public launch, customers, revenue, ownership or priority claim follows from this merge.
 
+### 2026-11-09 — AI-Crawl autonomous player merged
+
+[AI-Crawl PR #8](https://github.com/KindredKJ/AI-Crawl/pull/8) merged at `ae22a568b7e2f0dfbe6b5b4deb67c5fc802464e8` on November 9, 2026, at 22:26:41 UTC. GitHub attributes its six commits and merge to KindredKJ. The change adds a tactical player for the existing Covenant//Dust campaign: legal-action evaluation through deterministic combat transitions, bounded contextual learning, browser-local memory, and start/stop, pacing and playing-style controls. It defaults off and preserves manual play.
+
+The [source-associated Verify run](https://github.com/KindredKJ/AI-Crawl/actions/runs/40199857118), dated October 25, passed 37 tests, TypeScript checking and build for head `12adf215f3015cf034be5986e72c276567800390`, using synthetic PR merge `dfa80231803f0e8788226cf7ddd429a4c76b9354`. The November 9 [push-triggered merge Verify](https://github.com/KindredKJ/AI-Crawl/actions/runs/42711938845) also passed 37 tests, checking and build. The inspected tests cover deterministic legal decisions, all authored chapters/ten waves/boss ending, invalid-memory rejection and counterfeit learning-receipt refusal. This is a known deterministic campaign test, not evidence of general performance on unfamiliar games.
+
+The merge smoke returned HTTP 200 for the application shell and two compiled assets on a runner-local Vite preview. It does not establish public deployment or browser interaction. Exact source/merge Actions inventories each returned one successful attempt, with no manual or cancelled runs. The default branch was separately checked at the merge SHA; no GitHub release or commit deployment status was listed.
+
+The [versioned architecture notes](https://github.com/KindredKJ/AI-Crawl/blob/ae22a568b7e2f0dfbe6b5b4deb67c5fc802464e8/docs/architecture/AUTONOMOUS_PLAYER_V1.md) distinguish bounded contextual-bandit updates from model-weight training. Native Unreal control, a production StrataCast observation/action bridge, live YouTube ingest, 24-hour reliability and broader autonomous capability remain separate verification work. This merge does not change the scope of the earlier PR #26 cloud smoke evidence or establish launch, customers, revenue, ownership or priority.
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
 - [Public link hub — KindredKJ](https://linktr.ee/KindredKJ)
 - [Kindred Labs website](https://kindredlabs.ai)
 
-Last editorial update: 2026-11-07.
+Last editorial update: 2026-11-09.
