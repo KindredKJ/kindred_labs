@@ -175,6 +175,14 @@ The merge smoke returned HTTP 200 for the application shell and two compiled ass
 
 The [versioned architecture notes](https://github.com/KindredKJ/AI-Crawl/blob/ae22a568b7e2f0dfbe6b5b4deb67c5fc802464e8/docs/architecture/AUTONOMOUS_PLAYER_V1.md) distinguish bounded contextual-bandit updates from model-weight training. Native Unreal control, a production StrataCast observation/action bridge, live YouTube ingest, 24-hour reliability and broader autonomous capability remain separate verification work. This merge does not change the scope of the earlier PR #26 cloud smoke evidence or establish launch, customers, revenue, ownership or priority.
 
+### 2026-11-09 — AI-Crawl build correction and scoped dependency audit
+
+[AI-Crawl PR #27](https://github.com/KindredKJ/AI-Crawl/pull/27) merged at `6bd65e51ed7381623790a1493c8480f2af0cb9c4` at 22:40:55 UTC. GitHub attributes its three commits and merge to KindredKJ. It replaces the legacy Vite alias's `__dirname` with `import.meta.dirname` and adds a CI gate for high/critical findings in npm's production-dependency scope.
+
+Exact source head `fd43c3e05c8f4843f78751b79f9fdd792146d03e` returned three successful runs: [push audit](https://github.com/KindredKJ/AI-Crawl/actions/runs/42713844099), [PR audit](https://github.com/KindredKJ/AI-Crawl/actions/runs/42713947047) and [PR Verify](https://github.com/KindredKJ/AI-Crawl/actions/runs/42713946445). The actual merge's [push audit](https://github.com/KindredKJ/AI-Crawl/actions/runs/42714039367) and [push Verify](https://github.com/KindredKJ/AI-Crawl/actions/runs/42714039162) also passed. Inspected logs show 37 passing tests, checking/build success and a runner-local preview shell/two-asset smoke. No manual or cancelled runs were returned; no GitHub release or commit deployment status was listed, and the default branch was checked at the merge SHA.
+
+The audit command `npm audit --omit=dev --audit-level=high` reported zero findings on these runs. The full audit still reported five development-toolchain findings (three moderate, one high, one critical) through the Capacitor CLI dependency chain. The [versioned workflow](https://github.com/KindredKJ/AI-Crawl/blob/6bd65e51ed7381623790a1493c8480f2af0cb9c4/.github/workflows/security-audit.yml) prints those full-audit diagnostics without gating them. This package-scope result is not a comprehensive security assessment, a completed Android major upgrade, a live deployment or broadcast verification.
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
