@@ -46,7 +46,108 @@
       "source": "https://github.com/KindredKJ/kindred-brainstem/blob/main/README.md",
       "sourceBlobSha": "e16d55c844f8a586065b3e2e74678019de89c242",
       "scope": "public source; documented local runtime",
-      "founderAttribution": "Kindred Jermaine Cox"
+      "founderAttribution": "Kindred Jermaine Cox",
+      "milestones": [
+        {
+          "id": "brainstem-commercial-evidence-pr13",
+          "title": "Commercial-pilot evidence reconciliation and AGI-frontier program",
+          "stage": "merged_verifier_implementation_candidate",
+          "mergedAt": "2026-11-17T03:51:02Z",
+          "localDate": "2026-11-16",
+          "pullRequest": "https://github.com/KindredKJ/kindred-brainstem/pull/13",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "6121576f49023ee9ab27d670ea4f2871990a4ee3",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/kindred-brainstem/blob/6121576f49023ee9ab27d670ea4f2871990a4ee3/docs/AGI_FRONTIER_PROGRAM_2026.md",
+          "sourceBlobSha": "61966b8e79f9ced29e2a00c7e1964c2e07f998a5",
+          "summary": "Read-only verifier for reconciling a GitHub commit, HTTPS release metadata, a Stripe live-mode PaymentIntent and a private local agent-trace hash, plus a conservative AGI-frontier and commercial-pilot research program.",
+          "verification": {
+            "changedFiles": [
+              "brainstem/benchmarks/commercial_pilot.py",
+              "docs/AGI_FRONTIER_PROGRAM_2026.md",
+              "tests/test_commercial_pilot.py"
+            ],
+            "sourceHeadSha": "a032a480cad1b854b2ff396dfaccadff6ffeec3f",
+            "sourceRun": {
+              "name": "BRAINSTEM Governed Runtime CI",
+              "event": "pull_request",
+              "conclusion": "success",
+              "checkoutSha": "c3b8353d76f2299e42d62e5967bb0764b2cf0b30",
+              "testResult": "63 passed in 4.13s",
+              "url": "https://github.com/KindredKJ/kindred-brainstem/actions/runs/41503608781"
+            },
+            "mergeRun": {
+              "name": "BRAINSTEM Governed Runtime CI",
+              "event": "push",
+              "conclusion": "failure",
+              "headSha": "6121576f49023ee9ab27d670ea4f2871990a4ee3",
+              "url": "https://github.com/KindredKJ/kindred-brainstem/actions/runs/44013060522"
+            },
+            "mergeWorkflowObservation": "The exact-merge job failed before recording steps and its downloadable log was empty; no post-merge test execution or technical cause is asserted.",
+            "defaultBranchDisposition": "The merge is the first parent of subsequent main commit 28664827155b059f767d881e525f4337c0468b28.",
+            "githubReleasesAtObservation": [],
+            "observedAt": "2026-11-17T03:56:01.616Z"
+          },
+          "limitations": [
+            "The successful source-head tests use mocked provider responses and are not real customer, payment, release or agent-trace evidence.",
+            "The verifier does not deploy an application, charge a customer or prove production autonomy, AGI, bank settlement, revenue or legal ownership.",
+            "Private receipts and traces remain private and are not published by this record."
+          ]
+        },
+        {
+          "id": "brainstem-arcagi3-rank-audit-pr14",
+          "title": "ARC-AGI-3 registry adapter and signed rank-audit verifier",
+          "stage": "merged_evaluation_infrastructure_candidate",
+          "mergedAt": "2026-11-17T03:51:08Z",
+          "localDate": "2026-11-16",
+          "pullRequest": "https://github.com/KindredKJ/kindred-brainstem/pull/14",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "28664827155b059f767d881e525f4337c0468b28",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/kindred-brainstem/blob/28664827155b059f767d881e525f4337c0468b28/docs/FRONTIER_RANK_ONE_EVIDENCE.md",
+          "sourceBlobSha": "68829f1e48d42fc4fd807d30c1394da70ef602ae",
+          "summary": "Conservative ARC-AGI-3 registry and operator-configured official-command adapter plus a read-only Ed25519 detached-signature auditor for validating supplied ranking snapshots, scores, conditions and source attribution.",
+          "verification": {
+            "changedFiles": [
+              "brainstem/benchmarks/adapters.py",
+              "brainstem/benchmarks/rank_proof.py",
+              "brainstem/benchmarks/registry.py",
+              "brainstem_build_backend.py",
+              "docs/FRONTIER_RANK_ONE_EVIDENCE.md",
+              "pyproject.toml",
+              "tests/test_frontier_benchmarks.py",
+              "tests/test_rank_proof.py"
+            ],
+            "sourceHeadSha": "bde69eef1647e97fe55419a0843070dde7772eb2",
+            "sourceRun": {
+              "name": "BRAINSTEM Governed Runtime CI",
+              "event": "pull_request",
+              "conclusion": "success",
+              "checkoutSha": "4ef8b57318b912b4da2898d1e60899d8bef398ad",
+              "testResult": "72 passed in 5.17s",
+              "url": "https://github.com/KindredKJ/kindred-brainstem/actions/runs/41507865413"
+            },
+            "mergeRun": {
+              "name": "BRAINSTEM Governed Runtime CI",
+              "event": "push",
+              "conclusion": "failure",
+              "headSha": "28664827155b059f767d881e525f4337c0468b28",
+              "url": "https://github.com/KindredKJ/kindred-brainstem/actions/runs/44013070453"
+            },
+            "mergeWorkflowObservation": "The exact-merge job failed before recording steps and its downloadable log was empty; no post-merge test execution or technical cause is asserted.",
+            "defaultBranchHeadAtObservation": "28664827155b059f767d881e525f4337c0468b28",
+            "githubReleasesAtObservation": [],
+            "observedAt": "2026-11-17T03:56:01.616Z"
+          },
+          "limitations": [
+            "A valid signature authenticates only the supplied signing key; it does not establish an ARC Prize issuer or official leaderboard authority.",
+            "No official held-out scorecard, genuine full-leaderboard result, independent reproduction, competition submission or global first-place result was established.",
+            "The merge does not establish AGI, production deployment, customers, revenue, legal ownership or worldwide priority."
+          ]
+        }
+      ]
     },
     {
       "name": "Strata Data Port Network",
@@ -1871,6 +1972,68 @@
             "Retrieved content is untrusted; source receipts and links are not independent fact-checks or proof of answer accuracy.",
             "No model-weight changes, trained fluency improvement, unlimited search or access to ChatGPT's proprietary search backend is established.",
             "No GitHub release was listed at review; production deployment is not established."
+          ]
+        },
+        {
+          "id": "ntsa-krystal-rfc-pr24",
+          "title": "Integrated KRYSTAL mechanism architecture RFC",
+          "stage": "merged_design_rfc_implementation_deferred",
+          "mergedAt": "2026-11-17T03:50:08Z",
+          "localDate": "2026-11-16",
+          "pullRequest": "https://github.com/KindredKJ/NTSA-X/pull/24",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "8ea3b87d0e84a0bc64870748aba600180d245298",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/NTSA-X/blob/8ea3b87d0e84a0bc64870748aba600180d245298/docs/KRYSTAL-INTEGRATED-MECHANISM-RFC.md",
+          "sourceBlobSha": "f18e1086fa45f47b0ddbc18802783423a45aa8eb",
+          "summary": "Documentation-only RFC for one integrated KRYSTAL mechanism spanning a driver, generative diffusion, cognition, refining diffusion, memory woven through the mechanism and capability-gated tool use, while preserving the byte-native non-Transformer architecture.",
+          "verification": {
+            "changedFiles": [
+              "docs/KRYSTAL-INTEGRATED-MECHANISM-RFC.md"
+            ],
+            "sourceHeadSha": "0fdbedbf74a7ed9622edbdaf0ce8ff18f65288f5",
+            "sourceRuns": [
+              {
+                "name": "NTSA-X verified throughput",
+                "event": "push",
+                "conclusion": "success",
+                "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/39054014388"
+              },
+              {
+                "name": "NTSA-X verified throughput",
+                "event": "pull_request",
+                "conclusion": "success",
+                "checkoutSha": "72e202689338ea7b0b60b9780c18780d2bb4d672",
+                "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/39054038572"
+              }
+            ],
+            "testScope": "Both source-head runs passed nine jobs. The inspected Linux PR job ran 140 tests with 27 optional-PyTorch skips plus focused suites; the native-state jobs installed PyTorch. Because the change is documentation-only, these checks establish regression status, not implementation of the RFC.",
+            "mergeRuns": [
+              {
+                "name": "NTSA-X verified throughput",
+                "event": "push",
+                "conclusion": "failure",
+                "headSha": "8ea3b87d0e84a0bc64870748aba600180d245298",
+                "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/44012954638"
+              },
+              {
+                "name": "NTSA-X verified throughput",
+                "event": "push",
+                "conclusion": "failure",
+                "headSha": "8ea3b87d0e84a0bc64870748aba600180d245298",
+                "url": "https://github.com/KindredKJ/NTSA-X/actions/runs/44013040024"
+              }
+            ],
+            "mergeWorkflowObservation": "Both push-triggered repeats on the exact merge SHA failed before recording steps; inspected job logs were empty, so no post-merge execution or technical cause is asserted.",
+            "defaultBranchHeadAtObservation": "8ea3b87d0e84a0bc64870748aba600180d245298",
+            "githubReleasesAtObservation": [],
+            "observedAt": "2026-11-17T03:56:01.616Z"
+          },
+          "limitations": [
+            "The RFC explicitly defers implementation until founder authorization; no model weights or runtime files changed.",
+            "Existing trace graphs are not live graph-state dynamics.",
+            "The merge establishes no new training result, model capability, deployment, independent recognition, AGI status or worldwide priority."
           ]
         }
       ],
