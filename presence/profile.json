@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "lastEditorialUpdate": "2026-11-09",
+  "lastEditorialUpdate": "2026-11-16",
   "person": {
     "name": "Kindred Jermaine Cox",
     "preferredName": "KJ",
@@ -1554,6 +1554,104 @@
             "This fixes the reviewed CLI self-comparison limitation, not all protocol/security issues. The helper source remains unchanged, and the focused source CI failure remains recorded.",
             "Public proof-page source now includes the bounded recovery; anonymous live proof-page access could not be verified from this client. PR deployment-scope statements are publisher reports.",
             "Automatic failover, abrupt termination/power-loss recovery, physical-machine attestation and production readiness remain unproven; no public-launch, customer, revenue, ownership or worldwide-priority claim added."
+          ]
+        },
+        {
+          "id": "sdpn-interconnect-research-pr16",
+          "title": "INTERCONNECT research specification and additive capability program",
+          "stage": "merged_specification_proposal",
+          "mergedAt": "2026-11-17T03:50:01Z",
+          "localDate": "2026-11-16",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/16",
+          "pullRequestAuthor": "KindredKJ",
+          "mergeCommit": "c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28/docs/ADR-0002-INTERCONNECT-USER-RESEARCH-ADDITIVE-PERKS.md",
+          "sourceBlobSha": "9fba20c046888e6e14f877b49dff599a8d1be5e4",
+          "summary": "Merged Gate A research and specification for INTERCONNECT: a separate proposed non-Chromium native browser product with 16 P0/P1/P2 capabilities, optional and revocable SDPN integration, local-first privacy defaults, explicit release gates and evidence requirements.",
+          "verification": {
+            "sourceAndTestsInspected": true,
+            "changedFiles": [
+              "docs/ADR-0002-INTERCONNECT-USER-RESEARCH-ADDITIVE-PERKS.md",
+              "docs/interconnect-feature-register.v1.json",
+              "test/interconnect-feature-register.test.mjs"
+            ],
+            "sourceHeadSha": "012adbe992a1cf5f84b356ece1f5815ca004b251",
+            "sourceHeadWorkflows": [
+              {
+                "name": "Candidate verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "success",
+                "headSha": "012adbe992a1cf5f84b356ece1f5815ca004b251",
+                "checkoutSha": "20324a603f0ce20bfa2b6b7058ee349039c5ddaa",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/38103575708"
+              }
+            ],
+            "testScope": "The source-head PR workflow passed inherited checks: one focused Direct Pipe test, a worker-transfer integrity/measurement job, 60 Python tests and the Windows verification gate. It checked out GitHub's synthetic PR merge commit 20324a603f0ce20bfa2b6b7058ee349039c5ddaa. The new registry test file contains three invariant tests, but the inspected workflow logs do not show those tests executing.",
+            "mergeWorkflows": [
+              {
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "headSha": "c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/44012940720"
+              },
+              {
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "headSha": "c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/44012940840"
+              },
+              {
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "headSha": "c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/44012940735"
+              },
+              {
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "headSha": "c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/44012940815"
+              },
+              {
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "headSha": "c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/44012940749"
+              }
+            ],
+            "mergeWorkflowObservation": "All five push-triggered workflows returned failure on the exact merge SHA. Each returned job had no recorded steps and an empty downloadable job log, so no post-merge test execution or technical failure cause is asserted.",
+            "defaultBranchHeadAtObservation": "c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28",
+            "githubReleasesAtObservation": [],
+            "deploymentStatusAtObservation": [
+              {
+                "context": "Vercel",
+                "state": "success",
+                "description": "Deployment has completed",
+                "targetUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/8uhfTv6GREwBNQe43uhWWxLvDawy",
+                "createdAt": "2026-11-17T03:52:49Z"
+              }
+            ],
+            "observedAt": "2026-11-17T03:53:26.129Z"
+          },
+          "limitations": [
+            "The registry explicitly remains PROPOSED_NOT_IMPLEMENTED; this merge is research and specification, not browser implementation.",
+            "No current application code, Port Zero behavior, transport, network enrollment, production route or deployment configuration changed.",
+            "The three new registry tests were inspected in source, but their execution was not observed in the fetched CI logs.",
+            "All exact-merge push workflows failed before recording executable steps; post-merge verification is therefore absent.",
+            "No native browser release, compatibility or sandbox proof, two-physical-host evidence, public launch, production deployment, customer use, revenue, legal ownership or worldwide-priority claim is established."
           ]
         }
       ]
