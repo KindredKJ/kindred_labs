@@ -183,10 +183,18 @@ Exact source head `fd43c3e05c8f4843f78751b79f9fdd792146d03e` returned three succ
 
 The audit command `npm audit --omit=dev --audit-level=high` reported zero findings on these runs. The full audit still reported five development-toolchain findings (three moderate, one high, one critical) through the Capacitor CLI dependency chain. The [versioned workflow](https://github.com/KindredKJ/AI-Crawl/blob/6bd65e51ed7381623790a1493c8480f2af0cb9c4/.github/workflows/security-audit.yml) prints those full-audit diagnostics without gating them. This package-scope result is not a comprehensive security assessment, a completed Android major upgrade, a live deployment or broadcast verification.
 
+### 2026-11-16 — INTERCONNECT research specification merged (proposal only)
+
+[PR #16](https://github.com/KindredKJ/strata-data-port-network/pull/16), authored by the KindredKJ account, merged to `main` as [`c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28`](https://github.com/KindredKJ/strata-data-port-network/commit/c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28). Its four commits are attributed to KindredKJ; GitHub's `web-flow` account committed the merge. The three changed files add Gate A research, a machine-readable registry of 16 proposed P0/P1/P2 capabilities, and three registry-invariant tests for INTERCONNECT as a separate proposed non-Chromium native browser with optional, revocable SDPN integration and local-first privacy defaults.
+
+The exact source-head [Candidate verification run](https://github.com/KindredKJ/strata-data-port-network/actions/runs/38103575708) succeeded, checking out GitHub's synthetic PR merge commit `20324a603f0ce20bfa2b6b7058ee349039c5ddaa`. Its logs show one focused Direct Pipe test, worker-transfer integrity and measurements, 60 Python tests, and the Windows verification gate. They do not show execution of the three new registry tests. All five push-triggered workflows on the exact merge SHA returned failure before recording executable steps, with empty job logs; no post-merge test execution or technical failure cause is asserted. No GitHub release was listed. The provider commit status was successful when observed, which does not establish a working public deployment.
+
+The registry explicitly remains `PROPOSED_NOT_IMPLEMENTED`. This merge changes no application code, Port Zero behavior, transport, network enrollment, production route, or deployment configuration. It does not establish a shipped native browser, compatibility or sandbox proof, two-physical-host operation, public launch, production deployment, customers, revenue, legal ownership, or worldwide priority. See the [versioned ADR](https://github.com/KindredKJ/strata-data-port-network/blob/c63fb3dbb1c8c257b9101bc6af2a2919a77c3f28/docs/ADR-0002-INTERCONNECT-USER-RESEARCH-ADDITIVE-PERKS.md).
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
 - [Public link hub — KindredKJ](https://linktr.ee/KindredKJ)
 - [Kindred Labs website](https://kindredlabs.ai)
 
-Last editorial update: 2026-11-09.
+Last editorial update: 2026-11-16.
