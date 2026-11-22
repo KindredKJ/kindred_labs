@@ -1904,6 +1904,149 @@
           ],
           "confidence": "High for retrieved public source, exact GitHub metadata, Vercel deployment record and one live browser observation; transport performance and physical-host qualification remain unverified.",
           "nextVerification": "Connect signed paired measurements from distinct physical endpoints and pass three consecutive non-overlapping five-minute windows with at least 60 successful paired samples each, candidate p95 at most 60% of baseline, and no p99 or packet-loss regression."
+        },
+        {
+          "id": "sdpn-strata-connect-pr60",
+          "title": "Strata Connect direct encrypted browser transfer and product-first public site",
+          "stage": "public_browser_product_deployed_cross_device_operation_unverified",
+          "mergedAt": "2026-11-22T09:51:52Z",
+          "localDate": "2026-11-22",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/60",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceHeadSha": "b1efb18f14278851bfe3fb37cf4943dd10f20f9c",
+          "mergeCommit": "ba3f468d4d4fdb7eec90be9042ac8530eafe8ded",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/ba3f468d4d4fdb7eec90be9042ac8530eafe8ded/public/connect.html",
+          "sourceBlobSha": "cac72876f1052a4e3a86436e6c8c257b70f054fd",
+          "protocolSource": "https://github.com/KindredKJ/strata-data-port-network/blob/ba3f468d4d4fdb7eec90be9042ac8530eafe8ded/public/peer-protocol.mjs",
+          "protocolSourceBlobSha": "9e22323c1ccc4c43957063e7637e18d8aff96df6",
+          "testSource": "https://github.com/KindredKJ/strata-data-port-network/blob/ba3f468d4d4fdb7eec90be9042ac8530eafe8ded/test/peer-protocol.test.mjs",
+          "testSourceBlobSha": "20bfdcfb4c7a2791c9a086fe5530a53a1a479b71",
+          "browserTestSource": "https://github.com/KindredKJ/strata-data-port-network/blob/ba3f468d4d4fdb7eec90be9042ac8530eafe8ded/scripts/test-browser-peer.mjs",
+          "browserTestSourceBlobSha": "0073ebd9896dfc14e2e635054f6bac079326954b",
+          "summary": "Public Strata Connect interface implements manual offer/answer WebRTC DataChannel transfer of the existing passphrase-sealed browser package, bounded framing, received-package SHA-256 verification and an integrity receipt; the public homepage now leads with usable transfer and package-workspace paths.",
+          "attribution": "Nine source commits attributed by GitHub to KindredKJ; merge authored by KindredKJ and committed by web-flow. This does not attribute unrelated prior code, browser primitives or dependencies to KJ.",
+          "verification": {
+            "sourceAndTestsInspected": true,
+            "workflowsEnumeratedWithoutEventFilter": true,
+            "sourceRuns": [
+              {
+                "id": 45009528332,
+                "name": "SW06-F two actual VMs",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45009528332"
+              },
+              {
+                "id": 45009528346,
+                "name": "SW07 Android native network entry",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45009528346"
+              },
+              {
+                "id": 45009528397,
+                "name": "SDPN Community independent open-source verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45009528397"
+              },
+              {
+                "id": 45009528337,
+                "name": "INTERCONNECT native proof",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45009528337"
+              },
+              {
+                "id": 45009528357,
+                "name": "Candidate verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45009528357"
+              }
+            ],
+            "mergeRuns": [
+              {
+                "id": 45009598766,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45009598766"
+              },
+              {
+                "id": 45009598757,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45009598757"
+              },
+              {
+                "id": 45009598760,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45009598760"
+              },
+              {
+                "id": 45009598703,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45009598703"
+              },
+              {
+                "id": 45009598744,
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45009598744"
+              }
+            ],
+            "cancelledRepeats": [],
+            "manualRunsReturned": 0,
+            "testScope": "Five focused Node tests are present for typed signaling, exact encrypted-package reconstruction, tamper rejection, bounded/out-of-order framing and product navigation. A Playwright script is present for same-machine two-browser pairing, encrypted transfer, SHA-256 receipt and original-file restoration. The PR description reports 90/90 repository tests and 13/13 focused tests passing in a separate Node 24 environment, but no independently retrievable log accompanies that report. All exact-SHA Actions jobs failed without recorded steps, and log downloads returned BlobNotFound; no GitHub Actions test execution is asserted.",
+            "defaultBranchHeadAtObservation": "ba3f468d4d4fdb7eec90be9042ac8530eafe8ded",
+            "githubReleasesAtObservation": [],
+            "deployment": {
+              "provider": "Vercel",
+              "deploymentId": "dpl_DApZSa5e3uiRjRR2wLxnRaA53Lgn",
+              "state": "READY",
+              "target": "production",
+              "commitSha": "ba3f468d4d4fdb7eec90be9042ac8530eafe8ded",
+              "homepageUrl": "https://stratadataportnetwork.vercel.app/",
+              "productUrl": "https://stratadataportnetwork.vercel.app/connect.html",
+              "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/DApZSa5e3uiRjRR2wLxnRaA53Lgn"
+            },
+            "liveObservation": {
+              "observedAt": "2026-11-22T09:54:53Z",
+              "homepageHttpStatus": 200,
+              "productHttpStatus": 200,
+              "homepageTitle": "Strata — Secure File Transfer | Kindred Labs",
+              "productTitle": "Connect Devices | Strata Data Port Network",
+              "scope": "Public HTTP reachability and returned page source. No live two-user or two-physical-device transfer was performed in this observation."
+            }
+          },
+          "limitations": [
+            "Manual signaling uses public STUN and no TURN relay; restrictive NAT or firewalls can prevent pairing, and connection codes may expose network-address information to the intended peer.",
+            "The browser transfer is distinct from native SDPN QUIC/MORPH transport and does not verify the 40% p95 objective, two-physical-host qualification, failover or sustained availability.",
+            "All exact source and merge Actions runs failed before recording steps; the successful test counts in the PR description are first-party reported and lack a retrievable external log.",
+            "A Vercel READY deployment and HTTP 200 establish current page availability, not a successful cross-device transfer, customer use, revenue or production reliability.",
+            "No legal ownership, independent recognition, benchmark superiority or worldwide-priority claim is established."
+          ],
+          "confidence": "High for public source, exact GitHub metadata, deployment identity and page reachability; medium for first-party reported test counts; cross-device operation and native transport performance remain unverified.",
+          "nextVerification": "Retain an independently observable transfer receipt across two physical devices on distinct public networks, test restrictive-NAT failure and retry behavior, and continue the separate signed physical-host transport qualification."
         }
       ]
     },
