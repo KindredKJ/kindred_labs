@@ -207,10 +207,20 @@ The exact source head had successful [push](https://github.com/KindredKJ/NTSA-X/
 
 A valid signature authenticates only the supplied signing key. It does not establish an ARC Prize issuer, official leaderboard authority, an official held-out scorecard, independent reproduction, a competition submission, or a global first-place result. No AGI, production deployment, customers, revenue, legal ownership, or worldwide priority is established. See the [versioned evidence policy](https://github.com/KindredKJ/kindred-brainstem/blob/28664827155b059f767d881e525f4337c0468b28/docs/FRONTIER_RANK_ONE_EVIDENCE.md).
 
+### 2026-11-22 — SDPN public operations observability deployed
+
+[SDPN PR #59](https://github.com/KindredKJ/strata-data-port-network/pull/59), authored by the KindredKJ account, merged to `main` as [`4f6d26b28cb4f2b9918a9272170a551b8835f9d5`](https://github.com/KindredKJ/strata-data-port-network/commit/4f6d26b28cb4f2b9918a9272170a551b8835f9d5). GitHub attributes all three source commits to KindredKJ; the merge commit lists KindredKJ as author and `web-flow` as committer. The public change adds a read-only [SDPN Live Operations dashboard](https://stratadataportnetwork.vercel.app/performance.html), links it from the public homepage, and adds five source tests covering the link, live-status fetch behavior, the full qualification rule, truthful separation of API reachability from transport performance, and inline-module syntax.
+
+Vercel recorded production deployment [`dpl_Fw3iDRvkncjR9HyXvJjUabpca5Zu`](https://vercel.com/kindred-coxs-projects/strata_data_port_network/Fw3iDRvkncjR9HyXvJjUabpca5Zu) for the exact merge SHA. A separate public browser observation on November 22 returned HTTP 200 from the dashboard and a valid response from [`/api/proof/status`](https://stratadataportnetwork.vercel.app/api/proof/status): the service reported `ready: true` while explicitly retaining `physicalMachineAttestationProven: false` and `productionReadyClaim: false`. The dashboard showed the transport at baseline, 0/3 qualifying windows, physical-host qualification pending, and the 40% network-improvement objective unverified. Browser-to-API latency is a transient local RTT observation, not SDPN transport performance.
+
+All five source-head PR workflows and all five push-triggered workflows on the exact merge SHA concluded failure. Their jobs recorded no executable steps, and job-log retrieval returned missing log blobs, so no source or post-merge test execution and no technical failure cause are asserted. No manual or cancelled exact-SHA runs were returned, and no GitHub release was listed. The merged test source was inspected, but its five cases were not observed executing.
+
+This milestone establishes public observability and current endpoint reachability only. It does not establish native QUIC or MORPH activation, routed carrier traffic, a sustained 40% p95 improvement, acceptable p99 or loss, two-physical-host qualification, production-ready recovery, customers, revenue, legal ownership, independent recognition, or worldwide priority. The next verification action is to connect signed paired physical-host measurements and satisfy three consecutive non-overlapping five-minute windows with at least 60 successful paired samples each, candidate p95 at most 60% of baseline, and no p99 or packet-loss regression.
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
 - [Public link hub — KindredKJ](https://linktr.ee/KindredKJ)
 - [Kindred Labs website](https://kindredlabs.ai)
 
-Last editorial update: 2026-11-16.
+Last editorial update: 2026-11-22.
