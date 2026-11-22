@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "lastEditorialUpdate": "2026-11-16",
+  "lastEditorialUpdate": "2026-11-22",
   "person": {
     "name": "Kindred Jermaine Cox",
     "preferredName": "KJ",
@@ -154,7 +154,7 @@
       "url": "https://github.com/KindredKJ/strata-data-port-network",
       "source": "https://github.com/KindredKJ/strata-data-port-network/blob/main/README.md",
       "sourceBlobSha": "e7c37f63b5d1a8a826693dd7422548dea7164c62",
-      "scope": "public research candidates; encrypted browser handoff package; merged provider-independent static workspace host candidate; merged PORT/1 signed native-addressing candidate; merged PORTAL/1 local-first application candidate; separately licensed Apache-2.0 SDPN Community identity and naming component",
+      "scope": "public research candidates; encrypted browser handoff package; merged provider-independent static workspace host candidate; merged PORT/1 signed native-addressing candidate; merged PORTAL/1 local-first application candidate; separately licensed Apache-2.0 SDPN Community identity and naming component; publicly deployed read-only operations dashboard with live proof-status reachability and an explicit unverified 40% qualification gate",
       "founderAttribution": "Kindred Jermaine Cox",
       "milestones": [
         {
@@ -1754,6 +1754,156 @@
             "All exact-merge push workflows failed before recording executable steps; post-merge verification is therefore absent.",
             "No native browser release, compatibility or sandbox proof, two-physical-host evidence, public launch, production deployment, customer use, revenue, legal ownership or worldwide-priority claim is established."
           ]
+        },
+        {
+          "id": "sdpn-live-operations-pr59",
+          "title": "Public live-operations dashboard and explicit 40% qualification tracking",
+          "stage": "public_observability_deployed_transport_unverified",
+          "mergedAt": "2026-11-22T09:32:27Z",
+          "localDate": "2026-11-22",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/59",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceHeadSha": "69ab6f3295ef4851c1f3caa2424c212adf3c8a71",
+          "mergeCommit": "4f6d26b28cb4f2b9918a9272170a551b8835f9d5",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/4f6d26b28cb4f2b9918a9272170a551b8835f9d5/public/performance.html",
+          "sourceBlobSha": "b041a41bb8366421a8611fadd276443771027bd1",
+          "testSource": "https://github.com/KindredKJ/strata-data-port-network/blob/4f6d26b28cb4f2b9918a9272170a551b8835f9d5/test/performance-page.test.mjs",
+          "testSourceBlobSha": "56ab0918535d3ad572588a348c90f5b28d8472d8",
+          "summary": "Public read-only SDPN operations dashboard polls the existing proof-status endpoint, reports browser-to-API RTT separately from transport performance, and displays the complete signed two-physical-host acceptance rule while keeping the 40% objective unverified.",
+          "attribution": "Three source commits attributed by GitHub to KindredKJ; merge authored by KindredKJ and committed by web-flow. This does not attribute unrelated prior code or dependencies to KJ.",
+          "verification": {
+            "sourceAndTestsInspected": true,
+            "workflowsEnumeratedWithoutEventFilter": true,
+            "sourceRuns": [
+              {
+                "id": 45007961606,
+                "name": "INTERCONNECT native proof",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45007961606"
+              },
+              {
+                "id": 45007961699,
+                "name": "SW06-F two actual VMs",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45007961699"
+              },
+              {
+                "id": 45007961644,
+                "name": "SDPN Community independent open-source verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45007961644"
+              },
+              {
+                "id": 45007961685,
+                "name": "SW07 Android native network entry",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45007961685"
+              },
+              {
+                "id": 45007961600,
+                "name": "Candidate verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45007961600"
+              }
+            ],
+            "mergeRuns": [
+              {
+                "id": 45008042340,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45008042340"
+              },
+              {
+                "id": 45008042336,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45008042336"
+              },
+              {
+                "id": 45008042362,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45008042362"
+              },
+              {
+                "id": 45008042339,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45008042339"
+              },
+              {
+                "id": 45008042315,
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45008042315"
+              }
+            ],
+            "cancelledRepeats": [],
+            "manualRunsReturned": 0,
+            "testScope": "Five Node source tests were inspected: homepage link/title, no-store live proof-status fetch with timeout and periodic checks, full 40% qualification rule, truthful separation of reachability from transport proof, and inline-module syntax. All exact-SHA Actions jobs failed without recorded executable steps; log downloads returned missing blobs, so no test execution is asserted.",
+            "defaultBranchHeadAtObservation": "4f6d26b28cb4f2b9918a9272170a551b8835f9d5",
+            "githubReleasesAtObservation": [],
+            "deployment": {
+              "provider": "Vercel",
+              "deploymentId": "dpl_Fw3iDRvkncjR9HyXvJjUabpca5Zu",
+              "state": "READY",
+              "target": "production",
+              "commitSha": "4f6d26b28cb4f2b9918a9272170a551b8835f9d5",
+              "url": "https://stratadataportnetwork.vercel.app/performance.html",
+              "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/Fw3iDRvkncjR9HyXvJjUabpca5Zu"
+            },
+            "liveObservation": {
+              "observedAt": "2026-11-22T09:33:53Z",
+              "dashboardHttpStatus": 200,
+              "dashboardTitle": "SDPN Live Operations | Kindred Labs",
+              "proofStatusHttpStatus": 200,
+              "proofStatus": {
+                "service": "strata-external-proof",
+                "ready": true,
+                "schemaVersion": "kindred.external-proof.receipt.v1",
+                "physicalMachineAttestationProven": false,
+                "productionReadyClaim": false
+              },
+              "displayedState": {
+                "transport": "Baseline",
+                "verifiedWindows": "0 / 3",
+                "physicalHostQualification": "Pending",
+                "networkImprovement": "Unverified"
+              },
+              "scope": "Public dashboard and proof-status reachability from one browser observation. The local browser RTT is not SDPN transport p95 and is not retained as a performance claim."
+            }
+          },
+          "limitations": [
+            "All exact source and merge Actions runs failed before recording executable steps; the five new source tests were not observed running.",
+            "A Vercel READY deployment and HTTP 200 establish current web reachability, not native transport, carrier routing, production-ready recovery or sustained service reliability.",
+            "The proof-status response itself reports physicalMachineAttestationProven false and productionReadyClaim false.",
+            "The dashboard retains 0/3 qualifying windows, baseline transport and pending physical-host qualification; the 40% p95 objective remains unverified.",
+            "No customers, revenue, legal ownership, independent recognition, benchmark superiority or worldwide-priority claim is established."
+          ],
+          "confidence": "High for retrieved public source, exact GitHub metadata, Vercel deployment record and one live browser observation; transport performance and physical-host qualification remain unverified.",
+          "nextVerification": "Connect signed paired measurements from distinct physical endpoints and pass three consecutive non-overlapping five-minute windows with at least 60 successful paired samples each, candidate p95 at most 60% of baseline, and no p99 or packet-loss regression."
         }
       ]
     },
