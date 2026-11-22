@@ -228,6 +228,17 @@ The merged repository contains five focused Node tests for signaling, exact encr
 The deployed product uses manual signaling and public STUN without a TURN relay; restrictive NAT or firewalls may prevent pairing, and connection codes may contain network-address information. The browser path is separate from SDPN native QUIC/MORPH transport and does not verify the 40% p95 objective, two-physical-host qualification, failover, sustained availability, customers, revenue, legal ownership, independent recognition or worldwide priority. The next verification action is to retain an independently observable two-device transfer receipt across distinct public networks, including failure/retry behavior, while continuing the separate signed physical-host transport qualification.
 
 
+### 2026-11-22 — Strata four-action homepage deployed
+
+[SDPN PR #61](https://github.com/KindredKJ/strata-data-port-network/pull/61), authored and merged by the KindredKJ account, merged to `main` as [`5ceab185816104dde6e8c578641c4f79e4250f27`](https://github.com/KindredKJ/strata-data-port-network/commit/5ceab185816104dde6e8c578641c4f79e4250f27). GitHub attributes both source commits to KindredKJ; the merge commit lists KindredKJ as author and `web-flow` as committer. The public homepage now organizes Strata around four actions—Correspond, Connect, Create and Call—and adds an inline path that uses the existing browser package module to encrypt a selected file and download the resulting `.strata` package. Connect and Create route to the existing device-connection and package-workspace tools. Call currently routes an existing connection code or received package into those tools; it is not a new retrieval service.
+
+Vercel recorded production deployment [`dpl_8yrPGaTbXw7BYyVotnGpUWQPNVJT`](https://vercel.com/kindred-coxs-projects/strata_data_port_network/8yrPGaTbXw7BYyVotnGpUWQPNVJT) for the exact merge SHA. A public check on November 22 returned HTTP 200 and the title “Strata — Correspond. Connect. Create. Call.” from the [homepage](https://stratadataportnetwork.vercel.app/); the imported [browser package module](https://stratadataportnetwork.vercel.app/app-core.mjs) also returned HTTP 200. This establishes deployed source and route availability, not successful browser execution of the newly embedded encryption path.
+
+PR #61 changed only `public/index.html` and added no test files. All five exact-source PR workflows and all five exact-merge push workflows failed before recording executable steps; all 16 job-log downloads returned missing blobs. No manual or cancelled exact-SHA runs and no GitHub release were returned. Accordingly, this record does not infer passing tests from deployment readiness or from earlier revisions.
+
+The action labels describe navigation and current browser-package capabilities. They do not establish implemented messaging, automatic pairing, universal calling or retrieval, customer use, revenue, native SDPN transport performance, legal ownership, independent recognition or worldwide priority. The next verification action is to exercise each deployed action in a browser, retain an encrypted-package round-trip receipt for the homepage flow, and add focused tests for panel selection, drag/drop, validation, package download and retained technical links.
+
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
