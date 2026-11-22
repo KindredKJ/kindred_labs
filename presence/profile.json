@@ -2047,6 +2047,145 @@
           ],
           "confidence": "High for public source, exact GitHub metadata, deployment identity and page reachability; medium for first-party reported test counts; cross-device operation and native transport performance remain unverified.",
           "nextVerification": "Retain an independently observable transfer receipt across two physical devices on distinct public networks, test restrictive-NAT failure and retry behavior, and continue the separate signed physical-host transport qualification."
+        },
+        {
+          "id": "sdpn-four-action-home-pr61",
+          "title": "Correspond, Connect, Create and Call action-first public homepage",
+          "stage": "public_action_interface_deployed_embedded_encryption_unverified",
+          "mergedAt": "2026-11-22T12:36:14Z",
+          "localDate": "2026-11-22",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/61",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceHeadSha": "3e591887666715d325f72394bc9d20739801e0a1",
+          "mergeCommit": "5ceab185816104dde6e8c578641c4f79e4250f27",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/5ceab185816104dde6e8c578641c4f79e4250f27/public/index.html",
+          "sourceBlobSha": "8339262d05832a6f584addd09e2117b3f51c3702",
+          "summary": "The deployed Strata homepage presents Correspond, Connect, Create and Call actions; it can invoke the existing browser package module to encrypt and download a selected file, while the other panels route users into existing device-connection and package-workspace paths.",
+          "attribution": "Both source commits attributed by GitHub to KindredKJ; merge authored by KindredKJ and committed by web-flow. This does not attribute unrelated prior code, browser cryptography or dependencies to KJ.",
+          "verification": {
+            "sourceInspected": true,
+            "changedFiles": [
+              "public/index.html"
+            ],
+            "changedTestFiles": [],
+            "workflowsEnumeratedWithoutEventFilter": true,
+            "sourceRuns": [
+              {
+                "id": 45023142558,
+                "name": "SDPN Community independent open-source verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45023142558"
+              },
+              {
+                "id": 45023142660,
+                "name": "SW06-F two actual VMs",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45023142660"
+              },
+              {
+                "id": 45023142612,
+                "name": "Candidate verification",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45023142612"
+              },
+              {
+                "id": 45023142575,
+                "name": "INTERCONNECT native proof",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45023142575"
+              },
+              {
+                "id": 45023142642,
+                "name": "SW07 Android native network entry",
+                "event": "pull_request",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45023142642"
+              }
+            ],
+            "mergeRuns": [
+              {
+                "id": 45023145992,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45023145992"
+              },
+              {
+                "id": 45023145993,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45023145993"
+              },
+              {
+                "id": 45023146051,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45023146051"
+              },
+              {
+                "id": 45023146022,
+                "name": "Candidate verification",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45023146022"
+              },
+              {
+                "id": 45023145940,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "status": "completed",
+                "conclusion": "failure",
+                "url": "https://github.com/KindredKJ/strata-data-port-network/actions/runs/45023145940"
+              }
+            ],
+            "cancelledRepeats": [],
+            "manualRunsReturned": 0,
+            "testScope": "PR #61 changed only public/index.html and added no tests. All exact-source and exact-merge Actions jobs failed without recorded steps, and all 16 log downloads returned BlobNotFound. No test execution for the new panels, drag/drop or inline encryption is asserted.",
+            "defaultBranchHeadAtObservation": "5ceab185816104dde6e8c578641c4f79e4250f27",
+            "githubReleasesAtObservation": [],
+            "deployment": {
+              "provider": "Vercel",
+              "deploymentId": "dpl_8yrPGaTbXw7BYyVotnGpUWQPNVJT",
+              "state": "READY",
+              "target": "production",
+              "commitSha": "5ceab185816104dde6e8c578641c4f79e4250f27",
+              "url": "https://stratadataportnetwork.vercel.app/",
+              "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/8yrPGaTbXw7BYyVotnGpUWQPNVJT"
+            },
+            "liveObservation": {
+              "observedAt": "2026-11-22T12:37:54Z",
+              "homepageHttpStatus": 200,
+              "homepageTitle": "Strata — Correspond. Connect. Create. Call.",
+              "appCoreHttpStatus": 200,
+              "scope": "Public HTTP reachability and returned source only. The new inline encryption/download path was not interactively executed in this observation."
+            }
+          },
+          "limitations": [
+            "Correspond exposes existing file-package encryption and the existing connection path; no standalone messaging service was added.",
+            "Call currently routes an existing connection code or encrypted package into existing tools; no universal retrieval, service invocation or automatic discovery is implemented.",
+            "The change added no tests, and all exact-SHA Actions jobs failed before recording steps or retrievable logs.",
+            "Vercel READY and HTTP 200 establish page and module availability, not successful browser interaction, package round-trip, cross-device transfer or sustained service reliability.",
+            "No customers, revenue, native transport performance, legal ownership, independent recognition or worldwide-priority claim is established."
+          ],
+          "confidence": "High for public source, exact GitHub metadata, deployment identity and current HTTP reachability; interactive behavior and user outcomes remain unverified.",
+          "nextVerification": "Run and retain a browser-level homepage package round trip, exercise all four panels and drag/drop validation, and add focused automated tests for the new interaction paths and retained technical links."
         }
       ]
     },
