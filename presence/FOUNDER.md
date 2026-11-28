@@ -15,6 +15,7 @@ KJ identifies himself as the founder and creator of the Kindred Agentic Genesis 
 | [BRAINSTEM](https://github.com/KindredKJ/kindred-brainstem) | Governed agent execution, persistent state, evidence and approval workflows | Public source and a documented local runtime; its README explicitly names Kindred Jermaine Cox as founder. |
 | [Strata Data Port Network](https://github.com/KindredKJ/strata-data-port-network) | Permissioned data ports, device identity and governed transport | Public research implementations and an encrypted browser handoff package; its README names KJ as sole founder and creator. |
 | [NTSA-X](https://github.com/KindredKJ/NTSA-X) | Stateful adaptive computation and recurrent-model research | Public research source documenting recall-before-compute, hash-linked lineage, recurrent X/Y/Z state and a cognitive–diffusion research model. |
+| [AI-Crawl](https://github.com/KindredKJ/AI-Crawl) | Browser-game prototypes and autonomous gameplay research | Public source includes tested browser gameplay slices; external deployment and native Unreal production are tracked separately. |
 
 ## What distinguishes this work
 
@@ -239,10 +240,22 @@ PR #61 changed only `public/index.html` and added no test files. All five exact-
 The action labels describe navigation and current browser-package capabilities. They do not establish implemented messaging, automatic pairing, universal calling or retrieval, customer use, revenue, native SDPN transport performance, legal ownership, independent recognition or worldwide priority. The next verification action is to exercise each deployed action in a browser, retain an encrypted-package round-trip receipt for the homepage flow, and add focused tests for panel selection, drag/drop, validation, package download and retained technical links.
 
 
+### 2026-11-28 — AI-Crawl KINNULL-001 playable browser vertical slice
+
+[AI-Crawl PR #5](https://github.com/KindredKJ/AI-Crawl/pull/5), authored by the KindredKJ account, merged to `main` as [`6a6a61eb901b0c495a7550f4cad21797d4f32fc2`](https://github.com/KindredKJ/AI-Crawl/commit/6a6a61eb901b0c495a7550f4cad21797d4f32fc2). GitHub attributes the source revision and merge author to KindredKJ; the merge committer is `web-flow`. This attribution covers the recorded contribution and does not assign unrelated prior repository content or dependencies to KJ.
+
+The public source adds KINNULL-001 “The Awakening,” a locally playable turn-based browser vertical slice. It includes keyboard, arrow-key and touch input; a 13×9 collision map; ordered investigation, containment, host-selection and escape objectives; alternative maintenance and security routes; finite predictive protection; a 64-dimensional identity state partitioned across seven axes with irreversible band progression; and event-replayed local saves that reject invalid histories. The project document identifies this as standalone first-party StrataCast game content within AI-Crawl.
+
+The exact source SHA [`078565f67332277938ef64299ec819665b278551`](https://github.com/KindredKJ/AI-Crawl/commit/078565f67332277938ef64299ec819665b278551) completed [Verify run 38700728333](https://github.com/KindredKJ/AI-Crawl/actions/runs/38700728333) successfully. The inspected job log records `npm ci`, lint, 41/41 passing tests and a successful Vite production build. Seven of those tests directly cover the 64-dimensional identity schema, irreversible foreign-code deposition and idempotent replay, ordered proximity and gate rules, two completable host routes, finite prediction, mission-save restoration and duplicate/stale-event rejection. The build retained CSS import-order and large-chunk warnings.
+
+On the exact merge SHA, [Verify run 46135822325](https://github.com/KindredKJ/AI-Crawl/actions/runs/46135822325) and [dependency-security run 46135822321](https://github.com/KindredKJ/AI-Crawl/actions/runs/46135822321) both failed before recording executable steps. Each job returned an empty step list, and each log download returned a missing-blob response. No manual or cancelled exact-SHA run, GitHub release or matching Vercel deployment was returned. The default branch had advanced beyond this merge when checked on November 28, 2026.
+
+This establishes public source, a playable local browser implementation and successful source-head CI. The repository documentation keeps native Unreal production, full 3D assets, character rigs, authored animation and voice, real-time action systems, StrataCast Pack bindings and gameplay certification as future work. Local browser saves are not authoritative multiplayer state. No public deployment, external launch, customers, revenue, legal ownership, independent recognition or worldwide-priority claim is established. The next verification action is to restore green exact-merge Verify and dependency-security runs, then retain a separately observable browser interaction receipt for any authorized public deployment.
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
 - [Public link hub — KindredKJ](https://linktr.ee/KindredKJ)
 - [Kindred Labs website](https://kindredlabs.ai)
 
-Last editorial update: 2026-11-22.
+Last editorial update: 2026-11-28.
