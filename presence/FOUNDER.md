@@ -273,6 +273,18 @@ The exact source SHA [`86f23cdfc4a90422d09a73f055260b98e584bca6`](https://github
 
 On the exact merge SHA, [Verify run 46135867758](https://github.com/KindredKJ/AI-Crawl/actions/runs/46135867758) and [dependency-security run 46135867813](https://github.com/KindredKJ/AI-Crawl/actions/runs/46135867813) failed before recording executable steps. No manual or cancelled exact-SHA run, GitHub release or matching Vercel deployment was returned. Final production rigs and art, recorded actors or motion capture, finished native levels, native console execution, cooked executable verification, storefront distribution and external gameplay observation remain unverified. The merge does not establish a public launch, customers, revenue, legal ownership, independent recognition or worldwide priority. The next verification action is to compile and package the exact merge revision, exercise the native combat, cinematic, voice and handoff paths, retain test receipts, and restore green exact-merge CI.
 
+
+### 2026-11-28 — AI-Crawl truthful Mind projections and guarded testnet economy
+
+[AI-Crawl PR #1](https://github.com/KindredKJ/AI-Crawl/pull/1), authored by the KindredKJ account through 23 recorded pull-request commits, merged to `main` as [`8011161c6f5d91b4edbaa729991ca9b2fe0503bc`](https://github.com/KindredKJ/AI-Crawl/commit/8011161c6f5d91b4edbaa729991ca9b2fe0503bc). GitHub attributes every pull-request commit and the merge author to KindredKJ; the merge committer is `web-flow`. This attribution covers the recorded contribution and does not assign unrelated prior repository content or dependencies to KJ.
+
+The public source adds a versioned Mind-event contract with explicit truth classes and provenance, plus an authority-scoped projection ledger that validates events, enforces sequence order, isolates tenant/world/session/Mind scope, deduplicates canonical retries and rejects conflicting identities. It also adds Polygon Amoy testnet-facing MERK token and dungeon-contract source, a guarded client gateway, deployment-receipt validation and test source covering the ledger, gateway and contract rules. The [versioned architecture record](https://github.com/KindredKJ/AI-Crawl/blob/8011161c6f5d91b4edbaa729991ca9b2fe0503bc/docs/architecture/genesis-vertical-slice.md) describes the intended boundary between AI-Crawl product policy and StrataCast runtime capabilities.
+
+All four exact-source workflows and all three push-triggered workflows on the exact merge SHA concluded failure. Each returned one failed job with no recorded steps, so no test, build, Solidity compilation, audit or deployment-script execution is established for this revision. No manually triggered or cancelled exact-SHA runs, GitHub release or matching Vercel deployment was returned. The merge commit was the public default-branch head when checked on November 28, 2026.
+
+This milestone establishes merged public source and documented tests only. It does not establish passing tests, a deployed contract, a verified testnet receipt, production blockchain use, public gameplay deployment, external launch, customers, revenue, token value or sale, legal ownership, independent recognition or worldwide priority. The next verification action is to restore green exact-merge workflows with retained job steps and logs, then separately verify any authorized public deployment or testnet receipt against its published chain and contract addresses.
+
+
 ## Reference profiles
 
 - [GitHub — KindredKJ](https://github.com/KindredKJ)
