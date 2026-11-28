@@ -2328,6 +2328,111 @@
           ],
           "confidence": "High for public source, attribution, exact-SHA workflow metadata, empty recorded steps, deployment records and default-head state; runtime transport remains unverified.",
           "nextVerification": "Restore green exact-merge workflows with retained steps and logs, execute the focused routing suite, and retain a separately observable authorized two-endpoint frame exchange with ordering, acknowledgement and backpressure evidence."
+        },
+        {
+          "id": "sdpn-realtime-stream-control-pr6",
+          "title": "Realtime control, barge-in and stream-priority routing source",
+          "stage": "merged_public_source_production_deployment_ci_unexecuted",
+          "mergedAt": "2026-11-28T18:17:05Z",
+          "localDate": "2026-11-28",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/6",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceHeadSha": "9c181b5471102ae9a8a9a3bb7297b16b65177f7f",
+          "mergeCommit": "7571523091b66ec38a20d26218ff57014260c9fd",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/7571523091b66ec38a20d26218ff57014260c9fd/docs/REALTIME-STREAM-CONTROL.md",
+          "sourceBlobSha": "6e67e0547c99fc8141c2cff4428d94100d480be8",
+          "summary": "Public source adds bounded CONTROL, INTERACTIVE and STREAM priority lanes, control-window reserve, same-source ordering, priority scheduling and barge-in cancellation that reports dropped queued output while retaining executed=false route planning.",
+          "attribution": "GitHub returned ten pull-request commits, including four stacked interactive-routing foundation commits; all ten commits and the merge author are attributed to KindredKJ, and the merge committer is web-flow. Unrelated prior repository content and dependencies are not attributed by this merge.",
+          "verification": {
+            "changedFiles": [
+              "docs/REALTIME-STREAM-CONTROL.md",
+              "src/interface-session-routing.mjs",
+              "test/interface-session-routing.test.mjs"
+            ],
+            "sourceBlobShas": {
+              "documentation": "6e67e0547c99fc8141c2cff4428d94100d480be8",
+              "implementation": "42954c26d8780bed22cc4cba76a44770af7be984",
+              "focusedTests": "0045748d4a6d866952c5a089739e0f746b106ad4"
+            },
+            "workflowsEnumeratedWithoutEventFilter": true,
+            "sourceRuns": [],
+            "sourceRunObservation": "No workflow run was returned for the exact source SHA.",
+            "mergeRuns": [
+              {
+                "id": 46175017876,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175017928,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175017932,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175017855,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175017868,
+                "name": "Candidate verification",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 4,
+                "stepsRecorded": 0
+              }
+            ],
+            "manualRunsReturned": 0,
+            "cancelledRunsReturned": 0,
+            "testScope": "The merged focused file contains eighteen test declarations, seven extending the prior routing suite with saturation, bounded control reserve, priority scheduling, same-source ordering, barge-in dropping, queue eviction and route-class coverage. All eight exact-merge jobs returned empty recorded step lists, so no test or build execution is established.",
+            "defaultBranchHeadAtObservation": "7571523091b66ec38a20d26218ff57014260c9fd",
+            "githubReleasesAtObservation": [],
+            "deployments": [
+              {
+                "provider": "Vercel",
+                "deploymentId": "dpl_5APTHky9jKbXz4u2ceoUPSpnq3uM",
+                "state": "READY",
+                "target": "preview",
+                "commitSha": "9c181b5471102ae9a8a9a3bb7297b16b65177f7f",
+                "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/5APTHky9jKbXz4u2ceoUPSpnq3uM"
+              },
+              {
+                "provider": "Vercel",
+                "deploymentId": "dpl_B4sBPyKUoCfsuxu5juRKKQFbbHgn",
+                "state": "READY",
+                "target": "production",
+                "commitSha": "7571523091b66ec38a20d26218ff57014260c9fd",
+                "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/B4sBPyKUoCfsuxu5juRKKQFbbHgn"
+              }
+            ]
+          },
+          "limitations": [
+            "Planning remains executed=false; the merge does not establish network execution or zero latency.",
+            "No exact-source workflow run was returned, and all exact-merge workflows failed before recording executable steps.",
+            "Vercel READY establishes provider deployment state, not runtime priority behavior, successful interruption, frame transport, two-host operation or sustained production health.",
+            "No customers, revenue, legal ownership, independent recognition or worldwide-priority claim is established."
+          ],
+          "confidence": "High for public source, attribution, exact-SHA workflow enumeration, empty recorded steps, deployment records and default-head state; runtime transport and interruption behavior remain unverified.",
+          "nextVerification": "Restore green exact-merge workflows with retained steps and logs, execute the focused priority suite, and retain an authorized two-endpoint stream receipt where a saturated output lane is interrupted by a bounded control frame with ordering and drop evidence."
         }
       ]
     },
