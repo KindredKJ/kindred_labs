@@ -2579,6 +2579,152 @@
           ],
           "confidence": "High for public source, attribution, exact-SHA workflow enumeration, empty recorded steps, deployment records and default-head state; worker execution and completion remain unverified.",
           "nextVerification": "Restore green exact-merge workflows with retained steps and logs, execute the focused scheduler suite, and retain an authorized multi-worker receipt set linking reservations, releases, external task execution and independent completion proofs."
+        },
+        {
+          "id": "sdpn-verification-proof-scheduler-pr8",
+          "title": "Independent verification-proof scheduler source",
+          "stage": "merged_public_source_production_deployment_ci_unexecuted",
+          "mergedAt": "2026-11-28T18:24:05Z",
+          "localDate": "2026-11-28",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/8",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceHeadSha": "2dbd6dc74e8a15b272efb9fcb5a9f64b4aebe98c",
+          "mergeCommit": "c7c365e625501c21abdaf1c5fa554d83e212056d",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/c7c365e625501c21abdaf1c5fa554d83e212056d/docs/VERIFICATION-PROOF-SCHEDULER.md",
+          "sourceBlobSha": "875179a1279e510d7b9d5d36feeb5813b82b2823",
+          "summary": "Public source adds an isolated authorized verifier registry, exact gate-capability matching, bounded concurrency, normalized-load scheduling, required-before-advisory priority and reservation-bound release while retaining executed=false proof-assignment receipts.",
+          "attribution": "GitHub returned sixteen pull-request commits, including eleven stacked foundation commits and five verification-scheduler-specific commits; all sixteen commits and the merge author are attributed to KindredKJ, and the merge committer is web-flow. Unrelated prior repository content and dependencies are not attributed by this merge.",
+          "verification": {
+            "changedFiles": [
+              "docs/VERIFICATION-PROOF-SCHEDULER.md",
+              "package.json",
+              "src/verification-proof-scheduler.mjs",
+              "test/verification-proof-scheduler.test.mjs"
+            ],
+            "sourceBlobShas": {
+              "documentation": "875179a1279e510d7b9d5d36feeb5813b82b2823",
+              "implementation": "8adcc497e3f737ffc8e66adf8e7d1f48ec7d6166",
+              "focusedTests": "77af2ad3541b44762dffeb01f81ef0b759927836"
+            },
+            "workflowsEnumeratedWithoutEventFilter": true,
+            "sourceRuns": [
+              {
+                "id": 46175637033,
+                "name": "SW06-F two actual VMs",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175637040,
+                "name": "INTERCONNECT native proof",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175637165,
+                "name": "SW07 Android native network entry",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175637113,
+                "name": "Candidate verification",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 4,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175637045,
+                "name": "SDPN Community independent open-source verification",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              }
+            ],
+            "mergeRuns": [
+              {
+                "id": 46175655723,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175655731,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175655740,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175655727,
+                "name": "Candidate verification",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 4,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175655673,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              }
+            ],
+            "manualRunsReturned": 0,
+            "cancelledRunsReturned": 0,
+            "testScope": "The merged focused file contains twelve test declarations covering required-first ordering, gate capability, missing capability, bounded capacity, load selection, Boolean authorization, inherited-key rejection, detached registry snapshots, reserved required capacity, queue ordering, identifier validation and task-identity conflicts. All sixteen exact-SHA jobs returned empty recorded step lists, so no test or build execution is established.",
+            "defaultBranchHeadAtObservation": "c7c365e625501c21abdaf1c5fa554d83e212056d",
+            "githubReleasesAtObservation": [],
+            "deployments": [
+              {
+                "provider": "Vercel",
+                "deploymentId": "dpl_AgDf7owu8uhsVqYDxvSozfhCXYS1",
+                "state": "READY",
+                "target": "preview",
+                "commitSha": "2dbd6dc74e8a15b272efb9fcb5a9f64b4aebe98c",
+                "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/AgDf7owu8uhsVqYDxvSozfhCXYS1"
+              },
+              {
+                "provider": "Vercel",
+                "deploymentId": "dpl_4cbqeTNqkWktXvoc9dbdt8oe19Qm",
+                "state": "READY",
+                "target": "production",
+                "commitSha": "c7c365e625501c21abdaf1c5fa554d83e212056d",
+                "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/4cbqeTNqkWktXvoc9dbdt8oe19Qm"
+              }
+            ]
+          },
+          "limitations": [
+            "The scheduler assigns proof work and returns executed=false; it does not establish gate execution or a passing result.",
+            "All exact-source and exact-merge workflows failed before recording executable steps.",
+            "Vercel READY establishes provider deployment state, not verifier execution, passing gates, independent proofs, production isolation under load or sustained health.",
+            "No customers, revenue, legal ownership, independent recognition or worldwide-priority claim is established."
+          ],
+          "confidence": "High for public source, attribution, exact-SHA workflow enumeration, empty recorded steps, deployment records and default-head state; gate execution and proof results remain unverified.",
+          "nextVerification": "Restore green exact-merge workflows with retained steps and logs, execute the focused verification-scheduler suite, and retain a multi-verifier receipt chain linking assignment, reservation release, gate execution and independently checked proof results."
         }
       ]
     },
