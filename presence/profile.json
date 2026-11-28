@@ -2433,6 +2433,152 @@
           ],
           "confidence": "High for public source, attribution, exact-SHA workflow enumeration, empty recorded steps, deployment records and default-head state; runtime transport and interruption behavior remain unverified.",
           "nextVerification": "Restore green exact-merge workflows with retained steps and logs, execute the focused priority suite, and retain an authorized two-endpoint stream receipt where a saturated output lane is interrupted by a bounded control frame with ordering and drop evidence."
+        },
+        {
+          "id": "sdpn-production-capability-scheduler-pr7",
+          "title": "Bounded production-capability scheduler source",
+          "stage": "merged_public_source_production_deployment_ci_unexecuted",
+          "mergedAt": "2026-11-28T18:20:40Z",
+          "localDate": "2026-11-28",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/7",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceHeadSha": "47c84255ca28fb31a0085c0b0d6c909a244a7c24",
+          "mergeCommit": "2c74ddb45dc4f470d0597db57cd506dde5f8c4d8",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/2c74ddb45dc4f470d0597db57cd506dde5f8c4d8/docs/PRODUCTION-CAPABILITY-SCHEDULER.md",
+          "sourceBlobSha": "13039b19d94ea979aca8f374025a2004b832528a",
+          "summary": "Public source adds an authorized, capability-aware scheduler with bounded concurrency, normalized-load and least-surplus matching, proof-first priority, explicit E2–E5 approval, bounded queuing and idempotent reservation release while reporting executed=false.",
+          "attribution": "GitHub returned twelve pull-request commits, including seven stacked routing-foundation commits and five scheduler-specific commits; all twelve commits and the merge author are attributed to KindredKJ, and the merge committer is web-flow. Unrelated prior repository content and dependencies are not attributed by this merge.",
+          "verification": {
+            "changedFiles": [
+              "docs/PRODUCTION-CAPABILITY-SCHEDULER.md",
+              "package.json",
+              "src/production-capability-scheduler.mjs",
+              "test/production-capability-scheduler.test.mjs"
+            ],
+            "sourceBlobShas": {
+              "documentation": "13039b19d94ea979aca8f374025a2004b832528a",
+              "implementation": "5acc3662cfe27ce833c2848c7274ebcb8e369122",
+              "focusedTests": "389182ea4f6bffd7aa7b9f50de69ea482e3fb59d"
+            },
+            "workflowsEnumeratedWithoutEventFilter": true,
+            "sourceRuns": [
+              {
+                "id": 46175293638,
+                "name": "SDPN Community independent open-source verification",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175293674,
+                "name": "SW06-F two actual VMs",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175293663,
+                "name": "INTERCONNECT native proof",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175293620,
+                "name": "Candidate verification",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 4,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175293703,
+                "name": "SW07 Android native network entry",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              }
+            ],
+            "mergeRuns": [
+              {
+                "id": 46175343554,
+                "name": "Candidate verification",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 4,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175343468,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175343488,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175343516,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175343508,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              }
+            ],
+            "manualRunsReturned": 0,
+            "cancelledRunsReturned": 0,
+            "testScope": "The merged focused file contains twelve scheduler test declarations covering selection, approval, priority, reservation release, authorization types, inherited-key rejection, registry immutability, reserved capacity, queue ordering, ID validation, duplicate-task idempotency and queue bounds. All sixteen exact-SHA jobs returned empty recorded step lists, so no test or build execution is established.",
+            "defaultBranchHeadAtObservation": "2c74ddb45dc4f470d0597db57cd506dde5f8c4d8",
+            "githubReleasesAtObservation": [],
+            "deployments": [
+              {
+                "provider": "Vercel",
+                "deploymentId": "dpl_CV6s5iua4zHaFwVhRqpvf6LYryvU",
+                "state": "READY",
+                "target": "preview",
+                "commitSha": "47c84255ca28fb31a0085c0b0d6c909a244a7c24",
+                "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/CV6s5iua4zHaFwVhRqpvf6LYryvU"
+              },
+              {
+                "provider": "Vercel",
+                "deploymentId": "dpl_B9Grvja1sios2uS9eFsiiEwSm4yC",
+                "state": "READY",
+                "target": "production",
+                "commitSha": "2c74ddb45dc4f470d0597db57cd506dde5f8c4d8",
+                "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/B9Grvja1sios2uS9eFsiiEwSm4yC"
+              }
+            ]
+          },
+          "limitations": [
+            "The scheduler assigns work and returns executed=false; it does not establish task execution or completion.",
+            "All exact-source and exact-merge workflows failed before recording executable steps.",
+            "Vercel READY establishes provider deployment state, not worker operation, completed tasks, proof generation, workload scaling or sustained production health.",
+            "No customers, revenue, legal ownership, independent recognition or worldwide-priority claim is established."
+          ],
+          "confidence": "High for public source, attribution, exact-SHA workflow enumeration, empty recorded steps, deployment records and default-head state; worker execution and completion remain unverified.",
+          "nextVerification": "Restore green exact-merge workflows with retained steps and logs, execute the focused scheduler suite, and retain an authorized multi-worker receipt set linking reservations, releases, external task execution and independent completion proofs."
         }
       ]
     },
