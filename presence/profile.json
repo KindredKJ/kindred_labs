@@ -3024,6 +3024,100 @@
           ],
           "confidence": "High for public source, commit attribution and inspected source-head CI logs; native execution, deployment and external operation unverified.",
           "nextVerification": "Compile and package the exact merge revision, exercise native combat, cinematic, voice and handoff paths, retain receipts, and restore green exact-merge CI."
+        },
+        {
+          "id": "ai-crawl-mind-projection-merk-pr1",
+          "title": "Truth-labelled Mind projections and guarded MERK testnet source",
+          "stage": "merged_public_source_ci_failed_deployment_unverified",
+          "pullRequest": "https://github.com/KindredKJ/AI-Crawl/pull/1",
+          "mergedAt": "2026-11-28T11:30:34Z",
+          "localDate": "2026-11-28",
+          "sourceSha": "2f94f76fb2f5c86cf58925ee0a7eb07b87732170",
+          "mergeSha": "8011161c6f5d91b4edbaa729991ca9b2fe0503bc",
+          "source": "https://github.com/KindredKJ/AI-Crawl/blob/8011161c6f5d91b4edbaa729991ca9b2fe0503bc/docs/architecture/genesis-vertical-slice.md",
+          "sourceBlobSha": "afd41faa12da7c8488e8622d6d9c0563a0cbfcc0",
+          "attribution": "All 23 pull-request commits and the merge author are attributed by GitHub to KindredKJ; the merge committer is web-flow. Unrelated prior repository content and dependencies are not attributed by this merge.",
+          "implemented": [
+            "Versioned Mind-event contracts with explicit truth classes, provenance and authority scope",
+            "Authority-scoped projection ledger with sequence enforcement, canonical retry identity and conflict rejection",
+            "Polygon Amoy testnet-facing MERK token, dungeon-contract and guarded client-gateway source",
+            "Source tests for Mind-event validation, ledger isolation and retry behavior, deployment-receipt validation and MERK contract rules"
+          ],
+          "ciEvidence": {
+            "sourceShaRuns": [
+              {
+                "id": 46140168907,
+                "event": "pull_request",
+                "workflow": "AI Crawl Dependency Security Review",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46140168434,
+                "event": "pull_request",
+                "workflow": "Verify",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46140168520,
+                "event": "pull_request",
+                "workflow": "AI Crawl Economy and Mind Projection Verify",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46140165778,
+                "event": "push",
+                "workflow": "AI Crawl Economy and Mind Projection Verify",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              }
+            ],
+            "mergeShaRuns": [
+              {
+                "id": 46140211245,
+                "event": "push",
+                "workflow": "Verify",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46140211197,
+                "event": "push",
+                "workflow": "AI Crawl Economy and Mind Projection Verify",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46140211189,
+                "event": "push",
+                "workflow": "AI Crawl Dependency Security Review",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              }
+            ],
+            "conclusion": "All exact-SHA workflows failed with empty recorded step lists. No test, build, Solidity compilation, audit or deployment-script execution is established for this revision."
+          },
+          "releaseEvidence": {
+            "defaultBranchHeadAtObservation": "8011161c6f5d91b4edbaa729991ca9b2fe0503bc",
+            "githubRelease": false,
+            "matchingVercelDeployment": false
+          },
+          "limitations": [
+            "Merged public source and documented tests do not establish passing tests.",
+            "No deployed contract or independently verified testnet receipt was observed.",
+            "No production blockchain use, public gameplay deployment or external launch is established.",
+            "No customers, revenue, token value or sale, legal ownership, independent recognition or worldwide priority is established."
+          ],
+          "nextVerificationAction": "Restore green exact-merge workflows with retained steps and logs, then separately verify any authorized public deployment or testnet receipt against published chain and contract addresses."
         }
       ]
     }
