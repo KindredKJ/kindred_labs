@@ -2594,9 +2594,9 @@
     {
       "name": "AI-Crawl",
       "url": "https://github.com/KindredKJ/AI-Crawl",
-      "source": "https://github.com/KindredKJ/AI-Crawl/blob/595f2ca4aeeb627e1a885ed6725d2857544e8d3a/docs/operations/AI_CRAWL_FREE_CLOUD_BROADCAST.md",
-      "sourceBlobSha": "f888115f502ec53c7c10b3e72b54eb4ac5d8f77a",
-      "scope": "Public Linux cloud gameplay/FFmpeg implementation; bounded browser-game and local-video CI smoke; KINNULL-001 playable turn-based browser vertical slice. Five-segment 24-hour orchestration implemented but live broadcast and public KINNULL deployment unverified.",
+      "source": "https://github.com/KindredKJ/AI-Crawl/blob/e767f2e78a6a528d37950946b2317318bb40f502/docs/architecture/KINNULL_ASSETS_COMBAT_CINEMATICS_VOICE_CONSOLE.md",
+      "sourceBlobSha": "08e107ae24bfb28fed1ad80b8c5951a8387887d2",
+      "scope": "Public browser-game and autonomous-gameplay source; KINNULL-001 playable browser slice; tested twelve-scene branching browser campaign; Unreal Engine 5.8 character, combat, cinematic, voice and console-handoff source. Native compile/cook/package, public KINNULL deployment and external launch remain unverified.",
       "founderAttribution": "Seven PR commits attributed by GitHub to KindredKJ; merged by KindredKJ. This does not attribute every underlying dependency or prior line to KJ.",
       "milestones": [
         {
@@ -2884,6 +2884,146 @@
           ],
           "confidence": "High for public source, GitHub metadata and inspected source-head CI logs; deployment and external operation unverified.",
           "nextVerification": "Restore green exact-merge Verify and dependency-security runs, then retain a separately observable browser interaction receipt for any authorized public deployment."
+        },
+        {
+          "id": "ai-crawl-kinnull-native-source-pr6",
+          "title": "KINNULL branching campaign and native Unreal source",
+          "stage": "merged_tested_browser_campaign_native_source_uncompiled",
+          "pullRequest": "https://github.com/KindredKJ/AI-Crawl/pull/6",
+          "mergedAt": "2026-11-28T10:34:46Z",
+          "localDate": "2026-11-28",
+          "sourceSha": "2094da1b21f37491a0319e3498d4754808e24841",
+          "mergeSha": "5a05284238d7d05bdef76bd95ae50da8d9a3f784",
+          "source": "https://github.com/KindredKJ/AI-Crawl/blob/5a05284238d7d05bdef76bd95ae50da8d9a3f784/docs/architecture/KINNULL_ONE_SHOT_GAME_DELIVERY.md",
+          "sourceBlobSha": "80dc7dedbaa7fb36aa979a0c2d30652ac732526a",
+          "attribution": "All 37 pull-request commits and the source revision are attributed by GitHub to KindredKJ. This attribution does not assign unrelated prior repository content or dependencies to KJ.",
+          "implemented": [
+            "Twelve-scene, five-resolution branching browser campaign extending KINNULL beyond the Awakening slice",
+            "Unreal Engine 5.8 C++ project source for procedural facility assembly, character input and interaction, identity erosion, host possession, gates, sentries, saves and HUD"
+          ],
+          "ci": {
+            "source": [
+              {
+                "id": 38776745373,
+                "jobId": 116566247959,
+                "event": "pull_request",
+                "conclusion": "success",
+                "checkoutSha": "2094da1b21f37491a0319e3498d4754808e24841",
+                "testsPassed": 46,
+                "testsFailed": 0,
+                "scope": [
+                  "npm ci",
+                  "lint",
+                  "46 Node tests",
+                  "static Unreal source-contract check",
+                  "Vite production build"
+                ],
+                "nativeCheckScope": "Declaration and wiring inspection only; no Unreal C++ compile, cook, launch or packaging."
+              }
+            ],
+            "merge": [
+              {
+                "id": 46135845047,
+                "jobId": 140950847747,
+                "event": "push",
+                "workflow": "Verify",
+                "conclusion": "failure",
+                "stepsRecorded": 0,
+                "logStatus": "missing_or_unavailable"
+              },
+              {
+                "id": 46135845012,
+                "jobId": 140950847837,
+                "event": "push",
+                "workflow": "AI Crawl Dependency Security Review",
+                "conclusion": "failure",
+                "stepsRecorded": 0,
+                "logStatus": "missing_or_unavailable"
+              }
+            ],
+            "manualRunsReturned": 0,
+            "cancelledRunsReturned": 0
+          },
+          "releaseStatus": "No GitHub release or matching Vercel deployment was returned. The default branch advanced to the PR #7 merge after this merge.",
+          "limitations": [
+            "Static source validation is not an Unreal Engine compile, cook, launch or package",
+            "No packaged native build, public deployment or externally observed launch was established",
+            "Exact-merge workflows failed before recording executable steps",
+            "No customers, revenue, legal ownership, independent recognition or worldwide-priority claim is established"
+          ],
+          "confidence": "High for public source, commit attribution and inspected source-head CI logs; native execution and external operation unverified.",
+          "nextVerification": "Compile and package the exact merge revision in Unreal Engine 5.8, retain build and runtime logs, and restore green exact-merge CI."
+        },
+        {
+          "id": "ai-crawl-kinnull-production-source-pr7",
+          "title": "KINNULL animated proxies, combat, cinematic and voice source",
+          "stage": "merged_tested_source_assets_native_runtime_unverified",
+          "pullRequest": "https://github.com/KindredKJ/AI-Crawl/pull/7",
+          "mergedAt": "2026-11-28T10:35:02Z",
+          "localDate": "2026-11-28",
+          "sourceSha": "86f23cdfc4a90422d09a73f055260b98e584bca6",
+          "mergeSha": "e767f2e78a6a528d37950946b2317318bb40f502",
+          "source": "https://github.com/KindredKJ/AI-Crawl/blob/e767f2e78a6a528d37950946b2317318bb40f502/docs/architecture/KINNULL_ASSETS_COMBAT_CINEMATICS_VOICE_CONSOLE.md",
+          "sourceBlobSha": "08e107ae24bfb28fed1ad80b8c5951a8387887d2",
+          "attribution": "All 26 pull-request commits and the source revision are attributed by GitHub to KindredKJ. This attribution does not assign unrelated prior repository content or dependencies to KJ.",
+          "implemented": [
+            "Six procedural animated proxy roles and combat encounter source with keyboard and gamepad inputs",
+            "Twelve offline synthetic voice cues with generation and import tooling",
+            "Seven cinematic storyboards, expanded map generation and a separately bounded console-handoff source path"
+          ],
+          "ci": {
+            "source": [
+              {
+                "id": 38890432277,
+                "jobId": 116938318514,
+                "event": "pull_request",
+                "conclusion": "success",
+                "checkoutSha": "86f23cdfc4a90422d09a73f055260b98e584bca6",
+                "testsPassed": 46,
+                "testsFailed": 0,
+                "scope": [
+                  "npm ci",
+                  "lint",
+                  "46 Node tests",
+                  "static checks for rigs, combat, voice, cinematics and handoff declarations",
+                  "static Unreal source-contract check",
+                  "Vite production build"
+                ],
+                "nativeCheckScope": "Source-contract inspection only; no Unreal C++ compile, cook, launch or packaging."
+              }
+            ],
+            "merge": [
+              {
+                "id": 46135867758,
+                "jobId": 140950918316,
+                "event": "push",
+                "workflow": "Verify",
+                "conclusion": "failure",
+                "stepsRecorded": 0,
+                "logStatus": "missing_or_unavailable"
+              },
+              {
+                "id": 46135867813,
+                "jobId": 140950918436,
+                "event": "push",
+                "workflow": "AI Crawl Dependency Security Review",
+                "conclusion": "failure",
+                "stepsRecorded": 0,
+                "logStatus": "missing_or_unavailable"
+              }
+            ],
+            "manualRunsReturned": 0,
+            "cancelledRunsReturned": 0
+          },
+          "releaseStatus": "No GitHub release or matching Vercel deployment was returned. This merge was the independently checked default-branch head on 2026-11-28.",
+          "limitations": [
+            "Final production rigs and art, recorded actors or motion capture, finished native levels and native console execution remain unverified",
+            "No cooked executable, storefront distribution, public deployment or externally observed gameplay launch was established",
+            "Exact-merge workflows failed before recording executable steps",
+            "No customers, revenue, legal ownership, independent recognition or worldwide-priority claim is established"
+          ],
+          "confidence": "High for public source, commit attribution and inspected source-head CI logs; native execution, deployment and external operation unverified.",
+          "nextVerification": "Compile and package the exact merge revision, exercise native combat, cinematic, voice and handoff paths, retain receipts, and restore green exact-merge CI."
         }
       ]
     }
