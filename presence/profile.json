@@ -2725,6 +2725,112 @@
           ],
           "confidence": "High for public source, attribution, exact-SHA workflow enumeration, empty recorded steps, deployment records and default-head state; gate execution and proof results remain unverified.",
           "nextVerification": "Restore green exact-merge workflows with retained steps and logs, execute the focused verification-scheduler suite, and retain a multi-verifier receipt chain linking assignment, reservation release, gate execution and independently checked proof results."
+        },
+        {
+          "id": "sdpn-repair-experiment-scheduler-pr9",
+          "title": "Bounded repair-experiment scheduler source",
+          "stage": "merged_public_source_production_deployment_ci_unexecuted",
+          "mergedAt": "2026-11-28T18:27:02Z",
+          "localDate": "2026-11-28",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/9",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceHeadSha": "b0f5c2e6dfa78ff9cf08095ce3a574021526d178",
+          "mergeCommit": "9cacd9410c67594fa9a9d4f5bd6a0c9c15a7384c",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/9cacd9410c67594fa9a9d4f5bd6a0c9c15a7384c/docs/REPAIR-EXPERIMENT-SCHEDULER.md",
+          "sourceBlobSha": "3354e8c638c6801dd0f6adeaa3e8897158f8b7d3",
+          "summary": "Public source adds an isolated E0/E1 repair-worker scheduler with deterministic phase priority, bounded capacity and queues, immutable attempt budgets, stale and duplicate-attempt rejection, reservation-bound release and independent full-verification handoff while retaining executed=false receipts.",
+          "attribution": "GitHub returned twenty pull-request commits, including fifteen stacked foundation commits and five repair-scheduler-specific commits; all twenty commits and the merge author are attributed to KindredKJ, and the merge committer is web-flow. Unrelated prior repository content and dependencies are not attributed by this merge.",
+          "verification": {
+            "changedFiles": [
+              "docs/REPAIR-EXPERIMENT-SCHEDULER.md",
+              "package.json",
+              "src/repair-experiment-scheduler.mjs",
+              "test/repair-experiment-scheduler.test.mjs"
+            ],
+            "sourceBlobShas": {
+              "documentation": "3354e8c638c6801dd0f6adeaa3e8897158f8b7d3",
+              "implementation": "a5cc5c8a5b388e4fb8f82513e48a1c0ba22b916f",
+              "focusedTests": "686476c740c22ba3fff4efaa48bd56591061fccf"
+            },
+            "workflowsEnumeratedWithoutEventFilter": true,
+            "sourceRuns": [],
+            "sourceRunObservation": "No workflow run was returned for the exact source SHA.",
+            "mergeRuns": [
+              {
+                "id": 46175927023,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175927048,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175927042,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175927047,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46175927039,
+                "name": "Candidate verification",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 4,
+                "stepsRecorded": 0
+              }
+            ],
+            "manualRunsReturned": 0,
+            "cancelledRunsReturned": 0,
+            "testScope": "The merged focused file contains fourteen test declarations covering phase priority, E0/E1 admission, attempt budgets, stale attempts, bounded capacity, load selection, independent full-verification handoff, immutable ceilings, duplicate and pending attempt handling, reservation isolation, detached snapshots, Boolean authorization and identifier validation. All eight exact-merge jobs returned empty recorded step lists, so no test or build execution is established.",
+            "defaultBranchHeadAtObservation": "9cacd9410c67594fa9a9d4f5bd6a0c9c15a7384c",
+            "githubReleasesAtObservation": [],
+            "deployments": [
+              {
+                "provider": "Vercel",
+                "deploymentId": "dpl_58A74WzMMmWFwNwSdYdDk8FtJSQc",
+                "state": "READY",
+                "target": "preview",
+                "commitSha": "b0f5c2e6dfa78ff9cf08095ce3a574021526d178",
+                "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/58A74WzMMmWFwNwSdYdDk8FtJSQc"
+              },
+              {
+                "provider": "Vercel",
+                "deploymentId": "dpl_2zQd8sa1HRf6uRohg2TLZAgGxAXA",
+                "state": "READY",
+                "target": "production",
+                "commitSha": "9cacd9410c67594fa9a9d4f5bd6a0c9c15a7384c",
+                "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/2zQd8sa1HRf6uRohg2TLZAgGxAXA"
+              }
+            ]
+          },
+          "limitations": [
+            "The scheduler assigns repair experiments and returns executed=false; it does not establish that a repair ran, passed, merged, registered or deployed.",
+            "No exact-source workflow run was returned, and all exact-merge workflows failed before recording executable steps.",
+            "Vercel READY establishes provider deployment state, not repair execution, successful repair, independent verification, disposition outcomes or sustained health.",
+            "No customers, revenue, legal ownership, independent recognition or worldwide-priority claim is established."
+          ],
+          "confidence": "High for public source, attribution, exact-SHA workflow enumeration, empty recorded steps, deployment records and default-head state; repair execution and outcomes remain unverified.",
+          "nextVerification": "Restore green exact-merge workflows with retained steps and logs, execute the focused repair suite, and retain a bounded experiment receipt chain linking diagnosis, synthesis, staging, independent full verification and an authorized disposition."
         }
       ]
     },
