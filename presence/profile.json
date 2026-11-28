@@ -2186,6 +2186,148 @@
           ],
           "confidence": "High for public source, exact GitHub metadata, deployment identity and current HTTP reachability; interactive behavior and user outcomes remain unverified.",
           "nextVerification": "Run and retain a browser-level homepage package round trip, exercise all four panels and drag/drop validation, and add focused automated tests for the new interaction paths and retained technical links."
+        },
+        {
+          "id": "sdpn-interface-session-routing-pr5",
+          "title": "Ordered interactive-session routing source",
+          "stage": "merged_public_source_production_deployment_ci_unexecuted",
+          "mergedAt": "2026-11-28T18:12:48Z",
+          "localDate": "2026-11-28",
+          "pullRequest": "https://github.com/KindredKJ/strata-data-port-network/pull/5",
+          "pullRequestAuthor": "KindredKJ",
+          "sourceHeadSha": "993dd800a4dc099eb5740176fcd01c771031ba02",
+          "mergeCommit": "d7a0e9a3a656a547b341a89b983199a1f5bc583b",
+          "mergeCommitAuthor": "KindredKJ",
+          "mergeCommitter": "web-flow",
+          "source": "https://github.com/KindredKJ/strata-data-port-network/blob/d7a0e9a3a656a547b341a89b983199a1f5bc583b/docs/INTERFACE-SESSION-ROUTING.md",
+          "sourceBlobSha": "ecc2748e8cfe3bd8e6fa44facb39c0ddd0af987f",
+          "summary": "Public source adds deterministic interface-frame encoding and digesting, monotonic per-session/per-source sequencing, acknowledgement tracking, bounded backpressure and conservative REFERENCE, INTERACTIVE_BUFFERED and PORTABLE_BUFFERED route planning with executed=false.",
+          "attribution": "All eight pull-request commits and the merge author are attributed by GitHub to KindredKJ; the merge committer is web-flow. Unrelated prior repository content and dependencies are not attributed by this merge.",
+          "verification": {
+            "changedFiles": [
+              "docs/INTERFACE-SESSION-ROUTING.md",
+              "package.json",
+              "src/interface-session-routing.mjs",
+              "test/interface-session-routing.test.mjs",
+              "test/two-machine-proof-hardening.test.mjs"
+            ],
+            "workflowsEnumeratedWithoutEventFilter": true,
+            "sourceRuns": [
+              {
+                "id": 46174560618,
+                "name": "INTERCONNECT native proof",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46174560675,
+                "name": "SW06-F two actual VMs",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46174560671,
+                "name": "SW07 Android native network entry",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46174560654,
+                "name": "Candidate verification",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 4,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46174560630,
+                "name": "SDPN Community independent open-source verification",
+                "event": "pull_request",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              }
+            ],
+            "mergeRuns": [
+              {
+                "id": 46174612596,
+                "name": "Candidate verification",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 4,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46174612583,
+                "name": "SW06-F two actual VMs",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46174612581,
+                "name": "SDPN Community independent open-source verification",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46174612645,
+                "name": "INTERCONNECT native proof",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              },
+              {
+                "id": 46174612631,
+                "name": "SW07 Android native network entry",
+                "event": "push",
+                "conclusion": "failure",
+                "jobs": 1,
+                "stepsRecorded": 0
+              }
+            ],
+            "manualRunsReturned": 0,
+            "cancelledRunsReturned": 0,
+            "testScope": "The merged source declares eleven focused interface-routing tests and adjusts one existing session-expiry timing test. All sixteen exact-SHA jobs returned empty recorded step lists, so no test or build execution is established.",
+            "defaultBranchHeadAtObservation": "d7a0e9a3a656a547b341a89b983199a1f5bc583b",
+            "githubReleasesAtObservation": [],
+            "deployments": [
+              {
+                "provider": "Vercel",
+                "deploymentId": "dpl_AxnMnDia9XmDmz4tDGeZuye25dov",
+                "state": "READY",
+                "target": "preview",
+                "commitSha": "993dd800a4dc099eb5740176fcd01c771031ba02",
+                "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/AxnMnDia9XmDmz4tDGeZuye25dov"
+              },
+              {
+                "provider": "Vercel",
+                "deploymentId": "dpl_FQP35JrWHP9Edd3kYuhLQun47P9T",
+                "state": "READY",
+                "target": "production",
+                "commitSha": "d7a0e9a3a656a547b341a89b983199a1f5bc583b",
+                "inspectorUrl": "https://vercel.com/kindred-coxs-projects/strata_data_port_network/FQP35JrWHP9Edd3kYuhLQun47P9T"
+              }
+            ]
+          },
+          "limitations": [
+            "The planner returns executed=false; route planning does not establish that bytes crossed a network.",
+            "All exact-source and exact-merge workflows failed before recording executable steps, so the focused tests and broader proof workflows are unverified for this revision.",
+            "Vercel READY establishes provider deployment state, not routing-module invocation, successful frame transport, two-host operation or sustained production health.",
+            "No customers, revenue, legal ownership, independent recognition or worldwide-priority claim is established."
+          ],
+          "confidence": "High for public source, attribution, exact-SHA workflow metadata, empty recorded steps, deployment records and default-head state; runtime transport remains unverified.",
+          "nextVerification": "Restore green exact-merge workflows with retained steps and logs, execute the focused routing suite, and retain a separately observable authorized two-endpoint frame exchange with ordering, acknowledgement and backpressure evidence."
         }
       ]
     },
